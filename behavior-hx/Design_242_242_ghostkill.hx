@@ -42,19 +42,25 @@ import motion.easing.Sine;
 
 
 
-class ActorEvents_486 extends ActorScript
+class Design_242_242_ghostkill extends ActorScript
 {          	
 	
  
  	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
 		super(actor, engine);	
-		
+		nameMap.set("Actor", "actor");
+
 	}
 	
 	override public function init()
 	{
-		
+		    addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void {
+if(wrapper.enabled && sameAsAny(getActorType(432), event.otherActor.getType(),event.otherActor.getGroup())){
+        recycleActor(actor);
+}
+});
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)

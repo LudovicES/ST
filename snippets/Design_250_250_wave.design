@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-250-1 comment="false" x="26" y="40">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="3"/>
+                    </get-xy>
+                </set-val-250-1>
+                <set-val-250-4 comment="false" x="26" y="73">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="2"/>
+                    </get-xy>
+                </set-val-250-4>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-250-5 comment="false" x="26" y="40">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-250-5 comment="false" id="0" x="0" y="0"/>
+                        <get-val-250-3 comment="false" id="1" x="0" y="0"/>
+                    </plus>
+                </set-val-250-5>
+                <set-val-250-7 comment="false" x="26" y="70">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-250-7 comment="false" id="0" x="0" y="0"/>
+                        <get-val-250-8 comment="false" id="1" x="0" y="0"/>
+                    </plus>
+                </set-val-250-7>
+                <set-xy comment="false" x="26" y="100">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-val-250-1 comment="false" id="0" x="0" y="0"/>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <times comment="false" id="0" x="0" y="0">
+                                <get-val-250-2 comment="false" id="0" x="0" y="0"/>
+                                <trig-master comment="false" id="1" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <get-val-250-5 comment="false" id="1" x="0" y="0"/>
+                                </trig-master>
+                            </times>
+                            <get-wh comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="3"/>
+                            </get-wh>
+                        </minus>
+                    </plus>
+                </set-xy>
+                <set-xy comment="false" x="26" y="160">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-val-250-4 comment="false" id="0" x="0" y="0"/>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <times comment="false" id="0" x="0" y="0">
+                                <get-val-250-6 comment="false" id="0" x="0" y="0"/>
+                                <trig-master comment="false" id="1" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <get-val-250-7 comment="false" id="1" x="0" y="0"/>
+                                </trig-master>
+                            </times>
+                            <get-wh comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="2"/>
+                            </get-wh>
+                        </minus>
+                    </plus>
+                </set-xy>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="1">
+        <set-val-250-3 comment="false" x="889" y="379">
+            <int id="0" val=""/>
+        </set-val-250-3>
+    </group>
+    <group eventID="2" id="2">
+        <set-val-250-5 comment="false" x="97" y="332">
+            <plus comment="false" id="0" x="0" y="0">
+                <get-val-250-5 comment="false" id="0" x="0" y="0"/>
+                <get-val-250-3 comment="false" id="1" x="0" y="0"/>
+            </plus>
+        </set-val-250-5>
+    </group>
+    <group eventID="2" id="-1">
+        <get-val-250-5 comment="false" x="369" y="481"/>
+        <get-val-250-3 comment="false" x="571" y="638"/>
+        <get-val-250-2 comment="false" x="550" y="336"/>
+        <get-val-250-1 comment="false" x="249" y="245"/>
+        <minus comment="false" x="745" y="151">
+            <get-val-250-4 comment="false" id="0" x="0" y="0"/>
+            <get-xy comment="false" id="1" x="0" y="0">
+                <ACTOR eid="this" id="0"/>
+                <int id="1" val="2"/>
+            </get-xy>
+        </minus>
+        <get-val-250-3 comment="false" x="368" y="215"/>
+        <times comment="false" x="513" y="246">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+        </times>
+    </group>
+</groups>

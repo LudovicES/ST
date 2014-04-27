@@ -20,12 +20,16 @@ import com.stencyl.models.Font;
 
 import com.stencyl.Engine;
 import com.stencyl.Input;
+import com.stencyl.Key;
 import com.stencyl.utils.Utils;
 
 import nme.ui.Mouse;
 import nme.display.Graphics;
 import nme.display.BlendMode;
+import nme.display.BitmapData;
+import nme.display.Bitmap;
 import nme.events.Event;
+import nme.events.KeyboardEvent;
 import nme.events.TouchEvent;
 import nme.net.URLLoader;
 
@@ -39,6 +43,20 @@ import motion.easing.Quad;
 import motion.easing.Quart;
 import motion.easing.Quint;
 import motion.easing.Sine;
+
+import com.stencyl.graphics.shaders.BasicShader;
+import com.stencyl.graphics.shaders.GrayscaleShader;
+import com.stencyl.graphics.shaders.SepiaShader;
+import com.stencyl.graphics.shaders.InvertShader;
+import com.stencyl.graphics.shaders.GrainShader;
+import com.stencyl.graphics.shaders.ExternalShader;
+import com.stencyl.graphics.shaders.InlineShader;
+import com.stencyl.graphics.shaders.BlurShader;
+import com.stencyl.graphics.shaders.ScanlineShader;
+import com.stencyl.graphics.shaders.CSBShader;
+import com.stencyl.graphics.shaders.HueShader;
+import com.stencyl.graphics.shaders.TintShader;
+import com.stencyl.graphics.shaders.BloomShader;
 
 
 
@@ -88,15 +106,15 @@ if(wrapper.enabled){
 {
             if(actor.getValue("2 Way Horizontal Movement", "_FacingRight"))
 {
-                _hold.setX(((actor.getXCenter() - _hold.getWidth()/2) + _hold.getValue("item", "_offsetx")));
+                _hold.setX(((actor.getXCenter() - (_hold.getWidth()/2)) + _hold.getValue("item", "_offsetx")));
 }
 
             else
 {
-                _hold.setX(((actor.getXCenter() - _hold.getWidth()/2) - _hold.getValue("item", "_offsetx")));
+                _hold.setX(((actor.getXCenter() - (_hold.getWidth()/2)) - _hold.getValue("item", "_offsetx")));
 }
 
-            _hold.setY(((actor.getYCenter() - _hold.getHeight()/2) + _hold.getValue("item", "_offsety")));
+            _hold.setY(((actor.getYCenter() - (_hold.getHeight()/2)) + _hold.getValue("item", "_offsety")));
 }
 
 }

@@ -42,19 +42,36 @@ import motion.easing.Sine;
 
 
 
-class ActorEvents_488 extends ActorScript
+class Design_243_243_ghostrepop extends ActorScript
 {          	
 	
+public var _ghost:Bool;
+
  
  	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
 		super(actor, engine);	
-		
+		nameMap.set("ghost?", "_ghost");
+_ghost = false;
+nameMap.set("Actor", "actor");
+
 	}
 	
 	override public function init()
 	{
-		
+		    addWhenKilledListener(actor, function(list:Array<Dynamic>):Void {
+if(wrapper.enabled){
+        if(!(_ghost))
+{
+            trace("" + "create_ghost?");
+            createRecycledActor(getActorType(479), actor.getX(), actor.getY(), Script.BACK);
+            _ghost = true;
+propertyChanged("_ghost", _ghost);
+}
+
+}
+});
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)

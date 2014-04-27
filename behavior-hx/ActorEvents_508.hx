@@ -42,14 +42,17 @@ import motion.easing.Sine;
 
 
 
-class ActorEvents_500 extends ActorScript
+class ActorEvents_508 extends ActorScript
 {          	
 	
+public var _fish:Actor;
+
  
  	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
 		super(actor, engine);	
-		
+		nameMap.set("fish", "_fish");
+
 	}
 	
 	override public function init()
@@ -59,11 +62,12 @@ if(wrapper.enabled && sameAsAny(getActorType(432), event.otherActor.getType(),ev
         if(event.otherActor.getValue("holder", "_holding"))
 {
             trace("" + "IF_01");
-            if((event.otherActor.getValue("holder", "_hold").getType() == getActorType(496)))
+            if((event.otherActor.getValue("holder", "_hold").getType() == getActorType(506)))
 {
                 trace("" + "IF_02");
                 createRecycledActor(getActorType(486), actor.getX(), actor.getY(), Script.FRONT);
                 recycleActor(event.otherActor);
+                recycleActor(event.otherActor.getValue("holder", "_hold"));
 }
 
 }

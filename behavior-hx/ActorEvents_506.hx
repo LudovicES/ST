@@ -42,14 +42,17 @@ import motion.easing.Sine;
 
 
 
-class ActorEvents_513 extends ActorScript
+class ActorEvents_506 extends ActorScript
 {          	
 	
+public var _fish:Actor;
+
  
  	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
 		super(actor, engine);	
-		
+		nameMap.set("fish", "_fish");
+
 	}
 	
 	override public function init()

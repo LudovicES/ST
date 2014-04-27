@@ -7,6 +7,9 @@
                     <ACTOR eid="5" id="0"/>
                     <int id="1" val="1"/>
                 </toggle-grav>
+                <set-val-217-1 comment="false" x="26" y="67">
+                    <int id="0" val="432"/>
+                </set-val-217-1>
             </group>
         </init>
     </group>
@@ -37,7 +40,7 @@
                         <moveToBy comment="false" x="37" y="127">
                             <ACTOR eid="4" id="0"/>
                             <int id="1" val="0"/>
-                            <int id="2" val="5"/>
+                            <int id="2" val="3"/>
                             <int id="3" val="0"/>
                             <int id="4" val="0.1"/>
                             <int id="5" val="11"/>
@@ -46,9 +49,9 @@
                             <group eventID="5" id="-1">
                                 <moveToBy comment="false" x="48" y="181">
                                     <ACTOR eid="4" id="0"/>
-                                    <int id="1" val="0"/>
-                                    <int id="2" val="-5"/>
-                                    <int id="3" val="0"/>
+                                    <int id="1" val="1"/>
+                                    <int id="2" val="760"/>
+                                    <int id="3" val="26"/>
                                     <int id="4" val="0.1"/>
                                     <int id="5" val="11"/>
                                 </moveToBy>
@@ -59,7 +62,7 @@
                     </group>
                     <and comment="false" id="0" x="0" y="0">
                         <is-in-region comment="false" id="0" x="0" y="0">
-                            <ACTOR eid="2" id="0"/>
+                            <ACTOR eid="27" id="0"/>
                             <REGION eid="0" id="1"/>
                         </is-in-region>
                         <isonscreen comment="false" id="1" x="0" y="0">
@@ -91,20 +94,41 @@
         <print comment="false" x="734" y="136">
             <int id="0" val="gravityok"/>
         </print>
-        <toggle-grav comment="false" x="734" y="156">
-            <ACTOR eid="5" id="0"/>
-            <int id="1" val="0"/>
-        </toggle-grav>
     </group>
     <group eventID="5" id="4">
         <debug-draw comment="false" x="292" y="440">
             <int id="0" val="0"/>
         </debug-draw>
     </group>
+    <group eventID="5" id="5">
+        <set-val-217-1 comment="false" x="707" y="432">
+            <int id="0" val="432"/>
+        </set-val-217-1>
+    </group>
+    <group eventID="5" id="6">
+        <toggle-grav comment="false" x="841" y="88">
+            <ACTOR eid="5" id="0"/>
+            <int id="1" val="0"/>
+        </toggle-grav>
+    </group>
     <group eventID="5" id="-1">
         <getgroup comment="false" x="568" y="561">
             <ACTOR eid="lastcreated" id="0"/>
         </getgroup>
+        <pick-type comment="false" x="724" y="48">
+            <ACTORTYPE eid="432" id="0"/>
+        </pick-type>
+        <getatype comment="false" x="856" y="207">
+            <ACTOR eid="lastcreated" id="0"/>
+        </getatype>
+        <get-val-217-1 comment="false" x="616" y="103"/>
+        <is-in-region comment="false" x="933" y="548">
+            <ACTOR eid="lastcreated" id="0"/>
+            <REGION eid="lastcreated" id="1"/>
+        </is-in-region>
+        <region comment="false" x="1014" y="446">
+            <REGION eid="lastcreated" id="0"/>
+        </region>
     </group>
     <group eventID="6" id="0">
         <event-key-press-release comment="false" x="15" y="15">
@@ -214,328 +238,4 @@
         </init>
     </group>
     <group eventID="9" id="-1"/>
-    <group eventID="10" id="0">
-        <event-type-region comment="false" x="15" y="15">
-            <group eventID="10" id="-1">
-                <if comment="false" x="26" y="47">
-                    <group eventID="1" id="-1">
-                        <print comment="false" x="37" y="80">
-                            <int id="0" val="IF_01"/>
-                        </print>
-                        <if comment="false" x="37" y="100">
-                            <group eventID="1" id="-1">
-                                <print comment="false" x="48" y="151">
-                                    <int id="0" val="IF_02"/>
-                                </print>
-                                <create-actor3 comment="false" x="48" y="171">
-                                    <ACTORTYPE eid="486" id="0"/>
-                                    <get-region-pos comment="false" id="1" x="0" y="0">
-                                        <REGION eid="2" id="0"/>
-                                        <int id="1" val="0"/>
-                                    </get-region-pos>
-                                    <get-region-pos comment="false" id="2" x="0" y="0">
-                                        <REGION eid="2" id="0"/>
-                                        <int id="1" val="1"/>
-                                    </get-region-pos>
-                                    <int id="3" val="0"/>
-                                </create-actor3>
-                                <die comment="false" x="48" y="211">
-                                    <ACTOR eid="2" id="0"/>
-                                </die>
-                            </group>
-                            <eq comment="false" id="0" x="0" y="0">
-                                <getatype comment="false" id="0" x="0" y="0">
-                                    <get-attribute comment="false" id="0" x="0" y="0">
-                                        <ACTOR eid="2" id="0"/>
-                                        <int id="1" val="holder"/>
-                                        <int id="2" val="_hold"/>
-                                    </get-attribute>
-                                </getatype>
-                                <pick-type comment="false" id="1" x="0" y="0">
-                                    <ACTORTYPE eid="506" id="0"/>
-                                </pick-type>
-                            </eq>
-                        </if>
-                    </group>
-                    <get-attribute comment="false" id="0" x="0" y="0">
-                        <ACTOR eid="2" id="0"/>
-                        <int id="1" val="holder"/>
-                        <int id="2" val="_holding"/>
-                    </get-attribute>
-                </if>
-            </group>
-            <int id="0" val="0"/>
-            <REGION eid="2" id="1"/>
-            <ACTORTYPE eid="432" id="2"/>
-        </event-type-region>
-    </group>
-    <group eventID="10" id="-1">
-        <collide-actor-of-type comment="false" x="198" y="522"/>
-        <actor-entered-exited comment="false" x="106" y="278"/>
-        <collide-actor-of-type comment="false" x="152" y="373"/>
-        <collide-actor-of-type comment="false" x="405" y="348"/>
-        <get-xy comment="false" x="550" y="442">
-            <ACTOR eid="lastcreated" id="0"/>
-            <int id="1" val="1"/>
-        </get-xy>
-        <get-xy comment="false" x="353" y="572">
-            <ACTOR eid="lastcreated" id="0"/>
-            <int id="1" val="0"/>
-        </get-xy>
-    </group>
-    <group eventID="11" id="0">
-        <event-collide-actortotype comment="false" x="15" y="15">
-            <group eventID="11" id="-1">
-                <if comment="false" x="26" y="47">
-                    <group eventID="11" id="-1">
-                        <die comment="false" x="37" y="80">
-                            <ACTOR eid="17" id="0"/>
-                        </die>
-                    </group>
-                    <isalive comment="false" id="0" x="0" y="0">
-                        <ACTOR eid="17" id="0"/>
-                    </isalive>
-                </if>
-            </group>
-            <ACTOR eid="16" id="0"/>
-            <ACTORTYPE eid="432" id="1"/>
-        </event-collide-actortotype>
-    </group>
-    <group eventID="11" id="-1"/>
-    <group eventID="12" id="0">
-        <init comment="false" x="15" y="15">
-            <group eventID="12" id="-1">
-                <repeat comment="false" x="26" y="40">
-                    <group eventID="13" id="-1">
-                        <moveToBy comment="false" x="37" y="65">
-                            <ACTOR eid="22" id="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="300"/>
-                            <int id="3" val="200"/>
-                            <int id="4" val="2"/>
-                            <int id="5" val="8"/>
-                        </moveToBy>
-                        <moveToBy comment="false" x="37" y="92">
-                            <ACTOR eid="22" id="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="-300"/>
-                            <int id="3" val="-200"/>
-                            <int id="4" val="2"/>
-                            <int id="5" val="8"/>
-                        </moveToBy>
-                        <moveToBy comment="false" x="37" y="119">
-                            <ACTOR eid="22" id="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="300"/>
-                            <int id="3" val="200"/>
-                            <int id="4" val="2"/>
-                            <int id="5" val="8"/>
-                        </moveToBy>
-                        <moveToBy comment="false" x="37" y="146">
-                            <ACTOR eid="22" id="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="-300"/>
-                            <int id="3" val="-200"/>
-                            <int id="4" val="2"/>
-                            <int id="5" val="8"/>
-                        </moveToBy>
-                    </group>
-                    <int id="0" val="1000"/>
-                </repeat>
-            </group>
-        </init>
-    </group>
-    <group eventID="12" id="1">
-        <moveToBy comment="false" x="231" y="284">
-            <ACTOR eid="22" id="0"/>
-            <int id="1" val="0"/>
-            <int id="2" val="-30"/>
-            <int id="3" val="0"/>
-            <int id="4" val="2"/>
-            <int id="5" val="8"/>
-        </moveToBy>
-    </group>
-    <group eventID="12" id="2">
-        <continue comment="false" x="750" y="193"/>
-    </group>
-    <group eventID="12" id="3">
-        <moveToBy comment="false" x="128" y="543">
-            <ACTOR eid="22" id="0"/>
-            <int id="1" val="0"/>
-            <int id="2" val="30"/>
-            <int id="3" val="20"/>
-            <int id="4" val="2"/>
-            <int id="5" val="8"/>
-        </moveToBy>
-        <moveToBy comment="false" x="128" y="570">
-            <ACTOR eid="22" id="0"/>
-            <int id="1" val="0"/>
-            <int id="2" val="-30"/>
-            <int id="3" val="-20"/>
-            <int id="4" val="2"/>
-            <int id="5" val="8"/>
-        </moveToBy>
-        <moveToBy comment="false" x="128" y="597">
-            <ACTOR eid="22" id="0"/>
-            <int id="1" val="0"/>
-            <int id="2" val="30"/>
-            <int id="3" val="20"/>
-            <int id="4" val="2"/>
-            <int id="5" val="8"/>
-        </moveToBy>
-        <moveToBy comment="false" x="128" y="624">
-            <ACTOR eid="22" id="0"/>
-            <int id="1" val="0"/>
-            <int id="2" val="-30"/>
-            <int id="3" val="-20"/>
-            <int id="4" val="2"/>
-            <int id="5" val="8"/>
-        </moveToBy>
-    </group>
-    <group eventID="12" id="4">
-        <continue comment="false" x="14" y="308"/>
-    </group>
-    <group eventID="12" id="-1"/>
-    <group eventID="13" id="0">
-        <step comment="false" x="15" y="15">
-            <group eventID="13" id="-1"/>
-        </step>
-    </group>
-    <group eventID="13" id="1">
-        <repeat comment="false" x="201" y="206">
-            <group eventID="13" id="-1">
-                <moveToBy comment="false" x="212" y="231">
-                    <ACTOR eid="22" id="0"/>
-                    <int id="1" val="0"/>
-                    <int id="2" val="30"/>
-                    <int id="3" val="20"/>
-                    <int id="4" val="2"/>
-                    <int id="5" val="8"/>
-                </moveToBy>
-                <moveToBy comment="false" x="212" y="258">
-                    <ACTOR eid="22" id="0"/>
-                    <int id="1" val="0"/>
-                    <int id="2" val="-30"/>
-                    <int id="3" val="-20"/>
-                    <int id="4" val="2"/>
-                    <int id="5" val="8"/>
-                </moveToBy>
-                <moveToBy comment="false" x="212" y="285">
-                    <ACTOR eid="22" id="0"/>
-                    <int id="1" val="0"/>
-                    <int id="2" val="30"/>
-                    <int id="3" val="20"/>
-                    <int id="4" val="2"/>
-                    <int id="5" val="8"/>
-                </moveToBy>
-                <moveToBy comment="false" x="212" y="312">
-                    <ACTOR eid="22" id="0"/>
-                    <int id="1" val="0"/>
-                    <int id="2" val="-30"/>
-                    <int id="3" val="-20"/>
-                    <int id="4" val="2"/>
-                    <int id="5" val="8"/>
-                </moveToBy>
-            </group>
-            <int id="0" val="0"/>
-        </repeat>
-    </group>
-    <group eventID="13" id="-1"/>
-    <group eventID="14" id="0">
-        <init comment="false" x="15" y="15">
-            <group eventID="12" id="-1">
-                <repeat comment="false" x="26" y="40">
-                    <group eventID="13" id="-1">
-                        <dolater comment="false" x="37" y="65">
-                            <group eventID="14" id="-1">
-                                <moveToBy comment="false" x="48" y="92">
-                                    <ACTOR eid="23" id="0"/>
-                                    <int id="1" val="0"/>
-                                    <int id="2" val="30"/>
-                                    <int id="3" val="20"/>
-                                    <int id="4" val="2"/>
-                                    <int id="5" val="8"/>
-                                </moveToBy>
-                                <moveToBy comment="false" x="48" y="119">
-                                    <ACTOR eid="23" id="0"/>
-                                    <int id="1" val="0"/>
-                                    <int id="2" val="-30"/>
-                                    <int id="3" val="-20"/>
-                                    <int id="4" val="2"/>
-                                    <int id="5" val="8"/>
-                                </moveToBy>
-                                <moveToBy comment="false" x="48" y="146">
-                                    <ACTOR eid="23" id="0"/>
-                                    <int id="1" val="0"/>
-                                    <int id="2" val="30"/>
-                                    <int id="3" val="20"/>
-                                    <int id="4" val="2"/>
-                                    <int id="5" val="8"/>
-                                </moveToBy>
-                                <moveToBy comment="false" x="48" y="173">
-                                    <ACTOR eid="23" id="0"/>
-                                    <int id="1" val="0"/>
-                                    <int id="2" val="-30"/>
-                                    <int id="3" val="-20"/>
-                                    <int id="4" val="2"/>
-                                    <int id="5" val="8"/>
-                                </moveToBy>
-                            </group>
-                            <int id="0" val="1"/>
-                            <ACTOR eid="lastcreated" id="2"/>
-                        </dolater>
-                    </group>
-                    <int id="0" val="1000"/>
-                </repeat>
-            </group>
-        </init>
-    </group>
-    <group eventID="14" id="1">
-        <moveToBy comment="false" x="231" y="284">
-            <ACTOR eid="22" id="0"/>
-            <int id="1" val="0"/>
-            <int id="2" val="-30"/>
-            <int id="3" val="0"/>
-            <int id="4" val="2"/>
-            <int id="5" val="8"/>
-        </moveToBy>
-    </group>
-    <group eventID="14" id="2">
-        <continue comment="false" x="750" y="193"/>
-    </group>
-    <group eventID="14" id="3">
-        <moveToBy comment="false" x="128" y="543">
-            <ACTOR eid="22" id="0"/>
-            <int id="1" val="0"/>
-            <int id="2" val="30"/>
-            <int id="3" val="20"/>
-            <int id="4" val="2"/>
-            <int id="5" val="8"/>
-        </moveToBy>
-        <moveToBy comment="false" x="128" y="570">
-            <ACTOR eid="22" id="0"/>
-            <int id="1" val="0"/>
-            <int id="2" val="-30"/>
-            <int id="3" val="-20"/>
-            <int id="4" val="2"/>
-            <int id="5" val="8"/>
-        </moveToBy>
-        <moveToBy comment="false" x="128" y="597">
-            <ACTOR eid="22" id="0"/>
-            <int id="1" val="0"/>
-            <int id="2" val="30"/>
-            <int id="3" val="20"/>
-            <int id="4" val="2"/>
-            <int id="5" val="8"/>
-        </moveToBy>
-        <moveToBy comment="false" x="128" y="624">
-            <ACTOR eid="22" id="0"/>
-            <int id="1" val="0"/>
-            <int id="2" val="-30"/>
-            <int id="3" val="-20"/>
-            <int id="4" val="2"/>
-            <int id="5" val="8"/>
-        </moveToBy>
-    </group>
-    <group eventID="14" id="-1"/>
 </groups>
