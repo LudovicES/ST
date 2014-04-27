@@ -60,19 +60,66 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_479 extends ActorScript
+class Design_250_250_wave extends ActorScript
 {          	
 	
+public var _StartY:Float;
+
+public var _AmplitudeY:Float;
+
+public var _WavenumberY:Float;
+
+public var _StartX:Float;
+
+public var _timewaveY:Float;
+
+public var _AmplitudeX:Float;
+
+public var _timewaveX:Float;
+
+public var _WavenumberX:Float;
+
  
  	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
 		super(actor, engine);	
-		
+		nameMap.set("Start Y", "_StartY");
+_StartY = 0.0;
+nameMap.set("AmplitudeY", "_AmplitudeY");
+_AmplitudeY = 64.0;
+nameMap.set("WavenumberY", "_WavenumberY");
+_WavenumberY = 0.0;
+nameMap.set("Start X", "_StartX");
+_StartX = 0.0;
+nameMap.set("time_waveY", "_timewaveY");
+_timewaveY = 0.0;
+nameMap.set("AmplitudeX", "_AmplitudeX");
+_AmplitudeX = 0.0;
+nameMap.set("time_waveX", "_timewaveX");
+_timewaveX = 0.0;
+nameMap.set("WavenumberX", "_WavenumberX");
+_WavenumberX = 0.0;
+nameMap.set("Actor", "actor");
+
 	}
 	
 	override public function init()
 	{
-		
+		            _StartY = asNumber(actor.getYCenter());
+propertyChanged("_StartY", _StartY);
+        _StartX = asNumber(actor.getXCenter());
+propertyChanged("_StartX", _StartX);
+    addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void {
+if(wrapper.enabled){
+        _timewaveY = asNumber((_timewaveY + _WavenumberY));
+propertyChanged("_timewaveY", _timewaveY);
+        _timewaveX = asNumber((_timewaveX + _WavenumberX));
+propertyChanged("_timewaveX", _timewaveX);
+        actor.setY((_StartY + ((_AmplitudeY * Math.sin(_timewaveY)) - (actor.getHeight()/2))));
+        actor.setX((_StartX + ((_AmplitudeX * Math.sin(_timewaveX)) - (actor.getWidth()/2))));
+}
+});
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)

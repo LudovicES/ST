@@ -60,19 +60,49 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_479 extends ActorScript
+class SceneEvents_8 extends SceneScript
 {          	
 	
+public var _Jumpertype:ActorType;
+
  
- 	public function new(dummy:Int, actor:Actor, engine:Engine)
+ 	public function new(dummy:Int, engine:Engine)
 	{
-		super(actor, engine);	
-		
+		super(engine);
+		nameMap.set("Jumper_type", "_Jumpertype");
+
 	}
 	
 	override public function init()
 	{
-		
+		            getActor(5).setIgnoreGravity(!false);
+        _Jumpertype = getActorType(432);
+propertyChanged("_Jumpertype", _Jumpertype);
+            getActor(11).setAnimation("" + "2");
+        getActor(10).setAnimation("" + "3");
+        getActor(12).setAnimation("" + "2");
+        getActor(9).setAnimation("" + "3");
+        getActor(13).setAnimation("" + "2");
+    addKeyStateListener("kick", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void {
+if(wrapper.enabled && pressed){
+        if((isInRegion(getActor(27), getRegion(0)) && getActor(5).isOnScreen()))
+{
+            trace("" + "gravityok");
+            getActor(5).setIgnoreGravity(!true);
+            getActor(4).moveBy(3, 0, 0.1, Expo.easeInOut);
+            runLater(1000 * 0.1, function(timeTask:TimedTask):Void {
+                        getActor(4).moveTo(760, 26, 0.1, Expo.easeInOut);
+}, null);
+}
+
+}
+});
+    addKeyStateListener("reload", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void {
+if(wrapper.enabled && pressed){
+        reloadCurrentScene(null,createCrossfadeTransition((1)));
+}
+});
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)

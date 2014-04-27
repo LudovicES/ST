@@ -82,16 +82,15 @@ nameMap.set("Actor", "actor");
 	{
 		    addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void {
 if(wrapper.enabled && sameAsAny(getActorGroup(9),event.otherActor.getType(),event.otherActor.getGroup())){
-        if((!(_holding) && isKeyReleased("kick")))
+        if((!(_holding) && isKeyReleased("take")))
 {
-            trace("" + "objet ramass~x00e9");
             _holding = true;
 propertyChanged("_holding", _holding);
             _hold = event.otherActor;
 propertyChanged("_hold", _hold);
 }
 
-        else if((_holding && isKeyReleased("kick")))
+        else if((_holding && isKeyReleased("take")))
 {
             _holding = false;
 propertyChanged("_holding", _holding);

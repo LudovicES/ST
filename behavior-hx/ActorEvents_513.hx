@@ -60,14 +60,30 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_479 extends ActorScript
+class ActorEvents_513 extends ActorScript
 {          	
 	
+public var _StartY:Float;
+
+public var _Amplitude:Float;
+
+public var _Wavenumber:Float;
+
+public var _StartX:Float;
+
  
  	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
 		super(actor, engine);	
-		
+		nameMap.set("Start Y", "_StartY");
+_StartY = 0.0;
+nameMap.set("Amplitude", "_Amplitude");
+_Amplitude = 64.0;
+nameMap.set("Wavenumber", "_Wavenumber");
+_Wavenumber = 0.0;
+nameMap.set("Start X", "_StartX");
+_StartX = 0.0;
+
 	}
 	
 	override public function init()

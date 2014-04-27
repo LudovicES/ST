@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <game accelFramerate="0" adsPosition="0" aheight="480" airCert="" airPass="" androidAlias="" androidCert="" androidMinVersion="0" androidPassword="" androidPublicKey="" androidTargetVersion="7" antialias="true" appName="My Game" appType="0" author="" authorURL="" autoRotate="false" awidth="800" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" borderColor="-12303292" borderThickness="2" bundleID="com.yourcompany.gamename" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="" cws-icon128="" cws-icon16="" cws-name="" cws-version="" default="8" defaultFramerate="60" defaultSceneID="8" desc="" desktopScale="1.0" desktopScaleMode="0" deviceOS="4.3" disableBackButton="false" enablePurchases="false" engine="30" format="2.0" gameid="-1" haxeExtras="" height="480" internalVersion="1" internalVersionIOS="1" kit="false" lockURL="" macBundleID="com.yourcompany.gamename" maxScaleAndroid="4.0" maxScaleDesktop="1.0" maxScaleIOS="4.0" maxScaleWeb="1.0" metroColor="-12566464" mochi="" multitouch="true" name="ST" ngID="" ngKey="" orientation="1" p12="" p12pwd="" physicsMode="0" preloaderstyle="0" products="" prov-adhoc="" prov-store="" scale="1" scaleModeAndroid="0" scaleModeDesktop="0" scaleModeIOS="0" scaleModeWeb="0" showAds="false" simulatorOS="4.3" splashStyle="0" startInFullScreenDesktop="false" startInFullScreenWeb="false" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" useGlossyIcon="false" webScale="1.0" whirlKey="" width="800" windowsAppName="" windowsAuthor="" windowsBundleID="com.yourcompany.gamename">
     <exts>
-        <e enabled="false" id="spine"/>
         <e enabled="false" id="test-native"/>
+        <e enabled="false" id="spine"/>
         <e enabled="false" id="test"/>
-        <e enabled="false" id="test-flash"/>
         <e enabled="false" id="label"/>
+        <e enabled="false" id="test-flash"/>
         <e enabled="false" id="date"/>
         <e enabled="false" id="tileapi"/>
     </exts>
@@ -29,32 +29,30 @@
         <group desc="" id="12" name="papa_scout_skull"/>
     </groups>
     <cgroups>
-        <cgroup g1="12" g2="1"/>
-        <cgroup g1="1" g2="3"/>
-        <cgroup g1="10" g2="0"/>
-        <cgroup g1="8" g2="1"/>
-        <cgroup g1="8" g2="0"/>
+        <cgroup g1="6" g2="1"/>
         <cgroup g1="4" g2="1"/>
         <cgroup g1="4" g2="3"/>
-        <cgroup g1="0" g2="11"/>
-        <cgroup g1="0" g2="3"/>
-        <cgroup g1="0" g2="7"/>
-        <cgroup g1="5" g2="1"/>
         <cgroup g1="9" g2="1"/>
         <cgroup g1="9" g2="0"/>
-        <cgroup g1="6" g2="1"/>
+        <cgroup g1="1" g2="8"/>
+        <cgroup g1="1" g2="3"/>
+        <cgroup g1="1" g2="5"/>
+        <cgroup g1="1" g2="0"/>
+        <cgroup g1="1" g2="12"/>
+        <cgroup g1="8" g2="0"/>
+        <cgroup g1="7" g2="0"/>
+        <cgroup g1="3" g2="0"/>
+        <cgroup g1="11" g2="0"/>
+        <cgroup g1="0" g2="10"/>
     </cgroups>
     <input>
-        <key id="0" keyname="C" name="groundpound" vk="67" vks="67"/>
-        <key id="1" keyname="DOWN" name="duck" vk="40" vks="40"/>
         <key id="2" keyname="LEFT" name="left" vk="37" vks="37"/>
-        <key id="3" keyname="X" name="run" vk="88" vks="88"/>
         <key id="4" keyname="RIGHT" name="right" vk="39" vks="39"/>
-        <key id="5" keyname="UP" name="up" vk="38" vks="38"/>
-        <key id="6" keyname="Z" name="jump" vk="90" vks="90"/>
-        <key id="7" keyname="UP" name="jetpack" vk="38" vks="38"/>
-        <key id="8" keyname="X" name="grapple" vk="88" vks="88"/>
         <key id="9" keyname="E" name="kick" vk="69" vks="69"/>
+        <key id="10" keyname="Z" name="take" vk="90" vks="90,87"/>
+        <key id="11" keyname="R" name="reload" vk="82" vks="82"/>
+        <key id="12" keyname="UP" name="up" vk="38" vks="38"/>
+        <key id="13" keyname="DOWN" name="down" vk="40" vks="40"/>
     </input>
     <attcats>
         <cat id="0" name="Scoring"/>

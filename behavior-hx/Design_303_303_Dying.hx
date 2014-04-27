@@ -60,19 +60,26 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_479 extends ActorScript
+class Design_303_303_Dying extends ActorScript
 {          	
 	
+public var _hold:Actor;
+
  
  	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
 		super(actor, engine);	
-		
+		nameMap.set("hold", "_hold");
+nameMap.set("Actor", "actor");
+
 	}
 	
 	override public function init()
 	{
-		
+		            runLater(1000 * 0.2, function(timeTask:TimedTask):Void {
+                    createRecycledActor(getActorType(526), (actor.getXCenter() - 16), (actor.getYCenter() - 16), Script.FRONT);
+}, actor);
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)

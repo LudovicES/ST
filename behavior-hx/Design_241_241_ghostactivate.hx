@@ -60,19 +60,27 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_479 extends ActorScript
+class Design_241_241_ghostactivate extends ActorScript
 {          	
 	
  
  	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
 		super(actor, engine);	
-		
+		nameMap.set("Actor", "actor");
+
 	}
 	
 	override public function init()
 	{
-		
+		    addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void {
+if(wrapper.enabled && sameAsAny(getActorType(432), event.otherActor.getType(),event.otherActor.getGroup())){
+        trace("" + "colle");
+        event.otherActor.enableBehavior("2 Way Horizontal Movement");
+        recycleActor(actor);
+}
+});
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)

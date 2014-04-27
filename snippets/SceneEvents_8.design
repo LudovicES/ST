@@ -112,23 +112,23 @@
         </toggle-grav>
     </group>
     <group eventID="5" id="-1">
-        <getgroup comment="false" x="568" y="561">
-            <ACTOR eid="lastcreated" id="0"/>
-        </getgroup>
-        <pick-type comment="false" x="724" y="48">
-            <ACTORTYPE eid="432" id="0"/>
-        </pick-type>
-        <getatype comment="false" x="856" y="207">
-            <ACTOR eid="lastcreated" id="0"/>
-        </getatype>
-        <get-val-217-1 comment="false" x="616" y="103"/>
+        <region comment="false" x="1014" y="446">
+            <REGION eid="lastcreated" id="0"/>
+        </region>
         <is-in-region comment="false" x="933" y="548">
             <ACTOR eid="lastcreated" id="0"/>
             <REGION eid="lastcreated" id="1"/>
         </is-in-region>
-        <region comment="false" x="1014" y="446">
-            <REGION eid="lastcreated" id="0"/>
-        </region>
+        <get-val-217-1 comment="false" x="616" y="103"/>
+        <getatype comment="false" x="856" y="207">
+            <ACTOR eid="lastcreated" id="0"/>
+        </getatype>
+        <pick-type comment="false" x="724" y="48">
+            <ACTORTYPE eid="432" id="0"/>
+        </pick-type>
+        <getgroup comment="false" x="568" y="561">
+            <ACTOR eid="lastcreated" id="0"/>
+        </getgroup>
     </group>
     <group eventID="6" id="0">
         <event-key-press-release comment="false" x="15" y="15">
@@ -138,7 +138,7 @@
                     <int id="1" val="1"/>
                 </scene-reload-through>
             </group>
-            <CONTROL eid="3" id="0"/>
+            <CONTROL eid="11" id="0"/>
             <int id="1" val="0"/>
         </event-key-press-release>
     </group>

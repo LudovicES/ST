@@ -60,7 +60,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_479 extends ActorScript
+class ActorEvents_432 extends ActorScript
 {          	
 	
  
@@ -72,7 +72,9 @@ class ActorEvents_479 extends ActorScript
 	
 	override public function init()
 	{
-		
+		            actor.disableBehavior("2 Way Horizontal Movement");
+        actor.disableBehavior("Camera Follow Player");
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)
