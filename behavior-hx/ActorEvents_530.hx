@@ -60,7 +60,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_526 extends ActorScript
+class ActorEvents_530 extends ActorScript
 {          	
 	
  
@@ -72,7 +72,10 @@ class ActorEvents_526 extends ActorScript
 	
 	override public function init()
 	{
-		
+		            runLater(1000 * 1, function(timeTask:TimedTask):Void {
+                    recycleActor(getLastCreatedActor());
+}, actor);
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)

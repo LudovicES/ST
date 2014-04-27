@@ -20,12 +20,16 @@ import com.stencyl.models.Font;
 
 import com.stencyl.Engine;
 import com.stencyl.Input;
+import com.stencyl.Key;
 import com.stencyl.utils.Utils;
 
 import nme.ui.Mouse;
 import nme.display.Graphics;
 import nme.display.BlendMode;
+import nme.display.BitmapData;
+import nme.display.Bitmap;
 import nme.events.Event;
+import nme.events.KeyboardEvent;
 import nme.events.TouchEvent;
 import nme.net.URLLoader;
 
@@ -40,35 +44,40 @@ import motion.easing.Quart;
 import motion.easing.Quint;
 import motion.easing.Sine;
 
+import com.stencyl.graphics.shaders.BasicShader;
+import com.stencyl.graphics.shaders.GrayscaleShader;
+import com.stencyl.graphics.shaders.SepiaShader;
+import com.stencyl.graphics.shaders.InvertShader;
+import com.stencyl.graphics.shaders.GrainShader;
+import com.stencyl.graphics.shaders.ExternalShader;
+import com.stencyl.graphics.shaders.InlineShader;
+import com.stencyl.graphics.shaders.BlurShader;
+import com.stencyl.graphics.shaders.ScanlineShader;
+import com.stencyl.graphics.shaders.CSBShader;
+import com.stencyl.graphics.shaders.HueShader;
+import com.stencyl.graphics.shaders.TintShader;
+import com.stencyl.graphics.shaders.BloomShader;
 
 
-class Design_243_243_ghostrepop extends ActorScript
+
+class Design_311_311_snakerock extends ActorScript
 {          	
 	
-public var _ghost:Bool;
-
  
  	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
 		super(actor, engine);	
-		nameMap.set("ghost?", "_ghost");
-_ghost = false;
-nameMap.set("Actor", "actor");
+		nameMap.set("Actor", "actor");
 
 	}
 	
 	override public function init()
 	{
-		    addWhenKilledListener(actor, function(list:Array<Dynamic>):Void {
-if(wrapper.enabled){
-        if(!(_ghost))
-{
-            trace("" + "create_ghost?");
-            createRecycledActor(getActorType(479), actor.getX(), actor.getY(), Script.BACK);
-            _ghost = true;
-propertyChanged("_ghost", _ghost);
-}
-
+		    addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void {
+if(wrapper.enabled && sameAsAny(getActorType(432), event.otherActor.getType(),event.otherActor.getGroup())){
+        event.otherActor.disableBehavior("2 Way Horizontal Movement");
+        createRecycledActor(getActorType(538), (actor.getXCenter() - 50), (actor.getYCenter() - 60), Script.FRONT);
+        actor.setAnimation("" + "rock_break");
 }
 });
 

@@ -91,17 +91,7 @@
         </set-val-240-1>
     </group>
     <group eventID="2" id="-1">
-        <get-val-240-1 comment="false" x="345" y="327"/>
         <collide-actor-of-type comment="false" x="241" y="425"/>
+        <get-val-240-1 comment="false" x="345" y="327"/>
     </group>
-    <group eventID="3" id="0">
-        <init comment="false" x="15" y="15">
-            <group eventID="3" id="-1">
-                <set-val-240-1 comment="false" x="26" y="40">
-                    <ACTOR eid="lastcollided" id="0"/>
-                </set-val-240-1>
-            </group>
-        </init>
-    </group>
-    <group eventID="3" id="-1"/>
 </groups>

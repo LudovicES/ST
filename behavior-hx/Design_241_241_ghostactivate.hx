@@ -77,6 +77,10 @@ class Design_241_241_ghostactivate extends ActorScript
 if(wrapper.enabled && sameAsAny(getActorType(432), event.otherActor.getType(),event.otherActor.getGroup())){
         trace("" + "colle");
         event.otherActor.enableBehavior("2 Way Horizontal Movement");
+        event.otherActor.enableBehavior("Camera Follow Player");
+        createRecycledActor(getActorType(530), (event.otherActor.getX() - 30), (event.otherActor.getY() - 10), Script.FRONT);
+        event.otherActor.setAnimation("" + "idle-r");
+        event.otherActor.setFilter([createTintFilter(Utils.getColorRGB(51,255,255), 70/100)]);
         recycleActor(actor);
 }
 });

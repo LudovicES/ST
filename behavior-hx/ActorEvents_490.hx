@@ -20,12 +20,16 @@ import com.stencyl.models.Font;
 
 import com.stencyl.Engine;
 import com.stencyl.Input;
+import com.stencyl.Key;
 import com.stencyl.utils.Utils;
 
 import nme.ui.Mouse;
 import nme.display.Graphics;
 import nme.display.BlendMode;
+import nme.display.BitmapData;
+import nme.display.Bitmap;
 import nme.events.Event;
+import nme.events.KeyboardEvent;
 import nme.events.TouchEvent;
 import nme.net.URLLoader;
 
@@ -40,21 +44,46 @@ import motion.easing.Quart;
 import motion.easing.Quint;
 import motion.easing.Sine;
 
+import com.stencyl.graphics.shaders.BasicShader;
+import com.stencyl.graphics.shaders.GrayscaleShader;
+import com.stencyl.graphics.shaders.SepiaShader;
+import com.stencyl.graphics.shaders.InvertShader;
+import com.stencyl.graphics.shaders.GrainShader;
+import com.stencyl.graphics.shaders.ExternalShader;
+import com.stencyl.graphics.shaders.InlineShader;
+import com.stencyl.graphics.shaders.BlurShader;
+import com.stencyl.graphics.shaders.ScanlineShader;
+import com.stencyl.graphics.shaders.CSBShader;
+import com.stencyl.graphics.shaders.HueShader;
+import com.stencyl.graphics.shaders.TintShader;
+import com.stencyl.graphics.shaders.BloomShader;
+
 
 
 class ActorEvents_490 extends ActorScript
 {          	
 	
+public var _fish:Actor;
+
  
  	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
 		super(actor, engine);	
-		
+		nameMap.set("fish", "_fish");
+
 	}
 	
 	override public function init()
 	{
-		
+		            actor.setIgnoreGravity(!false);
+    addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void {
+if(wrapper.enabled && sameAsAny(getActorType(432), event.otherActor.getType(),event.otherActor.getGroup())){
+        createRecycledActor(getActorType(534), (event.otherActor.getX() - 20), (event.otherActor.getY() - 10), Script.FRONT);
+        recycleActor(event.otherActor);
+        recycleActor(actor);
+}
+});
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)

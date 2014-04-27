@@ -13,20 +13,48 @@
                                 <print comment="false" x="48" y="161">
                                     <int id="0" val="IF_02"/>
                                 </print>
-                                <create-actor3 comment="false" x="48" y="181">
-                                    <ACTORTYPE eid="486" id="0"/>
-                                    <get-xy comment="false" id="1" x="0" y="0">
-                                        <ACTOR eid="this" id="0"/>
-                                        <int id="1" val="0"/>
-                                    </get-xy>
-                                    <get-xy comment="false" id="2" x="0" y="0">
-                                        <ACTOR eid="this" id="0"/>
-                                        <int id="1" val="1"/>
-                                    </get-xy>
+                                <setanim comment="false" x="48" y="181">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="off"/>
+                                </setanim>
+                                <create-actor3 comment="false" x="48" y="208">
+                                    <ACTORTYPE eid="532" id="0"/>
+                                    <minus comment="false" id="1" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="2"/>
+                                        </get-xy>
+                                        <int id="1" val="50"/>
+                                    </minus>
+                                    <minus comment="false" id="2" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="3"/>
+                                        </get-xy>
+                                        <int id="1" val="95"/>
+                                    </minus>
                                     <int id="3" val="0"/>
                                 </create-actor3>
-                                <die comment="false" x="48" y="221">
+                                <set-xy comment="false" x="48" y="253">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                        </get-xy>
+                                        <int id="1" val="20"/>
+                                    </plus>
+                                </set-xy>
+                                <die comment="false" x="48" y="298">
                                     <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
+                                </die>
+                                <die comment="false" x="48" y="330">
+                                    <get-attribute comment="false" id="0" x="0" y="0">
+                                        <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="holder"/>
+                                        <int id="2" val="_hold"/>
+                                    </get-attribute>
                                 </die>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
@@ -62,10 +90,49 @@
             <int id="0" val="colle"/>
         </print>
     </group>
+    <group eventID="1" id="2">
+        <die comment="false" x="265" y="429">
+            <ACTOR eid="this" id="0"/>
+        </die>
+    </group>
+    <group eventID="1" id="3">
+        <set-xy comment="false" x="883" y="485">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val=""/>
+        </set-xy>
+    </group>
+    <group eventID="1" id="4">
+        <eq comment="false" x="179" y="735">
+            <getatype comment="false" id="0" x="0" y="0">
+                <ACTOR eid="this" id="0"/>
+            </getatype>
+            <pick-type comment="false" id="1" x="0" y="0">
+                <ACTORTYPE eid="496" id="0"/>
+            </pick-type>
+        </eq>
+    </group>
     <group eventID="1" id="-1">
+        <get-xy comment="false" x="982" y="134">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+        </get-xy>
+        <get-wh comment="false" x="615" y="527">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="3"/>
+        </get-wh>
+        <get-wh comment="false" x="523" y="470">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="2"/>
+        </get-wh>
+        <collide-actor-of-type comment="false" x="623" y="50"/>
         <and comment="false" x="895" y="352">
             <int id="0" val=""/>
             <int id="1" val=""/>
         </and>
+        <plus comment="false" x="859" y="133">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+        </plus>
     </group>
 </groups>

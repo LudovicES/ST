@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-actortotype comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <actor-enabledisable-snippet comment="false" x="26" y="47">
+                    <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="2 Way Horizontal Movement"/>
+                </actor-enabledisable-snippet>
+                <create-actor3 comment="false" x="26" y="79">
+                    <ACTORTYPE eid="538" id="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="2"/>
+                        </get-xy>
+                        <int id="1" val="50"/>
+                    </minus>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="3"/>
+                        </get-xy>
+                        <int id="1" val="60"/>
+                    </minus>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <setanim comment="false" x="26" y="124">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="rock_break"/>
+                </setanim>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <ACTORTYPE eid="432" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="1" id="1">
+        <if comment="false" x="215" y="261">
+            <group eventID="1" id="-1">
+                <print comment="false" x="226" y="299">
+                    <int id="0" val="IF_01"/>
+                </print>
+                <if comment="false" x="226" y="319">
+                    <group eventID="1" id="-1">
+                        <print comment="false" x="237" y="375">
+                            <int id="0" val="IF_02"/>
+                        </print>
+                        <setanim comment="false" x="237" y="395">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="off"/>
+                        </setanim>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <getatype comment="false" id="0" x="0" y="0">
+                            <get-attribute comment="false" id="0" x="0" y="0">
+                                <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="holder"/>
+                                <int id="2" val="_hold"/>
+                            </get-attribute>
+                        </getatype>
+                        <pick-type comment="false" id="1" x="0" y="0">
+                            <ACTORTYPE eid="496" id="0"/>
+                        </pick-type>
+                    </eq>
+                </if>
+            </group>
+            <get-attribute comment="false" id="0" x="0" y="0">
+                <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="holder"/>
+                <int id="2" val="_holding"/>
+            </get-attribute>
+        </if>
+    </group>
+    <group eventID="1" id="2">
+        <die comment="false" x="433" y="601">
+            <get-attribute comment="false" id="0" x="0" y="0">
+                <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="holder"/>
+                <int id="2" val="_hold"/>
+            </get-attribute>
+        </die>
+    </group>
+    <group eventID="1" id="3">
+        <set-xy comment="false" x="347" y="494">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+            <plus comment="false" id="2" x="0" y="0">
+                <get-xy comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                </get-xy>
+                <int id="1" val="20"/>
+            </plus>
+        </set-xy>
+    </group>
+    <group eventID="1" id="4">
+        <die comment="false" x="44" y="223">
+            <ACTOR eid="this" id="0"/>
+        </die>
+    </group>
+    <group eventID="1" id="5">
+        <collide-actor-of-type comment="false" x="76" y="471"/>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
