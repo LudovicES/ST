@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="3" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <print comment="false" x="26" y="47">
+                    <int id="0" val="colle"/>
+                </print>
+                <actor-enabledisable-snippet comment="false" x="26" y="67">
+                    <second-actor comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="2 Way Horizontal Movement"/>
+                </actor-enabledisable-snippet>
+                <die comment="false" x="26" y="99">
+                    <first-actor comment="false" id="0" x="0" y="0"/>
+                </die>
+            </group>
+            <ACTORTYPE eid="479" id="0"/>
+            <ACTORTYPE eid="432" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="3" id="1">
+        <print comment="false" x="525" y="143">
+            <int id="0" val="colle"/>
+        </print>
+        <actor-enabledisable-snippet comment="false" x="525" y="163">
+            <second-actor comment="false" id="0" x="0" y="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val="2 Way Horizontal Movement"/>
+        </actor-enabledisable-snippet>
+        <die comment="false" x="525" y="195">
+            <first-actor comment="false" id="0" x="0" y="0"/>
+        </die>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="4" id="-1"/>
+        </collide>
+    </group>
+    <group eventID="4" id="-1">
+        <pick-type comment="false" x="522" y="34">
+            <ACTORTYPE id="0"/>
+        </pick-type>
+        <getatype comment="false" x="989" y="61">
+            <ACTOR eid="this" id="0"/>
+        </getatype>
+    </group>
+    <group eventID="5" id="0">
+        <event-collide-actortotype comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <print comment="false" x="26" y="47">
+                    <int id="0" val="colle"/>
+                </print>
+                <actor-enabledisable-snippet comment="false" x="26" y="67">
+                    <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="2 Way Horizontal Movement"/>
+                </actor-enabledisable-snippet>
+                <die comment="false" x="26" y="99">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <ACTORTYPE eid="432" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="5" id="-1">
+        <second-actor comment="false" x="567" y="62"/>
+        <first-actor comment="false" x="666" y="75"/>
+    </group>
+</groups>

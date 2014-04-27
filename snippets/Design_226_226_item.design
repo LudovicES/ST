@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-actortogroup comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-224-3 comment="false" x="26" y="47">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-224-3>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <GROUP eid="1" id="1"/>
+        </event-collide-actortogroup>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <set-dxy comment="false" x="37" y="65">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="10"/>
+                        </set-dxy>
+                    </group>
+                    <get-val-224-3 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <else comment="false" x="26" y="104">
+                    <group eventID="2" id="-1">
+                        <set-dxy comment="false" x="37" y="124">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                        </set-dxy>
+                    </group>
+                </else>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<draw comment="false" x="15" y="234">
+<group id="-1"/>
+</draw>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1"/>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="161">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<receive-message comment="false" x="15" y="307">
+<group id="-1">
+<create-recycled-actor comment="false" x="26" y="337">
+<ACTORTYPE eid="var" id="0" vid="4"/>
+<getxc comment="false" id="1" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getxc>
+<plus comment="false" id="2" x="0" y="0">
+<getyc comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getyc>
+<get-val-229-8 comment="false" id="1" x="0" y="0"/>
+</plus>
+<int id="3" val="0"/>
+</create-recycled-actor>
+<setx comment="false" x="26" y="382">
+<ACTOR eid="lastcreated" id="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<getx comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcreated" id="0"/>
+</getx>
+<div comment="false" id="1" x="0" y="0">
+<getwidth comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcreated" id="0"/>
+</getwidth>
+<int id="1" val="2"/>
+</div>
+</minus>
+</setx>
+<sety comment="false" x="26" y="432">
+<ACTOR eid="lastcreated" id="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcreated" id="0"/>
+</gety>
+<div comment="false" id="1" x="0" y="0">
+<getheight comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcreated" id="0"/>
+</getheight>
+<int id="1" val="2"/>
+</div>
+</minus>
+</sety>
+<setvel comment="false" x="26" y="482">
+<ACTOR eid="lastcreated" id="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<getdir comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getdir>
+<get-val-229-5 comment="false" id="1" x="0" y="0"/>
+</minus>
+<get-val-229-2 comment="false" id="2" x="0" y="0"/>
+</setvel>
+<setangle comment="false" x="26" y="527">
+<ACTOR eid="lastcreated" id="0"/>
+<plus comment="false" id="1" x="0" y="0">
+<to-degrees comment="false" id="0" x="0" y="0">
+<atan2 comment="false" id="0" x="0" y="0">
+<getdy comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcreated" id="0"/>
+</getdy>
+<getdx comment="false" id="1" x="0" y="0">
+<ACTOR eid="lastcreated" id="0"/>
+</getdx>
+</atan2>
+</to-degrees>
+<get-val-229-6 comment="false" id="1" x="0" y="0"/>
+</plus>
+</setangle>
+<play-sound3 comment="false" x="26" y="582">
+<SOUND eid="var" id="0" vid="7"/>
+</play-sound3>
+</group>
+<get-val-229-1 comment="false" id="0" x="0" y="0"/>
+</receive-message>
+</group>
+<group id="4">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="-1"/>
+</groups>

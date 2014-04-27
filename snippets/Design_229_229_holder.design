@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <event-collide-actortogroup comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="47">
+                    <group eventID="2" id="-1">
+                        <print comment="false" x="37" y="85">
+                            <int id="0" val="objet ramassé"/>
+                        </print>
+                        <set-val-226-2 comment="false" x="37" y="105">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-226-2>
+                        <set-val-226-1 comment="false" x="37" y="130">
+                            <collide-member-of-group comment="false" id="0" x="0" y="0"/>
+                        </set-val-226-1>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <not comment="false" id="0" x="0" y="0">
+                            <get-val-226-2 comment="false" id="0" x="0" y="0"/>
+                        </not>
+                        <keystate comment="false" id="1" x="0" y="0">
+                            <int id="0" val="2"/>
+                            <CONTROL eid="9" id="1"/>
+                        </keystate>
+                    </and>
+                </if>
+                <else-if comment="false" x="26" y="174">
+                    <group eventID="2" id="-1">
+                        <set-val-226-2 comment="false" x="37" y="212">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-226-2>
+                        <set-attribute comment="false" x="37" y="237">
+                            <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="item"/>
+                            <int id="2" val="_dropping"/>
+                            <true comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-226-2 comment="false" id="0" x="0" y="0"/>
+                        <keystate comment="false" id="1" x="0" y="0">
+                            <int id="0" val="2"/>
+                            <CONTROL eid="9" id="1"/>
+                        </keystate>
+                    </and>
+                </else-if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <GROUP eid="9" id="1"/>
+        </event-collide-actortogroup>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <step comment="false" x="33" y="156">
+            <group eventID="3" id="-1">
+                <if comment="false" x="44" y="181">
+                    <group eventID="3" id="-1">
+                        <if comment="false" x="55" y="206">
+                            <group eventID="3" id="-1">
+                                <set-xy comment="false" x="66" y="239">
+                                    <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="0"/>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <minus comment="false" id="0" x="0" y="0">
+                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                                <int id="1" val="2"/>
+                                            </get-xy>
+                                            <get-wh comment="false" id="1" x="0" y="0">
+                                                <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="2"/>
+                                            </get-wh>
+                                        </minus>
+                                        <get-attribute comment="false" id="1" x="0" y="0">
+                                            <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="item"/>
+                                            <int id="2" val="_offsetx"/>
+                                        </get-attribute>
+                                    </plus>
+                                </set-xy>
+                            </group>
+                            <get-attribute comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="2 Way Horizontal Movement"/>
+                                <int id="2" val="_FacingRight"/>
+                            </get-attribute>
+                        </if>
+                        <else comment="false" x="55" y="306">
+                            <group eventID="3" id="-1">
+                                <set-xy comment="false" x="66" y="326">
+                                    <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="0"/>
+                                    <minus comment="false" id="2" x="0" y="0">
+                                        <minus comment="false" id="0" x="0" y="0">
+                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                                <int id="1" val="2"/>
+                                            </get-xy>
+                                            <get-wh comment="false" id="1" x="0" y="0">
+                                                <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="2"/>
+                                            </get-wh>
+                                        </minus>
+                                        <get-attribute comment="false" id="1" x="0" y="0">
+                                            <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="item"/>
+                                            <int id="2" val="_offsetx"/>
+                                        </get-attribute>
+                                    </minus>
+                                </set-xy>
+                            </group>
+                        </else>
+                        <set-xy comment="false" x="55" y="393">
+                            <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <get-xy comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="3"/>
+                                    </get-xy>
+                                    <get-wh comment="false" id="1" x="0" y="0">
+                                        <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="3"/>
+                                    </get-wh>
+                                </minus>
+                                <get-attribute comment="false" id="1" x="0" y="0">
+                                    <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="item"/>
+                                    <int id="2" val="_offsety"/>
+                                </get-attribute>
+                            </plus>
+                        </set-xy>
+                    </group>
+                    <get-val-226-2 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>
