@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <bullet-mode comment="false" x="37" y="70">
+                            <ACTOR eid="this" id="0"/>
+                        </bullet-mode>
+                        <set-val-314-2 comment="false" x="37" y="97">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-314-2>
+                        <set-fric-bounce comment="false" x="37" y="122">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="4"/>
+                            <int id="2" val="0.2"/>
+                        </set-fric-bounce>
+                        <toggle-grav comment="false" x="37" y="149">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </toggle-grav>
+                        <push-shove2 comment="false" x="37" y="176">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="-110"/>
+                            <int id="3" val="50"/>
+                        </push-shove2>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-314-2 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+            <int id="0" val="grab"/>
+        </event-custom>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <actor-enabledisable-snippet comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="item"/>
+                </actor-enabledisable-snippet>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <collide comment="false" x="21" y="63">
+            <group eventID="3" id="-1">
+                <if comment="false" x="32" y="93">
+                    <group eventID="3" id="-1">
+                        <backforward comment="false" x="43" y="126">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="3"/>
+                        </backforward>
+                        <set-fric-bounce comment="false" x="43" y="153">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="4"/>
+                            <int id="2" val="0"/>
+                        </set-fric-bounce>
+                        <toggle-grav comment="false" x="43" y="180">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                        </toggle-grav>
+                        <set-dxy comment="false" x="43" y="207">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                        </set-dxy>
+                        <set-dxy comment="false" x="43" y="234">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                        </set-dxy>
+                        <set-xy comment="false" x="43" y="261">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </screen-wh>
+                                <plus comment="false" id="1" x="0" y="0">
+                                    <int id="0" val="128"/>
+                                    <get-wh comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="1"/>
+                                    </get-wh>
+                                </plus>
+                            </minus>
+                        </set-xy>
+                        <actor-enabledisable-snippet comment="false" x="43" y="311">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="item"/>
+                        </actor-enabledisable-snippet>
+                        <disable-snippet comment="false" x="43" y="338"/>
+                    </group>
+                    <collision-type2 comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <int id="1" val="0"/>
+                        <int id="2" val="2"/>
+                    </collision-type2>
+                </if>
+            </group>
+        </collide>
+    </group>
+    <group eventID="3" id="-1">
+        <other-actor comment="false" x="344" y="66"/>
+    </group>
+</groups>

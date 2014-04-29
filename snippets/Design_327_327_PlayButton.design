@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="3" id="-1">
+                        <setanim comment="false" x="37" y="77">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="playon"/>
+                        </setanim>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <not comment="false" id="0" x="0" y="0">
+                            <get-val-501-1 comment="false" id="0" x="0" y="0"/>
+                        </not>
+                        <get-val-501-2 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="3" id="-1">
+                        <setanim comment="false" x="37" y="77">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="playoff"/>
+                        </setanim>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <not comment="false" id="0" x="0" y="0">
+                            <get-val-501-1 comment="false" id="0" x="0" y="0"/>
+                        </not>
+                        <get-val-501-2 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-key-any-press-release comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="47">
+                    <group eventID="3" id="-1">
+                        <set-val-501-1 comment="false" x="37" y="82">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-501-1>
+                        <setanim comment="false" x="37" y="107">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="playon"/>
+                        </setanim>
+                        <scene-shout comment="false" x="37" y="134">
+                            <int id="0" val="start"/>
+                        </scene-shout>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <not comment="false" id="0" x="0" y="0">
+                            <get-val-501-1 comment="false" id="0" x="0" y="0"/>
+                        </not>
+                        <get-val-501-2 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </if>
+            </group>
+            <int id="0" val="0"/>
+        </event-key-any-press-release>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="5" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="3" id="-1">
+                        <set-val-501-1 comment="false" x="37" y="77">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-501-1>
+                        <setanim comment="false" x="37" y="102">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="playon"/>
+                        </setanim>
+                        <scene-shout comment="false" x="37" y="129">
+                            <int id="0" val="start"/>
+                        </scene-shout>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <not comment="false" id="0" x="0" y="0">
+                            <get-val-501-1 comment="false" id="0" x="0" y="0"/>
+                        </not>
+                        <get-val-501-2 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="4"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="5" id="-1"/>
+</groups>

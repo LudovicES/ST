@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
+    <music atlasID="0" desc="" id="579" loop="true" name="abeilles" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="509" name="acteur_grotte" shared="false" width="32">
         <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="1" numframes="1" originx="16" originy="32" sync="false" version="2" width="32">
             <poly data="4,0,0,32,0,32,64,0,64" density="0.1" fric="0.2" gid="10" id="0" name="Animation 0" rest="0.0" sensor="true"/>
@@ -8,24 +9,16 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="240" fixedrot="false" fric="0.2" gid="10" id="508" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="acteur_grotte" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="509" static="true">
         <snippets/>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="499" name="ame" shared="false" width="100">
-        <anim across="1" down="1" durations="100" height="100" id="0" loop="true" name="Animation 0" numframes="1" originx="100" originy="100" sync="false" version="1" width="100">
-            <circle data="16,34,31" density="0.1" fric="0.2" gid="8" id="0" name="Circle" rest="0.0" sensor="true"/>
-        </anim>
-    </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="235" fixedrot="false" fric="0.2" gid="3" id="498" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="ame" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="499" static="false">
-        <snippets/>
-    </actor>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="522" name="arbres_01" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="2000" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="523" name="arbres_02" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1200" xpf="1.0" ypf="1.0"/>
-    <custom-block blocktag="custom-359" blocktype="NORMAL" code="Boolean((~.say(&quot;Walking&quot;, &quot;AtMaxWalkingSpeed&quot;)))" desc="" global="false" gui="%0 At Max Walking Speed" id="359" message="AtMaxWalkingSpeed" name="AtMaxWalkingSpeed" oid="-1" return="BOOLEAN" shared="false" snippetID="178">
+    <custom-block blocktag="custom-359" blocktype="NORMAL" code="" desc="" global="false" gui="%0 At Max Walking Speed" id="359" message="AtMaxWalkingSpeed" name="AtMaxWalkingSpeed" oid="-1" return="BOOLEAN" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="234" fixedrot="true" fric="0.2" gid="9" id="496" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="bidon" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="497" static="false">
         <snippets>
             <s enabled="true" id="224">
-                <prop id="1" list="0" val="0.0"/>
-                <prop id="2" list="0" val="0.0"/>
+                <prop id="1" list="0" val="15"/>
+                <prop id="2" list="0" val="10"/>
                 <prop id="3" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
@@ -34,8 +27,8 @@
     <tileset across="6" atlasID="0" desc="" down="3" id="512" name="bord_eau" oid="-1" shared="false" th="32" tw="32">
         <tile collision="1" data="" durations="100" frames="0" id="0" order="-1"/>
         <tile collision="1" data="" durations="100" frames="1" id="3" order="-1"/>
-        <tile collision="9" data="" durations="100" frames="2" id="6" order="-1"/>
-        <tile collision="-1" data="" durations="100" frames="3" id="9" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="2" id="6" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="3" id="9" order="-1"/>
         <tile collision="8" data="" durations="100" frames="4" id="12" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="5" id="15" order="-1"/>
         <tile collision="1" data="" durations="100" frames="6" id="1" order="-1"/>
@@ -54,20 +47,37 @@
     <background atlasID="0" desc="" durations="100" dx="0.8" dy="-0.0" height="480" id="505" name="brume_01" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1600" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="0.4" dy="-0.0" height="480" id="521" name="brume_02" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1600" xpf="1.0" ypf="1.0"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="304" fixedrot="false" fric="0.2" gid="3" id="528" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="canne_peche" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="529" static="true">
-        <snippets/>
+        <snippets>
+            <s enabled="true" id="315">
+                <prop id="1" list="0" val="0"/>
+                <prop id="2" list="0" val=""/>
+                <prop id="3" list="0" val=""/>
+                <prop id="4" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="220" id="529" name="canne_peche" shared="false" width="220">
-        <anim across="1" down="1" durations="60" height="220" id="0" loop="true" name="idle" numframes="1" originx="110" originy="110" sync="false" version="2" width="220">
+        <anim across="1" down="1" durations="100" height="220" id="0" loop="true" name="idle" numframes="1" originx="110" originy="110" sync="false" version="2" width="220">
             <poly data="4,66,62,166,62,166,162,66,162" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
         </anim>
-        <anim across="7" down="6" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50" height="1320" id="1" loop="false" name="peche" numframes="39" originx="110" originy="110" sync="false" version="2" width="1540">
-            <poly data="4,0,0,220,0,220,220,0,220" density="0.1" fric="0.2" gid="-1000" id="0" name="peche" rest="0.0" sensor="false"/>
+        <anim across="5" down="5" durations="40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40" height="1100" id="1" loop="false" name="peche" numframes="23" originx="110" originy="110" sync="false" version="2" width="1100">
+            <poly data="4,62,117,112,117,112,167,62,167" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
     <custom-block blocktag="custom-469" blocktype="NORMAL" code="Boolean((~.say(&quot;Animation Manager&quot;, &quot;CategorySameAs&quot;, ~)))" desc="" global="false" gui="Current Category Same As %1" id="469" message="CategorySameAs" name="CategorySameAs" oid="-1" return="BOOLEAN" shared="false" snippetID="169">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="CheckCategory" order="1" type="TEXT"/>
     </custom-block>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="327" fixedrot="false" fric="0.2" gid="3" id="565" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="champi" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="566" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="25" id="566" name="champi" shared="false" width="24">
+        <anim across="1" down="1" durations="100" height="25" id="0" loop="true" name="1" numframes="1" originx="12" originy="12" sync="false" version="2" width="24">
+            <poly data="4,0,0,24,0,24,25,0,25" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="29" id="1" loop="true" name="2" numframes="1" originx="13" originy="14" sync="false" version="2" width="27"/>
+    </sprite>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="493" name="ciel_nuit_01" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="800" xpf="1.0" ypf="1.0"/>
     <custom-block blocktag="custom-471" blocktype="ACTION" code="~.say(&quot;Animation Manager&quot;, &quot;ClearAnimCat&quot;, ~);" desc="" global="false" gui="Clear Current Anim Category If Same As %1" id="471" message="ClearAnimCat" name="ClearAnimCat" oid="-1" return="VOID" shared="false" snippetID="169">
         <blank name="Self" order="0" type="ACTOR"/>
@@ -76,11 +86,57 @@
     <custom-block blocktag="custom-436" blocktype="ACTION" code="~.say(&quot;Animation Manager&quot;, &quot;ClearCat&quot;);" desc="" global="false" gui="Clear Current Animation for %0" id="436" message="ClearCat" name="ClearCat" oid="-1" return="VOID" shared="false" snippetID="169">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
+    <music atlasID="0" desc="" id="596" loop="true" name="dead_champi" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="568" name="death_champi" shared="false" width="120">
+        <anim across="6" down="5" durations="60,60,60,60,60,60,60,60,60,60,130,130,130,130,130,60,60,60,60,60,60,60,60,60,60,60,60" height="500" id="0" loop="false" name="Animation 0" numframes="27" originx="60" originy="50" sync="false" version="2" width="720"/>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="570" name="death_champi" shared="false" width="120">
+        <anim across="6" down="5" durations="60,60,60,60,60,60,60,60,60,60,130,130,130,130,130,60,60,60,60,60,60,60,60,60,60,60,60" height="500" id="0" loop="false" name="Animation 0" numframes="27" originx="60" originy="50" sync="false" version="2" width="720"/>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="328" fixedrot="false" fric="0.2" gid="3" id="567" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="death_champi" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="568" static="true">
+        <snippets>
+            <s enabled="true" id="243">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="303">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="1"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="429" fixedrot="false" fric="0.2" gid="3" id="569" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="death_champi2" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="570" static="true">
+        <snippets>
+            <s enabled="true" id="243">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="303">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="1"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="326" fixedrot="false" fric="0.2" gid="3" id="563" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="death_eclair" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="564" static="true">
+        <snippets>
+            <s enabled="true" id="243">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="303">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="1"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="60" id="541" name="death_fire" shared="false" width="100">
         <anim across="5" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60" height="240" id="0" loop="false" name="death_snake" numframes="18" originx="50" originy="30" sync="false" version="2" width="500"/>
     </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="535" name="death_fire" shared="false" width="100">
-        <anim across="4" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60" height="400" id="0" loop="false" name="death_stick" numframes="13" originx="50" originy="75" sync="false" version="2" width="400"/>
+        <anim across="4" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60" height="400" id="0" loop="false" name="death_stick" numframes="13" originx="50" originy="50" sync="false" version="2" width="400"/>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="307" fixedrot="false" fric="0.2" gid="3" id="532" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="death_fire" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="533" static="true">
         <snippets>
@@ -90,13 +146,33 @@
             </s>
             <s enabled="true" id="303">
                 <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="1"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="150" id="533" name="death_fire" shared="false" width="100">
-        <anim across="5" down="5" durations="60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60" height="750" id="0" loop="false" name="death_fire" numframes="25" originx="50" originy="75" sync="false" version="2" width="500"/>
+        <anim across="5" down="5" durations="65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65" height="750" id="0" loop="false" name="death_fire" numframes="25" originx="50" originy="75" sync="false" version="2" width="500"/>
     </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="120" id="564" name="death_fire" shared="false" width="100">
+        <anim across="5" down="5" durations="60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60" height="600" id="0" loop="false" name="death_snake" numframes="24" originx="50" originy="60" sync="false" version="2" width="500"/>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="558" name="death_fire" shared="false" width="100">
+        <anim across="5" down="5" durations="55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55" height="500" id="0" loop="false" name="death_snake" numframes="23" originx="50" originy="50" sync="false" version="2" width="500"/>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="323" fixedrot="false" fric="0.2" gid="3" id="557" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="death_ruche" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="558" static="true">
+        <snippets>
+            <s enabled="true" id="243">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="303">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="1"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="312" fixedrot="false" fric="0.2" gid="3" id="540" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="death_snake" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="541" static="true">
         <snippets>
             <s enabled="true" id="243">
@@ -105,29 +181,70 @@
             </s>
             <s enabled="true" id="303">
                 <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="1"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
     </actor>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="308" fixedrot="false" fric="0.2" gid="3" id="534" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="death_stick" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="535" static="true">
         <snippets>
+            <s enabled="true" id="243">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="303">
                 <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="1"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
     </actor>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="230" fixedrot="false" fric="0.2" gid="3" id="486" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="death_wolf" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="487" static="true">
         <snippets>
+            <s enabled="true" id="243">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="303">
                 <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="1"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="32" id="487" name="death_wolf" shared="false" width="32">
-        <anim across="1" down="1" durations="100" height="32" id="0" loop="true" name="0" numframes="1" originx="16" originy="16" sync="false" version="2" width="32"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="487" name="death_wolf" shared="false" width="110">
+        <anim across="3" down="3" durations="60,60,60,60,60,60,60,60,60" height="300" id="0" loop="false" name="0" numframes="9" originx="16" originy="16" sync="false" version="2" width="330"/>
     </sprite>
+    <music atlasID="0" desc="" id="592" loop="true" name="eclair" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="581" loop="true" name="empale" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="319" fixedrot="false" fric="0.2" gid="3" id="549" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="feuille" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="550" static="false">
+        <snippets>
+            <s enabled="true" id="301">
+                <prop id="1" list="0" val="Animation 0"/>
+                <prop id="2" list="0" val="Animation 0"/>
+                <prop id="3" list="0" val="Animation 0"/>
+                <prop id="4" list="0" val="Animation 0"/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="20.0"/>
+                <prop id="11" list="0" val="0.0"/>
+                <prop id="14" list="0" val="0.0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="0.1"/>
+                <prop id="19" list="0" val="10"/>
+                <prop id="21" list="0" val="false"/>
+                <prop id="20" list="0" val="0"/>
+                <prop id="22" list="0" val="false"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="6" id="550" name="feuille" shared="false" width="6">
+        <anim across="1" down="1" durations="100" height="6" id="0" loop="true" name="Animation 0" numframes="1" originx="3" originy="3" sync="false" version="2" width="6">
+            <poly data="4,0,0,6,0,6,6,0,6" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="322" fixedrot="false" fric="0.2" gid="3" id="555" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="fil ruche" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="556" static="true">
+        <snippets/>
+    </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="80" id="501" name="fire" shared="false" width="70">
         <anim across="3" down="3" durations="90,90,90,90,90,90,90,90,90" height="240" id="0" loop="true" name="Animation 0" numframes="9" originx="35" originy="40" sync="false" version="2" width="210">
             <poly data="4,18,29,50,29,50,61,18,61" density="0.1" fric="0.2" gid="10" id="0" name="Animation 0" rest="0.0" sensor="true"/>
@@ -139,31 +256,67 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="236" fixedrot="false" fric="0.2" gid="10" id="500" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="fire" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="501" static="true">
         <snippets/>
     </actor>
+    <music atlasID="0" desc="" id="582" loop="true" name="fire_ok" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="239" fixedrot="true" fric="0.2" gid="9" id="506" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="fish" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="507" static="false">
         <snippets>
+            <s enabled="true" id="314">
+                <prop id="1" list="0" val="50"/>
+                <prop id="2" list="0" val="false"/>
+                <prop id="3" list="0" val="false"/>
+                <prop id="4" list="0" val="false"/>
+                <prop id="5" list="0" val=""/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="224">
-                <prop id="1" list="0" val="0.0"/>
-                <prop id="2" list="0" val="0.0"/>
+                <prop id="1" list="0" val="15"/>
+                <prop id="2" list="0" val="10"/>
                 <prop id="3" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
     </actor>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="504" name="foreground" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="800" xpf="1.0" ypf="1.0"/>
+    <music atlasID="0" desc="" id="595" loop="true" name="foret_ambiance" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="316" fixedrot="true" fric="0.2" gid="9" id="542" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="fork" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="543" static="false">
+        <snippets>
+            <s enabled="true" id="314">
+                <prop id="1" list="0" val="50"/>
+                <prop id="2" list="0" val="false"/>
+                <prop id="3" list="0" val="false"/>
+                <prop id="4" list="0" val="false"/>
+                <prop id="5" list="0" val=""/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="224">
+                <prop id="1" list="0" val="15"/>
+                <prop id="2" list="0" val="10"/>
+                <prop id="3" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="22" id="543" name="fork" shared="false" width="17">
+        <anim across="1" down="1" durations="100" height="22" id="0" loop="true" name="Animation 0" numframes="1" originx="16" originy="16" sync="false" version="2" width="17">
+            <poly data="4,0,0,16,0,16,22,0,22" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="320" id="560" name="foudre" shared="false" width="100">
+        <anim across="4" down="4" durations="30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30" height="1280" id="0" loop="false" name="1" numframes="16" originx="50" originy="160" sync="false" version="2" width="400"/>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="505" fixedrot="false" fric="0.2" gid="3" id="559" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="foudre" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="560" static="true">
+        <snippets/>
+    </actor>
     <custom-block blocktag="custom-437" blocktype="NORMAL" code="String((~.say(&quot;Animation Manager&quot;, &quot;GetCat&quot;)))" desc="" global="false" gui="Current Animation Category for %0" id="437" message="GetCat" name="GetCat" oid="-1" return="TEXT" shared="false" snippetID="169">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-362" blocktype="NORMAL" code="Number((~.say(&quot;Walking&quot;, &quot;GetMaxWalkSpeed&quot;)))" desc="" global="false" gui="Get Max Walk Speed for %0" id="362" message="GetMaxWalkSpeed" name="GetMaxWalkSpeed" oid="-1" return="NUMBER" shared="false" snippetID="178">
+    <custom-block blocktag="custom-362" blocktype="NORMAL" code="" desc="" global="false" gui="Get Max Walk Speed for %0" id="362" message="GetMaxWalkSpeed" name="GetMaxWalkSpeed" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-363" blocktype="NORMAL" code="Number((~.say(&quot;Walking&quot;, &quot;GetWalkAccel&quot;)))" desc="" global="false" gui="Get Walk Accel for %0" id="363" message="GetWalkAccel" name="GetWalkAccel" oid="-1" return="NUMBER" shared="false" snippetID="178">
+    <custom-block blocktag="custom-363" blocktype="NORMAL" code="" desc="" global="false" gui="Get Walk Accel for %0" id="363" message="GetWalkAccel" name="GetWalkAccel" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="Simple template Actor demonstrates potential usage of Behaviors and Animations.  Please note that the Behavior Attributes are configured to work with an Actor mass of 1.0.   " eventsnippetid="223" fixedrot="true" fric="0.0" gid="11" id="479" ignoreg="false" inertia="0.01" ldamp="0.0" mass="1.0" name="ghost" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="480" static="false">
         <snippets>
-            <s enabled="true" id="237">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="false" id="169">
                 <prop id="1" list="0" val="false"/>
                 <prop id="2" list="0" val=""/>
@@ -182,6 +335,9 @@
                 </prop>
                 <prop id="6" list="0" val="false"/>
                 <prop id="7" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="237">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="306">
@@ -218,55 +374,14 @@
                 <prop id="2" list="0" val="0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="false" id="110">
-                <prop id="1" list="0" val="false"/>
-                <prop id="2" list="0" val="No Control"/>
-                <prop id="3" list="0" val="true"/>
-                <prop id="4" list="0" val="0"/>
-                <prop id="5" list="0" val="0.0"/>
-                <prop id="6" list="0" val="false"/>
-                <prop id="7" list="0" val="0"/>
-                <prop id="8" list="0" val="100.0"/>
-                <prop id="9" list="0" val="35"/>
-                <prop id="10" list="0" val="40"/>
-                <prop id="11" list="0" val="right"/>
-                <prop id="12" list="0" val="left"/>
-                <prop id="13" list="0" val="0.4"/>
-                <prop id="14" list="0" val="true"/>
+            <s enabled="true" id="313">
                 <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="15" list="0" val="run-r"/>
-                <prop id="17" list="0" val="run-r"/>
-                <prop id="16" list="0" val="run-l"/>
-                <prop id="19" list="0" val="run-r"/>
-                <prop id="18" list="0" val="run-l"/>
-                <prop id="21" list="0" val="Running"/>
-                <prop id="20" list="0" val="run-l"/>
             </s>
-            <s enabled="false" id="163">
-                <prop id="1" list="0" val="false"/>
-                <prop id="2" list="0" val="false"/>
-                <prop id="3" list="0" val="No Control"/>
-                <prop id="8" list="0" val="0.075"/>
-                <prop id="12" list="0" val="jump-r"/>
-                <prop id="13" list="0" val="jump-l"/>
-                <prop id="14" list="0" val="false"/>
-                <prop id="15" list="0" val="0"/>
+            <s enabled="false" id="242">
                 <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="17" list="0" val="0"/>
-                <prop id="16" list="0" val="0"/>
-                <prop id="19" list="0" val="-1"/>
-                <prop id="18" list="0" val="0.65"/>
-                <prop id="21" list="0" val="Jumping"/>
-                <prop id="20" list="0" val="30"/>
             </s>
-            <s enabled="false" id="108">
-                <prop id="1" list="0" val="right"/>
-                <prop id="2" list="0" val="left"/>
-                <prop id="3" list="0" val="0.9"/>
-                <prop id="4" list="0" val="0.975"/>
-                <prop id="5" list="0" val="0.975"/>
-                <prop id="6" list="0" val="0.975"/>
-                <prop id="7" list="0" val="0.99"/>
+            <s enabled="true" id="123">
+                <prop id="1" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="226">
@@ -274,10 +389,7 @@
                 <prop id="2" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="false" id="107">
-                <prop id="1" list="0" val="false"/>
-                <prop id="2" list="0" val="false"/>
-                <prop id="3" list="1" val=""/>
+            <s enabled="true" id="241">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="false" id="224">
@@ -286,163 +398,29 @@
                 <prop id="3" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="false" id="115">
-                <prop id="1" list="0" val="false"/>
-                <prop id="2" list="0" val="0.0"/>
-                <prop id="3" list="0" val="false"/>
-                <prop id="4" list="0" val="0"/>
-                <prop id="5" list="0" val="0"/>
-                <prop id="6" list="0" val="999.0"/>
-                <prop id="7" list="0" val="No Control"/>
-                <prop id="8" list="0" val="false"/>
-                <prop id="9" list="0" val="50"/>
-                <prop id="10" list="0" val="airjump-r"/>
-                <prop id="11" list="0" val="airjump-l"/>
-                <prop id="12" list="0" val="Air Jumping"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="false" id="114">
-                <prop id="1" list="0" val="0"/>
-                <prop id="2" list="0" val="false"/>
-                <prop id="3" list="0" val="fall-r"/>
-                <prop id="4" list="0" val="fall-l"/>
-                <prop id="5" list="0" val="0"/>
-                <prop id="6" list="0" val="Falling"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="false" id="112">
-                <prop id="1" list="0" val="No Control"/>
-                <prop id="2" list="0" val="duck-r"/>
-                <prop id="3" list="0" val="duck-l"/>
-                <prop id="4" list="0" val="Ducking"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="false" id="178">
-                <prop id="1" list="0" val="right"/>
-                <prop id="2" list="0" val="left"/>
-                <prop id="3" list="0" val="85"/>
-                <prop id="4" list="0" val="20"/>
-                <prop id="5" list="0" val="false"/>
-                <prop id="6" list="0" val="walk-r"/>
-                <prop id="7" list="0" val="walk-l"/>
-                <prop id="8" list="0" val="idle-r"/>
-                <prop id="9" list="0" val="idle-l"/>
-                <prop id="10" list="0" val="false"/>
-                <prop id="11" list="1" val="">
-                    <text order="0" value="Is Ducking?"/>
-                </prop>
-                <prop id="12" list="0" val="Walking"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="false" id="179">
-                <prop id="2" list="0" val="false"/>
-                <prop id="3" list="0" val="false"/>
-                <prop id="4" list="0" val="false"/>
-                <prop id="5" list="0" val="false"/>
-                <prop id="6" list="0" val="true"/>
-                <prop id="7" list="0" val="false"/>
-                <prop id="8" list="0" val="No Control"/>
-                <prop id="9" list="0" val="false"/>
-                <prop id="10" list="0" val="0"/>
-                <prop id="11" list="0" val="290"/>
-                <prop id="12" list="0" val="250"/>
-                <prop id="13" list="0" val="65"/>
-                <prop id="14" list="0" val="jump-r"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="15" list="0" val="jump-l"/>
-                <prop id="17" list="0" val="Wall Jumping"/>
-                <prop id="16" list="0" val="false"/>
-            </s>
-            <s enabled="true" id="123">
-                <prop id="1" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="false" id="242">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="false" id="180">
-                <prop id="1" list="0" val="false"/>
-                <prop id="2" list="0" val="false"/>
-                <prop id="3" list="0" val="false"/>
-                <prop id="4" list="0" val="false"/>
-                <prop id="5" list="0" val="false"/>
-                <prop id="6" list="0" val="0"/>
-                <prop id="7" list="0" val="left"/>
-                <prop id="8" list="0" val="right"/>
-                <prop id="9" list="0" val="7"/>
-                <prop id="10" list="0" val="wallslide-r"/>
-                <prop id="11" list="0" val="wallslide-l"/>
-                <prop id="12" list="0" val="true"/>
-                <prop id="13" list="0" val="false"/>
-                <prop id="14" list="0" val="Wall Sliding"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="241">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="false" id="181">
-                <prop id="1" list="0" val="false"/>
-                <prop id="2" list="0" val="No Control"/>
-                <prop id="3" list="0" val="No Control"/>
-                <prop id="4" list="0" val="false"/>
-                <prop id="5" list="0" val="30"/>
-                <prop id="6" list="0" val="wallslide-r"/>
-                <prop id="7" list="0" val="wallslide-l"/>
-                <prop id="8" list="0" val="0"/>
-                <prop id="9" list="0" val="Ground Pounding"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
         </snippets>
     </actor>
+    <music atlasID="0" desc="" id="590" loop="true" name="ghost_move" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="194" id="503" name="grotte" shared="false" width="172">
         <anim across="1" down="1" durations="100" height="194" id="0" loop="true" name="Animation 0" numframes="1" originx="86" originy="97" sync="false" version="1" width="172"/>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="238" fixedrot="false" fric="0.2" gid="3" id="502" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="grotte" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="503" static="true">
         <snippets/>
     </actor>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="222" fixedrot="false" fric="0.2" gid="3" id="477" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Jump" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="478" static="true">
-        <snippets/>
-    </actor>
+    <music atlasID="0" desc="" id="578" loop="true" name="hors_eau" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="Standard jumping sound" id="261" loop="true" name="Jump" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="480" name="Jumper" shared="false" width="100">
         <anim across="4" down="3" durations="60,60,60,60,60,60,60,60,60,60" height="300" id="0" loop="true" name="idle-l" numframes="10" originx="8" originy="16" sync="false" version="2" width="400">
             <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="idle-l" rest="0.0" sensor="true"/>
         </anim>
+        <anim across="4" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60" height="400" id="16" loop="true" name="duck-r" numframes="13" originx="8" originy="16" sync="false" version="2" width="400">
+            <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
+        </anim>
         <anim across="4" down="3" durations="60,60,60,60,60,60,60,60,60,60" height="300" id="1" loop="true" name="idle-r" numframes="10" originx="8" originy="16" sync="false" version="2" width="400">
             <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="idle-r" rest="0.0" sensor="true"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="32" id="2" loop="true" name="walk-l" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="walk-l" rest="0.0" sensor="true"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="3" loop="true" name="walk-r" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="walk-r" rest="0.0" sensor="true"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="4" loop="true" name="run-l" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="run-l" rest="0.0" sensor="true"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="5" loop="true" name="run-r" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="run-r" rest="0.0" sensor="true"/>
-        </anim>
         <anim across="4" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60" height="400" id="6" loop="true" name="duck-l" numframes="13" originx="8" originy="16" sync="false" version="2" width="400">
             <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="8" loop="true" name="jump-l" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-l" rest="0.0" sensor="true"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="9" loop="true" name="jump-r" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-r" rest="0.0" sensor="true"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="10" loop="true" name="wallslide-l" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="wallslide-l" rest="0.0" sensor="true"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="11" loop="true" name="wallslide-r" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="wallslide-r" rest="0.0" sensor="true"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="12" loop="true" name="fall-r" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-r" rest="0.0" sensor="true"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="13" loop="true" name="fall-l" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-l" rest="0.0" sensor="true"/>
         </anim>
         <anim across="4" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60" height="400" id="14" loop="true" name="airjump-r" numframes="13" originx="8" originy="16" sync="false" version="2" width="400">
             <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-r" rest="0.0" sensor="true"/>
@@ -450,46 +428,10 @@
         <anim across="4" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60" height="400" id="15" loop="true" name="airjump-l" numframes="13" originx="8" originy="16" sync="false" version="2" width="400">
             <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-l" rest="0.0" sensor="true"/>
         </anim>
-        <anim across="4" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60" height="400" id="16" loop="true" name="duck-r" numframes="13" originx="8" originy="16" sync="false" version="2" width="400">
-            <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
-        </anim>
     </sprite>
     <sprite atlasID="0" default="19" defaultAnimation="19" desc="" height="70" id="433" name="Jumper" shared="false" width="50">
         <anim across="4" down="3" durations="55,55,55,55,55,55,55,55,55,55,55,55" height="210" id="3" loop="true" name="walk-r" numframes="12" originx="25" originy="35" sync="false" version="2" width="200">
             <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="walk-r" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="4" loop="true" name="run-l" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="run-l" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="5" loop="true" name="run-r" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="run-r" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="6" loop="true" name="duck-l" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,16,16,16,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="7" loop="true" name="duck-r" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,16,16,16,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="8" loop="true" name="jump-l" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-l" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="9" loop="true" name="jump-r" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-r" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="10" loop="true" name="wallslide-l" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="wallslide-l" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="11" loop="true" name="wallslide-r" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="wallslide-r" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="12" loop="true" name="fall-r" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-r" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="13" loop="true" name="fall-l" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-l" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="32" id="14" loop="true" name="airjump-r" numframes="1" originx="8" originy="16" sync="false" version="2" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-r" rest="0.0" sensor="false"/>
         </anim>
         <anim across="4" down="3" durations="100,100,100,100,100,100,100,100,100,100" height="210" id="15" loop="true" name="idle-r" numframes="10" originx="25" originy="35" sync="false" version="2" width="200">
             <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-l" rest="0.0" sensor="false"/>
@@ -531,10 +473,25 @@
             <poly data="4,49,28,65,28,65,60,49,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="219" fixedrot="false" fric="0.2" gid="3" id="473" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Left" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="474" static="true">
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="82" id="576" name="lighr_tree" shared="false" width="32">
+        <anim across="1" down="1" durations="100" height="82" id="0" loop="true" name="Animation 0" numframes="1" originx="16" originy="90" sync="false" version="2" width="32"/>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="180" id="572" name="lighr_tree" shared="false" width="33">
+        <anim across="1" down="1" durations="100" height="180" id="0" loop="true" name="Animation 0" numframes="1" originx="16" originy="90" sync="false" version="2" width="33"/>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="133" id="574" name="lighr_tree" shared="false" width="32">
+        <anim across="1" down="1" durations="100" height="133" id="0" loop="true" name="Animation 0" numframes="1" originx="16" originy="90" sync="false" version="2" width="32"/>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="330" fixedrot="false" fric="0.2" gid="3" id="571" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="light_tree1" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="572" static="true">
         <snippets/>
     </actor>
-    <custom-block blocktag="custom-357" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;LimitSpeed&quot;, ~);" desc="" global="false" gui="Set Limit Speed for %0 to %1" id="357" message="LimitSpeed" name="LimitSpeed" oid="-1" return="VOID" shared="false" snippetID="178">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="331" fixedrot="false" fric="0.2" gid="3" id="573" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="light_tree2" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="574" static="true">
+        <snippets/>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="332" fixedrot="false" fric="0.2" gid="3" id="575" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="light_tree3" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="576" static="true">
+        <snippets/>
+    </actor>
+    <custom-block blocktag="custom-357" blocktype="ACTION" code="" desc="" global="false" gui="Set Limit Speed for %0 to %1" id="357" message="LimitSpeed" name="LimitSpeed" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Limit" order="1" type="BOOLEAN"/>
     </custom-block>
@@ -543,67 +500,113 @@
         <blank name="Animation" order="1" type="ANIMATION"/>
         <blank name="Category" order="2" type="TEXT"/>
     </custom-block>
-    <custom-block blocktag="custom-358" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;MaxWalkSpeed&quot;, ~);" desc="" global="false" gui="For %0 Set Max Walk Speed To %1" id="358" message="MaxWalkSpeed" name="MaxWalkSpeed" oid="-1" return="VOID" shared="false" snippetID="178">
+    <custom-block blocktag="custom-358" blocktype="ACTION" code="" desc="" global="false" gui="For %0 Set Max Walk Speed To %1" id="358" message="MaxWalkSpeed" name="MaxWalkSpeed" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="MaxSpeed" order="1" type="NUMBER"/>
     </custom-block>
+    <music atlasID="0" desc="" id="583" loop="true" name="niania1" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="584" loop="true" name="niania2" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="585" loop="true" name="niania3" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="552" name="ours" shared="false" width="180">
+        <anim across="7" down="6" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,100,100,100,100,100" height="600" id="0" loop="false" name="ON" numframes="37" originx="90" originy="50" sync="false" version="2" width="1260"/>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="320" fixedrot="true" fric="0.2" gid="3" id="551" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="ours" oid="-1" pausable="true" physicsMode="1" rest="0.0" shared="false" sprite="552" static="true">
+        <snippets>
+            <s enabled="true" id="243">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="303">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="1"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <music atlasID="0" desc="" id="599" loop="true" name="ours_ok" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="598" loop="true" name="ourts_2" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="251" fixedrot="false" fric="0.2" gid="3" id="524" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Papa_scout_skull" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="525" static="false">
-        <snippets/>
+        <snippets>
+            <s enabled="true" id="330">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="119" id="589" name="play" shared="false" width="167">
+        <anim across="1" down="1" durations="100" height="119" id="0" loop="true" name="playon" numframes="1" originx="83" originy="59" sync="false" version="2" width="167">
+            <poly data="4,0,0,167,0,167,119,0,119" density="0.1" fric="0.2" gid="-1000" id="0" name="playon" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="105" id="1" loop="true" name="playoff" numframes="1" originx="83" originy="52" sync="false" version="2" width="167">
+            <poly data="4,0,0,167,0,167,105,0,105" density="0.1" fric="0.2" gid="-1000" id="0" name="playoff" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="335" fixedrot="true" fric="0.2" gid="13" id="588" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="play" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="589" static="true">
+        <snippets>
+            <s enabled="true" id="501">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
     <custom-block blocktag="custom-333" blocktype="ACTION" code="~.say(&quot;Animation Manager&quot;, &quot;PlayOnce&quot;, ~);" desc="" global="false" gui="Play %1 Once for %0" id="333" message="PlayOnce" name="PlayOnce" oid="-1" return="VOID" shared="false" snippetID="169">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Animation" order="1" type="ANIMATION"/>
     </custom-block>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="325" fixedrot="false" fric="0.2" gid="3" id="561" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="pluie" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="562" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="500" id="562" name="pluie" shared="false" width="200">
+        <anim across="4" down="3" durations="60,60,60,60,60,60,60,60,60,60" height="1500" id="0" loop="true" name="1" numframes="10" originx="100" originy="250" sync="false" version="2" width="800">
+            <poly data="4,71,338,121,338,121,438,71,438" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
+        </anim>
+    </sprite>
+    <music atlasID="0" desc="" id="597" loop="true" name="pluie_" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="61" id="518" name="ponton" shared="false" width="157">
-        <anim across="1" down="1" durations="100" height="61" id="0" loop="true" name="1" numframes="1" originx="78" originy="30" sync="false" version="1" width="157"/>
+        <anim across="1" down="1" durations="100" height="61" id="0" loop="true" name="1" numframes="1" originx="78" originy="30" sync="false" version="2" width="157"/>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="247" fixedrot="false" fric="0.2" gid="3" id="517" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="ponton" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="518" static="true">
         <snippets/>
     </actor>
+    <music atlasID="0" desc="" id="591" loop="true" name="posseder" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="305" fixedrot="false" fric="0.2" gid="3" id="530" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="pouf" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="531" static="false">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="120" id="531" name="pouf" shared="false" width="120">
         <anim across="5" down="4" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50" height="480" id="0" loop="false" name="1" numframes="18" originx="60" originy="60" sync="false" version="2" width="600"/>
     </sprite>
-    <custom-block blocktag="custom-211" blocktype="ACTION" code="~.say(&quot;Air Jumping&quot;, &quot;PreventAirJump&quot;, ~);" desc="" global="false" gui="Set Prevent Air Jump for %0 to %1" id="211" message="PreventAirJump" name="PreventAirJump" oid="-1" return="VOID" shared="false" snippetID="115">
+    <custom-block blocktag="custom-211" blocktype="ACTION" code="" desc="" global="false" gui="Set Prevent Air Jump for %0 to %1" id="211" message="PreventAirJump" name="PreventAirJump" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Prevent" order="1" type="BOOLEAN"/>
     </custom-block>
-    <custom-block blocktag="custom-360" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;PreventWalk&quot;, ~);" desc="" global="false" gui="Set Prevent Walk for %0 to %1" id="360" message="PreventWalk" name="PreventWalk" oid="-1" return="VOID" shared="false" snippetID="178">
+    <custom-block blocktag="custom-360" blocktype="ACTION" code="" desc="" global="false" gui="Set Prevent Walk for %0 to %1" id="360" message="PreventWalk" name="PreventWalk" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Prevent" order="1" type="BOOLEAN"/>
     </custom-block>
-    <custom-block blocktag="custom-370" blocktype="ACTION" code="~.say(&quot;Wall Jumping&quot;, &quot;PreventWallJump&quot;, ~);" desc="" global="false" gui="Set Prevent Wall Jump for %0 to %1" id="370" message="PreventWallJump" name="PreventWallJump" oid="-1" return="VOID" shared="false" snippetID="179">
+    <custom-block blocktag="custom-370" blocktype="ACTION" code="" desc="" global="false" gui="Set Prevent Wall Jump for %0 to %1" id="370" message="PreventWallJump" name="PreventWallJump" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Prevent" order="1" type="BOOLEAN"/>
     </custom-block>
-    <custom-block blocktag="custom-364" blocktype="ACTION" code="~.say(&quot;Wall Sliding&quot;, &quot;PreventWallSlide&quot;, ~);" desc="" global="false" gui="Set Prevent Wall Slide for %0 to %1" id="364" message="PreventWallSlide" name="PreventWallSlide" oid="-1" return="VOID" shared="false" snippetID="180">
+    <custom-block blocktag="custom-364" blocktype="ACTION" code="" desc="" global="false" gui="Set Prevent Wall Slide for %0 to %1" id="364" message="PreventWallSlide" name="PreventWallSlide" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Prevent" order="1" type="BOOLEAN"/>
     </custom-block>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="221" fixedrot="false" fric="0.2" gid="3" id="475" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Right" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="476" static="true">
-        <snippets/>
-    </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="113" id="511" name="rocher_eau" shared="false" width="184">
         <anim across="1" down="1" durations="100" height="113" id="0" loop="true" name="Animation 0" numframes="1" originx="92" originy="56" sync="false" version="1" width="184"/>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="244" fixedrot="false" fric="0.2" gid="3" id="510" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="rocher_eau" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="511" static="true">
         <snippets/>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="29" id="497" name="rock" shared="false" width="27">
-        <anim across="1" down="1" durations="100" height="29" id="0" loop="true" name="rock_sol" numframes="1" originx="16" originy="16" sync="false" version="2" width="27">
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="25" id="497" name="rock" shared="false" width="23">
+        <anim across="1" down="1" durations="100" height="25" id="0" loop="true" name="rock_sol" numframes="1" originx="11" originy="12" sync="false" version="2" width="23">
             <poly data="4,0,0,25,0,25,25,0,25" density="0.1" fric="0.2" gid="9" id="0" name="Box" rest="0.0" sensor="true"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="32" id="1" loop="true" name="rock_up" numframes="1" originx="16" originy="16" sync="false" version="2" width="32">
-            <circle data="18,0,0" density="0.1" fric="0.2" gid="9" id="0" name="Circle" rest="0.0" sensor="true"/>
-        </anim>
     </sprite>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="32" id="507" name="rock" shared="false" width="32">
-        <anim across="1" down="1" durations="100" height="32" id="0" loop="true" name="rock_sol" numframes="1" originx="16" originy="16" sync="false" version="1" width="32">
-            <circle data="10,6,0" density="0.1" fric="0.2" gid="9" id="0" name="Circle" rest="0.0" sensor="true"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="23" id="507" name="rock" shared="false" width="33">
+        <anim across="1" down="1" durations="100" height="23" id="0" loop="true" name="rock_sol" numframes="1" originx="16" originy="16" sync="false" version="2" width="33">
+            <poly data="4,5,6,8,19,32,13,22,4" density="0.1" fric="0.2" gid="9" id="0" name="" rest="0.0" sensor="true"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="32" id="1" loop="true" name="rock_up" numframes="1" originx="16" originy="16" sync="false" version="1" width="32">
+        <anim across="1" down="1" durations="100" height="32" id="1" loop="true" name="rock_up" numframes="1" originx="16" originy="16" sync="false" version="2" width="32">
             <circle data="18,0,0" density="0.1" fric="0.2" gid="9" id="0" name="Circle" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
@@ -612,9 +615,20 @@
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="35" id="537" name="rock_snake" shared="false" width="37">
         <anim across="1" down="1" durations="100" height="35" id="0" loop="true" name="rock" numframes="1" originx="18" originy="17" sync="false" version="2" width="37">
-            <poly data="4,0,0,37,0,37,35,0,35" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
+            <poly data="4,0,0,60,0,60,30,0,30" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
         </anim>
         <anim across="4" down="4" durations="50,50,50,50,50,50,50,50,50,50,50,50,50" height="480" id="1" loop="false" name="rock_break" numframes="13" originx="60" originy="60" sync="false" version="2" width="480"/>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="321" fixedrot="false" fric="0.2" gid="3" id="553" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="ruche" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="554" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="70" id="554" name="ruche" shared="false" width="70">
+        <anim across="5" down="4" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50" height="280" id="0" loop="true" name="on" numframes="17" originx="35" originy="35" sync="false" version="2" width="350">
+            <poly data="4,0,0,70,0,70,70,0,70" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="56" id="556" name="ruche" shared="false" width="4">
+        <anim across="1" down="1" durations="100" height="56" id="0" loop="true" name="on" numframes="1" originx="35" originy="35" sync="false" version="2" width="4"/>
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="Simple template Actor demonstrates potential usage of Behaviors and Animations.  Please note that the Behavior Attributes are configured to work with an Actor mass of 1.0.   " eventsnippetid="218" fixedrot="true" fric="0.0" gid="0" id="432" ignoreg="false" inertia="0.01" ldamp="0.0" mass="1.0" name="Scout" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="433" static="false">
         <snippets>
@@ -649,6 +663,8 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="228">
+                <prop id="11" list="0" val="20"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="34" list="0" val="right"/>
                 <prop id="33" list="0" val="left"/>
                 <prop id="38" list="0" val="true"/>
@@ -657,13 +673,21 @@
                 <prop id="42" list="0" val="walk-l"/>
                 <prop id="43" list="0" val="idle-r"/>
                 <prop id="40" list="0" val="0.0"/>
-                <prop id="11" list="0" val="20"/>
                 <prop id="41" list="0" val="iidle-l"/>
                 <prop id="46" list="0" val="false"/>
                 <prop id="47" list="0" val="false"/>
                 <prop id="44" list="0" val="walk-r"/>
                 <prop id="45" list="0" val="true"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="51" list="0" val="idle_porte_r"/>
+                <prop id="50" list="0" val="idle_porte_l"/>
+                <prop id="49" list="0" val="walk_porte-r"/>
+                <prop id="48" list="0" val="walk_porte-l"/>
+                <prop id="55" list="0" val="push-l"/>
+                <prop id="54" list="0" val="push-r"/>
+                <prop id="53" list="0" val="false"/>
+                <prop id="52" list="0" val="false"/>
+                <prop id="57" list="0" val="tape_stick-l"/>
+                <prop id="56" list="0" val="tape_stick-r"/>
             </s>
             <s enabled="true" id="123">
                 <prop id="1" list="0" val="false"/>
@@ -674,60 +698,62 @@
                 <prop id="2" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="false" id="243">
-                <prop id="1" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="false" id="241">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
         </snippets>
     </actor>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="252" fixedrot="true" fric="0.2" gid="12" id="526" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="scout_skull" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="527" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="252" fixedrot="true" fric="0.2" gid="14" id="526" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="scout_skull" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="527" static="false">
         <snippets>
             <s enabled="true" id="301">
                 <prop id="1" list="0" val="ghost"/>
-                <prop id="19" list="0" val="5"/>
                 <prop id="2" list="0" val="walk_right"/>
                 <prop id="3" list="0" val="walk_left"/>
                 <prop id="4" list="0" val="scout_idle"/>
-                <prop id="20" list="0" val="4"/>
                 <prop id="5" list="0" val="0.0"/>
                 <prop id="6" list="0" val="15"/>
                 <prop id="11" list="0" val="0.0"/>
                 <prop id="14" list="0" val="0.0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="0.1"/>
+                <prop id="19" list="0" val="5"/>
+                <prop id="21" list="0" val="false"/>
+                <prop id="20" list="0" val="4"/>
+                <prop id="22" list="0" val="false"/>
             </s>
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="70" id="527" name="scout_squelette" shared="false" width="50">
-        <anim across="4" down="3" durations="120,120,120,120,120,120,120,120,120,120" height="210" id="0" loop="true" name="scout_idle" numframes="10" originx="50" originy="50" sync="false" version="2" width="200">
-            <poly data="4,16,35,32,35,32,67,16,67" density="0.1" fric="0.2" gid="-1000" id="0" name="scout_idle" rest="0.0" sensor="false"/>
+        <anim across="4" down="3" durations="120,120,120,120,120,120,120,120,120,120" height="210" id="0" loop="true" name="scout_idle" numframes="10" originx="25" originy="35" sync="false" version="2" width="200">
+            <poly data="4,15,35,35,35,35,67,15,67" density="0.1" fric="0.2" gid="-1000" id="0" name="scout_idle" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="5" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60" height="280" id="2" loop="true" name="walk_left" numframes="19" originx="50" originy="50" sync="false" version="2" width="250">
-            <poly data="4,16,28,32,28,32,60,16,60" density="0.1" fric="0.2" gid="-1000" id="0" name="walk_scout" rest="0.0" sensor="false"/>
+        <anim across="5" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60" height="280" id="2" loop="true" name="walk_left" numframes="19" originx="25" originy="35" sync="false" version="2" width="250">
+            <poly data="4,15,35,35,35,35,67,15,67" density="0.1" fric="0.2" gid="-1000" id="0" name="walk_scout" rest="0.0" sensor="false"/>
         </anim>
         <anim across="1" down="1" durations="100" height="70" id="4" loop="true" name="ghost" numframes="1" originx="25" originy="35" sync="false" version="2" width="50"/>
         <anim across="5" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60" height="280" id="5" loop="true" name="walk_right" numframes="19" originx="25" originy="35" sync="false" version="2" width="250">
-            <poly data="4,16,28,32,28,32,60,16,60" density="0.1" fric="0.2" gid="-1000" id="0" name="walk_scout" rest="0.0" sensor="false"/>
+            <poly data="4,15,35,35,35,35,67,15,67" density="0.1" fric="0.2" gid="-1000" id="0" name="walk_scout" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="4" down="4" durations="70,70,70,70,70,70,70,70,70,70,70,70,70" height="280" id="6" loop="true" name="sing" numframes="13" originx="25" originy="35" sync="false" version="2" width="200">
+            <poly data="4,15,35,35,35,35,67,15,67" density="0.1" fric="0.2" gid="-1000" id="0" name="sing" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="525" name="scout_squelette" shared="false" width="100">
-        <anim across="4" down="3" durations="100,100,100,100,100,100,100,100,100,100" height="300" id="0" loop="true" name="papa_scout_idle" numframes="10" originx="50" originy="50" sync="false" version="2" width="400">
-            <poly data="4,41,48,57,48,57,80,41,80" density="0.1" fric="0.2" gid="-1000" id="0" name="scout_idle" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="3" defaultAnimation="3" desc="" height="70" id="525" name="scout_squelette" shared="false" width="70">
+        <anim across="4" down="4" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="280" id="0" loop="true" name="deg" numframes="16" originx="25" originy="35" sync="false" version="2" width="200">
+            <poly data="4,0,0,50,0,50,65,0,65" density="0.1" fric="0.2" gid="-1000" id="0" name="deg" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="5" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60" height="400" id="1" loop="true" name="walk_right" numframes="18" originx="50" originy="50" sync="false" version="2" width="500">
-            <poly data="4,41,48,57,48,57,80,41,80" density="0.1" fric="0.2" gid="-1000" id="0" name="walk_scout" rest="0.0" sensor="false"/>
+        <anim across="5" down="4" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="280" id="2" loop="true" name="ending" numframes="20" originx="25" originy="35" sync="false" version="2" width="250">
+            <poly data="4,0,0,50,0,50,65,0,65" density="0.1" fric="0.2" gid="-1000" id="0" name="ending" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="5" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60" height="400" id="2" loop="true" name="walk_left" numframes="18" originx="50" originy="50" sync="false" version="2" width="500">
-            <poly data="4,41,48,57,48,57,80,41,80" density="0.1" fric="0.2" gid="-1000" id="0" name="walk_scout" rest="0.0" sensor="false"/>
+        <anim across="9" down="9" durations="40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40" height="630" id="3" loop="true" name="angry" numframes="75" originx="35" originy="35" sync="false" version="2" width="630">
+            <poly data="4,0,0,70,0,70,70,0,70" density="0.1" fric="0.2" gid="-1000" id="0" name="angry" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="100" id="3" loop="true" name="fixe" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
-            <poly data="4,41,48,57,48,57,80,41,80" density="0.1" fric="0.2" gid="-1000" id="0" name="fixe" rest="0.0" sensor="false"/>
+        <anim across="6" down="5" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50" height="350" id="4" loop="true" name="happy" numframes="29" originx="25" originy="35" sync="false" version="2" width="300">
+            <poly data="4,0,0,50,0,50,65,0,65" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="70" id="5" loop="true" name="idle" numframes="1" originx="25" originy="35" sync="false" version="2" width="50">
+            <poly data="4,0,0,50,0,50,65,0,65" density="0.1" fric="0.2" gid="-1000" id="0" name="fixe" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <custom-block blocktag="custom-472" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;SlowToMax&quot;, ~);" desc="" global="false" gui="Slow Down %0 To Max Speed Using Rate %1" id="472" message="SlowToMax" name="SlowToMax" oid="-1" return="VOID" shared="false" snippetID="178">
+    <music atlasID="0" desc="" id="577" loop="true" name="secouer_arbre" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <custom-block blocktag="custom-472" blocktype="ACTION" code="" desc="" global="false" gui="Slow Down %0 To Max Speed Using Rate %1" id="472" message="SlowToMax" name="SlowToMax" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Rate" order="1" type="NUMBER"/>
     </custom-block>
@@ -737,12 +763,27 @@
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="539" name="snake" shared="false" width="100">
         <anim across="5" down="4" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50" height="400" id="0" loop="false" name="Animation 0" numframes="18" originx="50" originy="50" sync="false" version="2" width="500"/>
     </sprite>
+    <music atlasID="0" desc="" id="593" loop="true" name="snake_" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="53" id="491" name="stick" shared="false" width="10">
         <anim across="1" down="1" durations="100" height="53" id="0" loop="true" name="Animation 0" numframes="1" originx="325" originy="325" sync="false" version="2" width="10">
-            <poly data="4,0,4,10,4,10,44,0,44" density="0.1" fric="0.2" gid="9" id="0" name="Box" rest="0.0" sensor="false"/>
-            <poly data="4,0,0,10,0,10,53,0,53" density="0.1" fric="0.2" gid="-1000" id="1" name="Box" rest="0.0" sensor="false"/>
+            <poly data="4,0,0,10,0,10,53,0,53" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="53" id="546" name="stick" shared="false" width="10">
+        <anim across="1" down="1" durations="100" height="53" id="0" loop="true" name="Animation 0" numframes="1" originx="325" originy="325" sync="false" version="2" width="10">
+            <poly data="4,0,0,10,0,10,53,0,53" density="0.1" fric="0.2" gid="9" id="1" name="Box" rest="0.0" sensor="true"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="317" fixedrot="true" fric="0.2" gid="9" id="545" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="stick_item" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="546" static="false">
+        <snippets>
+            <s enabled="true" id="224">
+                <prop id="1" list="0" val="15"/>
+                <prop id="2" list="0" val="10"/>
+                <prop id="3" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="232" fixedrot="false" fric="0.2" gid="3" id="490" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="stick_kill" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="491" static="false">
         <snippets/>
     </actor>
@@ -1900,6 +1941,14 @@
         <tile collision="-1" data="" durations="100" frames="773" id="773" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="774" id="774" order="-1"/>
     </tileset>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="233" id="587" name="title" shared="false" width="280">
+        <anim across="1" down="1" durations="100" height="233" id="0" loop="true" name="title" numframes="1" originx="140" originy="116" sync="false" version="2" width="280">
+            <poly data="4,0,0,280,0,280,233,0,233" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="334" fixedrot="true" fric="0.2" gid="13" id="586" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="title" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="587" static="true">
+        <snippets/>
+    </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="69" id="520" name="tombe" shared="false" width="44">
         <anim across="1" down="1" durations="100" height="69" id="0" loop="true" name="Animation 0" numframes="1" originx="22" originy="34" sync="false" version="2" width="44"/>
     </sprite>
@@ -1920,22 +1969,15 @@
             <poly data="4,15,300,115,300,115,330,15,330" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="474" name="Virtual Button" shared="false" width="64">
-        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="1" width="64">
-            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="335" id="548" name="tree" shared="false" width="135">
+        <anim across="1" down="1" durations="100" height="335" id="0" loop="true" name="1" numframes="1" originx="67" originy="167" sync="false" version="2" width="135">
+            <poly data="4,15,303,115,303,115,333,15,333" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="476" name="Virtual Button" shared="false" width="64">
-        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="1" width="64">
-            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
-        </anim>
-    </sprite>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="478" name="Virtual Button" shared="false" width="64">
-        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="1" width="64">
-            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
-        </anim>
-    </sprite>
-    <custom-block blocktag="custom-361" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;WalkAccel&quot;, ~);" desc="" global="false" gui="For %0 Set Walk Accel to %1" id="361" message="WalkAccel" name="WalkAccel" oid="-1" return="VOID" shared="false" snippetID="178">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="318" fixedrot="true" fric="0.2" gid="3" id="547" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Tree_of_death" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="548" static="true">
+        <snippets/>
+    </actor>
+    <custom-block blocktag="custom-361" blocktype="ACTION" code="" desc="" global="false" gui="For %0 Set Walk Accel to %1" id="361" message="WalkAccel" name="WalkAccel" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Accel" order="1" type="NUMBER"/>
     </custom-block>
@@ -1955,16 +1997,6 @@
                 <prop id="6" list="0" val="8"/>
                 <prop id="7" list="0" val="0"/>
                 <prop id="8" list="0" val="0.025"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="false" id="249">
-                <prop id="1" list="0" val="0.0"/>
-                <prop id="2" list="0" val="32"/>
-                <prop id="3" list="0" val="32"/>
-                <prop id="4" list="0" val="Vertical"/>
-                <prop id="5" list="0" val="0.0"/>
-                <prop id="6" list="0" val="1"/>
-                <prop id="7" list="0" val="0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -1987,25 +2019,16 @@
                 <prop id="8" list="0" val="0.028"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="false" id="249">
-                <prop id="1" list="0" val="0.0"/>
-                <prop id="2" list="0" val="0"/>
-                <prop id="3" list="0" val="64"/>
-                <prop id="4" list="0" val="Horizontal"/>
-                <prop id="5" list="0" val="0.0"/>
-                <prop id="6" list="0" val="1"/>
-                <prop id="7" list="0" val="0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
         </snippets>
     </actor>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="229" fixedrot="false" fric="0.2" gid="3" id="484" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="wolf_trap" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="485" static="true">
         <snippets/>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="32" id="485" name="wolf_trap" shared="false" width="32">
-        <anim across="1" down="1" durations="100" height="32" id="0" loop="true" name="piege_ouvert" numframes="1" originx="16" originy="16" sync="false" version="1" width="32">
-            <poly data="4,0,24,32,24,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="60" id="485" name="wolf_trap" shared="false" width="80">
+        <anim across="1" down="1" durations="100" height="60" id="0" loop="false" name="piege_ouvert" numframes="1" originx="16" originy="16" sync="false" version="2" width="80">
+            <poly data="4,0,27,80,27,80,47,0,47" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="32" id="1" loop="true" name="piege_ferme" numframes="1" originx="16" originy="16" sync="false" version="1" width="32"/>
+        <anim across="3" down="3" durations="60,60,60,60,60,60,60" height="180" id="1" loop="false" name="piege_ferme" numframes="7" originx="40" originy="30" sync="false" version="2" width="240"/>
     </sprite>
+    <music atlasID="0" desc="" id="580" loop="true" name="wolf_trap_ok" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
 </pack>

@@ -1,2 +1,86 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-actortotype comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="47">
+                    <group eventID="1" id="-1">
+                        <moveToBy comment="false" x="37" y="80">
+                            <ACTOR eid="42" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="100"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val="0.1"/>
+                            <int id="5" val="11"/>
+                        </moveToBy>
+                        <dolater comment="false" x="37" y="107">
+                            <group eventID="5" id="-1">
+                                <moveToBy comment="false" x="48" y="134">
+                                    <ACTOR eid="42" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <get-val-231-1 comment="false" id="2" x="0" y="0"/>
+                                    <get-val-231-2 comment="false" id="3" x="0" y="0"/>
+                                    <int id="4" val="0.1"/>
+                                    <int id="5" val="11"/>
+                                </moveToBy>
+                            </group>
+                            <int id="0" val="0.2"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="2"/>
+                        <CONTROL eid="9" id="1"/>
+                    </keystate>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <ACTORTYPE eid="432" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="1" id="1">
+        <set-val-231-1 comment="false" x="1013" y="443">
+            <int id="0" val=""/>
+        </set-val-231-1>
+    </group>
+    <group eventID="1" id="2">
+        <set-val-231-2 comment="false" x="1032" y="533">
+            <int id="0" val=""/>
+        </set-val-231-2>
+    </group>
+    <group eventID="1" id="5">
+        <print comment="false" x="67" y="230">
+            <int id="0" val="slide?"/>
+        </print>
+    </group>
+    <group eventID="1" id="7">
+        <print comment="false" x="47" y="355">
+            <int id="0" val="kick?"/>
+        </print>
+    </group>
+    <group eventID="1" id="-1">
+        <get-xy comment="false" x="692" y="239">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+        </get-xy>
+    </group>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-231-1 comment="false" x="26" y="40">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="2"/>
+                    </get-xy>
+                </set-val-231-1>
+                <set-val-231-2 comment="false" x="26" y="73">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="3"/>
+                    </get-xy>
+                </set-val-231-2>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="4" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <fadeInOut comment="false" x="26" y="40">
+                    <ACTOR eid="var" id="0" vid="3"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="1"/>
+                    <int id="3" val="8"/>
+                </fadeInOut>
+                <dolater comment="false" x="26" y="67">
+                    <group eventID="4" id="-1">
+                        <die comment="false" x="37" y="94">
+                            <ACTOR eid="var" id="0" vid="3"/>
+                        </die>
+                        <die comment="false" x="37" y="121">
+                            <ACTOR eid="var" id="0" vid="2"/>
+                        </die>
+                        <disable-snippet comment="false" x="37" y="148"/>
+                    </group>
+                    <int id="0" val="2"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="start"/>
+        </event-custom>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <event-delay comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="1" id="-1">
+                        <create-actor3 comment="false" x="37" y="72">
+                            <ACTORTYPE eid="586" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="20"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <set-val-324-2 comment="false" x="37" y="99">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </set-val-324-2>
+                        <set-xy comment="false" x="37" y="126">
+                            <ACTOR eid="var" id="0" vid="2"/>
+                            <int id="1" val="0"/>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <plus comment="false" id="0" x="0" y="0">
+                                    <screen-xy comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </screen-xy>
+                                    <times comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="0.5"/>
+                                        <screen-wh comment="false" id="1" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                        </screen-wh>
+                                    </times>
+                                </plus>
+                                <get-wh comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="2"/>
+                                    <int id="1" val="2"/>
+                                </get-wh>
+                            </minus>
+                        </set-xy>
+                        <fadeInOut comment="false" x="37" y="181">
+                            <ACTOR eid="var" id="0" vid="2"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </fadeInOut>
+                        <create-actor3 comment="false" x="37" y="208">
+                            <ACTORTYPE eid="588" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="120"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <set-val-324-3 comment="false" x="37" y="235">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </set-val-324-3>
+                        <set-xy comment="false" x="37" y="262">
+                            <ACTOR eid="var" id="0" vid="3"/>
+                            <int id="1" val="0"/>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <plus comment="false" id="0" x="0" y="0">
+                                    <screen-xy comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </screen-xy>
+                                    <times comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="0.5"/>
+                                        <screen-wh comment="false" id="1" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                        </screen-wh>
+                                    </times>
+                                </plus>
+                                <get-wh comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="3"/>
+                                    <int id="1" val="2"/>
+                                </get-wh>
+                            </minus>
+                        </set-xy>
+                        <fadeInOut comment="false" x="37" y="317">
+                            <ACTOR eid="var" id="0" vid="3"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </fadeInOut>
+                        <if comment="false" x="37" y="344">
+                            <group eventID="5" id="-1">
+                                <set-game-val-3 comment="false" x="48" y="369">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-game-val-3>
+                                <dolater comment="false" x="48" y="394">
+                                    <group eventID="1" id="-1">
+                                        <fadeInOut comment="false" x="59" y="421">
+                                            <ACTOR eid="var" id="0" vid="2"/>
+                                            <int id="1" val="0"/>
+                                            <int id="2" val="1"/>
+                                            <int id="3" val="8"/>
+                                        </fadeInOut>
+                                        <dolater comment="false" x="59" y="448">
+                                            <group eventID="1" id="-1">
+                                                <fadeInOut comment="false" x="70" y="475">
+                                                    <ACTOR eid="var" id="0" vid="2"/>
+                                                    <int id="1" val="1"/>
+                                                    <int id="2" val="1"/>
+                                                    <int id="3" val="8"/>
+                                                </fadeInOut>
+                                                <dolater comment="false" x="70" y="502">
+                                                    <group eventID="1" id="-1">
+                                                        <set-attribute comment="false" x="81" y="529">
+                                                            <get-val-324-3 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="PlayButton"/>
+                                                            <int id="2" val="_ready"/>
+                                                            <true comment="false" id="3" x="0" y="0"/>
+                                                        </set-attribute>
+                                                        <fadeInOut comment="false" x="81" y="561">
+                                                            <ACTOR eid="var" id="0" vid="3"/>
+                                                            <int id="1" val="0"/>
+                                                            <int id="2" val="1"/>
+                                                            <int id="3" val="8"/>
+                                                        </fadeInOut>
+                                                    </group>
+                                                    <int id="0" val="1"/>
+                                                    <ACTOR eid="lastcreated" id="2"/>
+                                                </dolater>
+                                            </group>
+                                            <int id="0" val="5"/>
+                                            <ACTOR eid="lastcreated" id="2"/>
+                                        </dolater>
+                                    </group>
+                                    <int id="0" val="1"/>
+                                    <ACTOR eid="lastcreated" id="2"/>
+                                </dolater>
+                            </group>
+                            <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else comment="false" x="37" y="636">
+                            <group eventID="5" id="-1">
+                                <set-attribute comment="false" x="48" y="656">
+                                    <get-val-324-3 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="PlayButton"/>
+                                    <int id="2" val="_ready"/>
+                                    <true comment="false" id="3" x="0" y="0"/>
+                                </set-attribute>
+                                <fadeInOut comment="false" x="48" y="688">
+                                    <ACTOR eid="var" id="0" vid="3"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="1"/>
+                                    <int id="3" val="8"/>
+                                </fadeInOut>
+                            </group>
+                        </else>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+            <int id="0" val="3"/>
+            <ACTOR eid="lastcreated" id="2"/>
+        </event-delay>
+    </group>
+    <group eventID="5" id="-1"/>
+</groups>

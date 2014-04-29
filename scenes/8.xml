@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="7" desc="" eventsnippetid="217" extheight="544" extwidth="3904" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="85.0" height="480" id="8" name="Level" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="3840">
+<scene depth="8" desc="" eventsnippetid="217" extheight="544" extwidth="3648" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="85.0" height="480" id="8" name="Level" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="3584">
     <layers>
-        <layer color="255,200,0" id="3" name="Layer 3" order="0"/>
-        <layer color="0,255,0" id="2" name="Layer 2" order="1"/>
-        <layer color="100,168,234" id="0" name="Layer 0" order="2"/>
-        <layer color="64,64,64" id="4" name="Layer 4" order="3"/>
-        <layer color="0,0,255" id="1" name="Layer 1" order="4"/>
-        <layer color="255,255,0" id="5" name="Layer 5" order="5"/>
-        <layer color="255,0,255" id="6" name="Layer 6" order="6"/>
+        <layer color="255,175,175" id="7" name="Layer 7" order="0"/>
+        <layer color="255,200,0" id="3" name="Layer 3" order="1"/>
+        <layer color="0,255,0" id="2" name="Layer 2" order="2"/>
+        <layer color="100,168,234" id="0" name="Layer 0" order="3"/>
+        <layer color="64,64,64" id="4" name="Layer 4" order="4"/>
+        <layer color="0,0,255" id="1" name="Layer 1" order="5"/>
+        <layer color="255,255,0" id="5" name="Layer 5" order="6"/>
+        <layer color="255,0,255" id="6" name="Layer 6" order="7"/>
     </layers>
     <color-bg blue="128" green="128" red="128"/>
     <backgrounds>
@@ -22,21 +23,18 @@
     </foregrounds>
     <joints/>
     <regions>
-        <region b="64" g="64" h="61" id="0" name="Region 0" pts="4,34.0,0.0,34.0,61.0,0.0,61.0,0.0,0.0" r="64" type="box" w="34" x="791" y="293"/>
-        <region b="64" g="64" h="31" id="1" name="Region 1" pts="4,42.0,0.0,42.0,31.0,0.0,31.0,0.0,0.0" r="64" type="box" w="42" x="1336" y="321"/>
+        <region b="64" g="64" h="182" id="2" name="Region 2" pts="4,288.0,0.0,288.0,182.0,0.0,182.0,0.0,0.0" r="64" type="box" w="288" x="2316" y="178"/>
+        <region b="64" g="64" h="311" id="3" name="Region 3" pts="4,294.0,0.0,294.0,311.0,0.0,311.0,0.0,0.0" r="64" type="box" w="294" x="1956" y="-3"/>
     </regions>
-    <terrainRegions/>
+    <terrainRegions>
+        <terrainRegion b="64" g="64" group="1" h="474" id="1" name="Terrain 1" pts="4,0.0,0.0,0.0,474.0,23.0,474.0,23.0,0.0" r="64" type="box" w="23" x="-3" y="-2"/>
+        <terrainRegion b="64" g="64" group="1" h="8" id="2" name="Terrain 2" pts="4,0.0,0.0,0.0,8.0,3.0,8.0,3.0,0.0" r="64" type="box" w="3" x="3255" y="347"/>
+    </terrainRegions>
     <actors>
-        <actor a="0.0" aid="3" c="false" group="3" id="484" name="wolf_trap 3" sx="1.0" sy="1.0" x="1160" y="321" z="0"/>
-        <actor a="0.0" aid="4" c="false" group="3" id="488" name="tree 4" sx="1.0" sy="1.0" x="760" y="26" z="0"/>
-        <actor a="0.0" aid="5" c="true" group="3" id="490" name="stick 5" sx="1.0" sy="1.0" x="993" y="140" z="6">
-            <snippets>
-                <s enabled="true" id="232">
-                    <prop id="1" list="0" val=""/>
-                </s>
-            </snippets>
-        </actor>
-        <actor a="0.0" aid="6" c="true" group="9" id="496" name="rock 6" sx="1.0" sy="1.0" x="694" y="327" z="0">
+        <actor a="0.0" aid="4" c="false" group="3" id="488" name="tree 4" sx="1.0" sy="1.0" x="771" y="73" z="5"/>
+        <actor a="0.0" aid="64" c="false" group="3" id="573" name="light_tree2 64" sx="1.0" sy="1.0" x="853" y="180" z="6"/>
+        <actor a="0.0" aid="65" c="false" group="3" id="524" name="Papa_scout_skull 65" sx="1.0" sy="1.0" x="612" y="379" z="2"/>
+        <actor a="0.0" aid="6" c="true" group="9" id="496" name="rock 6" sx="1.0" sy="1.0" x="177" y="327" z="3">
             <snippets>
                 <s enabled="true" id="234"/>
                 <s enabled="true" id="224">
@@ -47,37 +45,80 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="7" c="false" group="10" id="500" name="fire 7" sx="1.0" sy="1.0" x="629" y="290" z="3"/>
+        <actor a="0.0" aid="7" c="false" group="10" id="500" name="fire 7" sx="1.0" sy="1.0" x="603" y="289" z="3"/>
         <actor a="0.0" aid="8" c="false" group="3" id="488" name="tree 8" sx="0.73652697" sy="0.73652697" x="2382" y="38" z="5"/>
         <actor a="0.0" aid="9" c="false" group="3" id="488" name="tree 9" sx="1.0" sy="1.0" x="2696" y="79" z="5"/>
-        <actor a="0.0" aid="10" c="false" group="3" id="488" name="tree 10" sx="1.0" sy="1.0" x="958" y="78" z="5"/>
+        <actor a="0.0" aid="10" c="false" group="3" id="488" name="tree 10" sx="1.0" sy="1.0" x="970" y="39" z="5"/>
         <actor a="0.0" aid="11" c="false" group="3" id="488" name="tree 11" sx="0.89221555" sy="0.89221555" x="345" y="44" z="5"/>
-        <actor a="0.0" aid="12" c="false" group="3" id="488" name="tree 12" sx="1.0" sy="1.0" x="1507" y="47" z="5"/>
         <actor a="0.0" aid="13" c="false" group="3" id="488" name="tree 13" sx="1.0" sy="1.0" x="2872" y="18" z="5"/>
-        <actor a="0.0" aid="14" c="false" group="3" id="502" name="grotte 14" sx="1.0" sy="1.0" x="1" y="163" z="1"/>
-        <actor a="0.0" aid="17" c="false" group="9" id="506" name="fish 17" sx="1.0" sy="1.0" x="259" y="315" z="1"/>
+        <actor a="0.0" aid="14" c="false" group="3" id="502" name="grotte 14" sx="1.0" sy="1.0" x="0" y="163" z="1"/>
         <actor a="0.0" aid="16" c="false" group="10" id="508" name="acteur_grotte 16" sx="1.0" sy="1.0" x="80" y="289" z="2"/>
-        <actor a="0.0" aid="21" c="false" group="3" id="510" name="rocher_eau 21" sx="1.0" sy="1.0" x="3113" y="368" z="3"/>
+        <actor a="0.0" aid="21" c="false" group="3" id="510" name="rocher_eau 21" sx="1.0" sy="1.0" x="3083" y="367" z="7"/>
         <actor a="0.0" aid="23" c="false" group="3" id="515" name="water_02 23" sx="1.0" sy="1.0" x="3151" y="377" z="1"/>
-        <actor a="0.0" aid="22" c="false" group="3" id="513" name="water_01 22" sx="1.0" sy="1.0" x="3146" y="381" z="0"/>
-        <actor a="0.0" aid="25" c="false" group="0" id="432" name="Jumper 25" sx="1.0" sy="1.0" x="778" y="290" z="0"/>
-        <actor a="0.0" aid="24" c="false" group="3" id="517" name="ponton 24" sx="1.0" sy="1.0" x="3132" y="336" z="4"/>
-        <actor a="0.0" aid="27" c="false" group="0" id="432" name="Jumper 27" sx="1.0" sy="1.0" x="815" y="289" z="0"/>
-        <actor a="0.0" aid="26" c="false" group="0" id="432" name="Jumper 26" sx="1.0" sy="1.0" x="445" y="290" z="0"/>
-        <actor a="0.0" aid="29" c="false" group="0" id="432" name="Jumper 29" sx="1.0" sy="1.0" x="387" y="286" z="0"/>
-        <actor a="0.0" aid="28" c="false" group="0" id="432" name="Jumper 28" sx="1.0" sy="1.0" x="554" y="285" z="0"/>
-        <actor a="0.0" aid="31" c="false" group="11" id="479" name="ghost 31" sx="1.0" sy="1.0" x="286" y="260" z="0"/>
-        <actor a="0.0" aid="30" c="false" group="3" id="519" name="tombe 30" sx="1.0" sy="1.0" x="1352" y="286" z="1"/>
-        <actor a="0.0" aid="32" c="false" group="3" id="528" name="canne_peche 32" sx="1.0" sy="1.0" x="3156" y="191" z="4"/>
-        <actor a="0.0" aid="33" c="false" group="3" id="536" name="rock_snake 33" sx="1.0" sy="1.0" x="922" y="322" z="1"/>
+        <actor a="0.0" aid="22" c="false" group="3" id="513" name="water_01 22" sx="1.0" sy="1.0" x="3146" y="381" z="3"/>
+        <actor a="0.0" aid="25" c="false" group="0" id="432" name="Jumper 25" sx="1.0" sy="1.0" x="720" y="288" z="0"/>
+        <actor a="0.0" aid="24" c="false" group="3" id="517" name="ponton 24" sx="1.0" sy="1.0" x="3118" y="337" z="2"/>
+        <actor a="0.0" aid="27" c="false" group="0" id="432" name="Jumper 27" sx="1.0" sy="1.0" x="688" y="288" z="0"/>
+        <actor a="0.0" aid="26" c="false" group="0" id="432" name="Jumper 26" sx="1.0" sy="1.0" x="516" y="288" z="0"/>
+        <actor a="0.0" aid="29" c="false" group="0" id="432" name="Jumper 29" sx="1.0" sy="1.0" x="481" y="286" z="0"/>
+        <actor a="0.0" aid="28" c="false" group="0" id="432" name="Jumper 28" sx="1.0" sy="1.0" x="580" y="287" z="0"/>
+        <actor a="0.0" aid="30" c="false" group="3" id="519" name="tombe 30" sx="1.0" sy="1.0" x="894" y="288" z="1"/>
+        <actor a="0.0" aid="34" c="false" group="9" id="542" name="fork 34" sx="1.0" sy="1.0" x="3298" y="392" z="2"/>
+        <actor a="0.0" aid="35" c="false" group="9" id="506" name="fish 35" sx="1.0" sy="1.0" x="3292" y="394" z="2"/>
+        <actor a="0.0" aid="32" c="true" group="3" id="528" name="canne_peche 32" sx="1.0" sy="1.0" x="3145" y="191" z="4">
+            <snippets>
+                <s enabled="true" id="304"/>
+                <s enabled="true" id="315">
+                    <prop id="1" list="0" val="0"/>
+                    <prop id="2" list="0" val="35"/>
+                    <prop id="3" list="0" val="34"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="33" c="false" group="3" id="536" name="rock_snake 33" sx="1.0" sy="1.0" x="1872" y="258" z="1"/>
+        <actor a="0.0" aid="39" c="false" group="0" id="432" name="Scout 39" sx="1.0" sy="1.0" x="745" y="286" z="0"/>
+        <actor a="0.0" aid="37" c="false" group="0" id="432" name="Scout 37" sx="1.0" sy="1.0" x="656" y="287" z="0"/>
+        <actor a="0.0" aid="42" c="false" group="3" id="547" name="Tre_of_death 42" sx="1.0" sy="1.0" x="1590" y="30" z="5"/>
+        <actor a="0.0" aid="43" c="false" group="3" id="484" name="wolf_trap 43" sx="1.0" sy="1.0" x="1307" y="307" z="4"/>
+        <actor a="0.0" aid="41" c="false" group="0" id="432" name="Scout 41" sx="1.0" sy="1.0" x="550" y="288" z="0"/>
+        <actor a="0.0" aid="46" c="false" group="3" id="565" name="champi 46" sx="1.0" sy="1.0" x="2776" y="328" z="7"/>
+        <actor a="0.0" aid="47" c="false" group="3" id="553" name="ruche 47" sx="1.0" sy="1.0" x="2433" y="239" z="5"/>
+        <actor a="0.0" aid="44" c="false" group="3" id="561" name="pluie 44" sx="1.0" sy="1.0" x="2015" y="-212" z="7"/>
+        <actor a="0.0" aid="51" c="false" group="3" id="573" name="light_tree2 51" sx="1.0" sy="1.0" x="1063" y="121" z="6"/>
+        <actor a="0.0" aid="50" c="false" group="3" id="571" name="light_tree1 50" sx="1.0" sy="1.0" x="794" y="116" z="6"/>
+        <actor a="0.0" aid="48" c="false" group="3" id="555" name="fil ruche 48" sx="1.0" sy="1.0" x="2466" y="207" z="6"/>
+        <actor a="0.0" aid="55" c="false" group="3" id="575" name="light_tree3 55" sx="1.0" sy="1.0" x="422" y="122" z="6"/>
+        <actor a="0.0" aid="54" c="false" group="3" id="575" name="light_tree3 54" sx="1.0" sy="1.0" x="1047" y="111" z="6"/>
+        <actor a="0.0" aid="52" c="false" group="3" id="575" name="light_tree3 52" sx="1.0" sy="1.0" x="985" y="144" z="6"/>
+        <actor a="0.0" aid="59" c="false" group="3" id="571" name="light_tree1 59" sx="1.0" sy="1.0" x="2949" y="104" z="6"/>
+        <actor a="0.0" aid="58" c="false" group="3" id="575" name="light_tree3 58" sx="1.0" sy="1.0" x="2720" y="190" z="6"/>
+        <actor a="0.0" aid="57" c="false" group="3" id="573" name="light_tree2 57" sx="1.0" sy="1.0" x="2409" y="108" z="6"/>
+        <actor a="0.0" aid="56" c="false" group="3" id="571" name="light_tree1 56" sx="1.0" sy="1.0" x="360" y="101" z="6"/>
+        <actor a="0.0" aid="62" c="false" group="3" id="571" name="light_tree1 62" sx="1.0" sy="1.0" x="2787" y="130" z="6"/>
+        <actor a="0.0" aid="61" c="false" group="3" id="575" name="light_tree3 61" sx="1.0" sy="1.0" x="2768" y="244" z="6"/>
+        <actor a="0.0" aid="60" c="false" group="3" id="575" name="light_tree3 60" sx="1.0" sy="1.0" x="2894" y="116" z="6"/>
     </actors>
-    <snippets/>
+    <snippets>
+        <s enabled="true" id="324">
+            <prop id="1" list="0" val="false"/>
+            <prop id="2" list="0" val=""/>
+            <prop id="3" list="0" val=""/>
+            <prop id="4" list="0" val="0"/>
+            <prop id="5" list="0" val="65"/>
+        </s>
+        <s enabled="true" id="500">
+            <prop id="1" list="0" val="65"/>
+            <prop id="2" list="0" val="8"/>
+            <prop id="3" list="0" val="0"/>
+            <prop id="4" list="0" val=""/>
+            <prop id="5" list="0" val=""/>
+            <prop id="6" list="0" val="false"/>
+        </s>
+    </snippets>
     <terrain>
-        <p pts="16,3168.0,128.0,3168.0,224.0,3136.0,224.0,3136.0,256.0,0.0,256.0,0.0,128.0,1728.0,128.0,1792.0,64.0,1984.0,64.0,2048.0,0.0,2176.0,0.0,2208.0,32.0,2336.0,32.0,2400.0,96.0,2528.0,96.0,2560.0,128.0" x="0.0" y="224.0"/>
-        <p pts="4,32.0,16.0,32.0,32.0,0.0,32.0,0.0,0.0" x="3200.0" y="352.0"/>
+        <p pts="18,3264.0,128.0,3264.0,160.0,3168.0,160.0,3168.0,224.0,3136.0,224.0,3136.0,256.0,0.0,256.0,0.0,128.0,1728.0,128.0,1792.0,64.0,1984.0,64.0,2048.0,0.0,2176.0,0.0,2208.0,32.0,2336.0,32.0,2400.0,96.0,2528.0,96.0,2560.0,128.0" x="0.0" y="224.0"/>
         <p pts="4,3008.0,64.0,3008.0,0.0,0.0,0.0,0.0,64.0" x="32.0" y="384.0"/>
-        <p pts="3,32.0,0.0,32.0,16.0,0.0,16.0" x="3264.0" y="400.0"/>
-        <p pts="4,32.0,0.0,32.0,32.0,0.0,32.0,0.0,0.0" x="3264.0" y="352.0"/>
-        <p pts="4,32.0,0.0,32.0,32.0,0.0,32.0,0.0,0.0" x="3232.0" y="384.0"/>
     </terrain>
 </scene>

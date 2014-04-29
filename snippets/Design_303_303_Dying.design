@@ -5,7 +5,7 @@
             <group eventID="1" id="-1">
                 <dolater comment="false" x="19" y="66">
                     <group eventID="1" id="-1">
-                        <create-actor3 comment="false" x="30" y="93">
+                        <create-actor3 comment="false" x="30" y="98">
                             <ACTORTYPE eid="526" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <get-xy comment="false" id="0" x="0" y="0">
@@ -24,7 +24,7 @@
                             <int id="3" val="0"/>
                         </create-actor3>
                     </group>
-                    <int id="0" val="0.2"/>
+                    <get-val-303-2 comment="false" id="0" x="0" y="0"/>
                     <ACTOR eid="this" id="2"/>
                 </dolater>
             </group>

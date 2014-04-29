@@ -53,7 +53,7 @@
             <ACTORTYPE eid="432" id="1"/>
         </event-collide-actortotype>
     </group>
-    <group eventID="5" id="4">
+    <group eventID="5" id="1">
         <dolater comment="false" x="601" y="337">
             <group eventID="5" id="-1">
                 <die comment="false" x="612" y="364">
@@ -64,7 +64,7 @@
             <ACTOR eid="this" id="2"/>
         </dolater>
     </group>
-    <group eventID="5" id="6">
+    <group eventID="5" id="2">
         <apply-filter comment="false" x="37" y="307">
             <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
             <filter-hsb comment="false" id="1" x="0" y="0">
@@ -72,35 +72,35 @@
             </filter-hsb>
         </apply-filter>
     </group>
-    <group eventID="5" id="7">
+    <group eventID="5" id="3">
         <setanim comment="false" x="844" y="277">
             <ACTOR eid="this" id="0"/>
             <int id="1" val=""/>
         </setanim>
     </group>
-    <group eventID="5" id="9">
+    <group eventID="5" id="4">
         <set-blend-actor comment="false" x="70" y="549">
             <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
             <int id="1" val="8"/>
         </set-blend-actor>
     </group>
     <group eventID="5" id="-1">
-        <second-actor comment="false" x="566" y="228"/>
-        <filter-bright comment="false" x="103" y="532">
-            <int id="0" val="10"/>
-        </filter-bright>
-        <plus comment="false" x="992" y="174">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-        </plus>
+        <second-actor comment="false" x="567" y="62"/>
+        <first-actor comment="false" x="666" y="75"/>
+        <pick-type comment="false" x="157" y="438">
+            <ACTORTYPE id="0"/>
+        </pick-type>
         <plus comment="false" x="1068" y="212">
             <int id="0" val=""/>
             <int id="1" val=""/>
         </plus>
-        <pick-type comment="false" x="157" y="438">
-            <ACTORTYPE id="0"/>
-        </pick-type>
-        <first-actor comment="false" x="666" y="75"/>
-        <second-actor comment="false" x="567" y="62"/>
+        <plus comment="false" x="992" y="174">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+        </plus>
+        <filter-bright comment="false" x="103" y="532">
+            <int id="0" val="10"/>
+        </filter-bright>
+        <second-actor comment="false" x="566" y="228"/>
     </group>
 </groups>
