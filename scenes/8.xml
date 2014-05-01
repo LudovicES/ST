@@ -23,12 +23,12 @@
     </foregrounds>
     <joints/>
     <regions>
-        <region b="64" g="64" h="182" id="2" name="Region 2" pts="4,288.0,0.0,288.0,182.0,0.0,182.0,0.0,0.0" r="64" type="box" w="288" x="2316" y="178"/>
-        <region b="64" g="64" h="311" id="3" name="Region 3" pts="4,294.0,0.0,294.0,311.0,0.0,311.0,0.0,0.0" r="64" type="box" w="294" x="1956" y="-3"/>
+        <region b="64" g="64" h="182" id="2" name="Region 2" pts="4,0.0,0.0,0.0,182.0,288.0,182.0,288.0,0.0" r="64" type="box" w="288" x="2316" y="178"/>
+        <region b="64" g="64" h="311" id="3" name="Region 3" pts="4,0.0,0.0,0.0,311.0,294.0,311.0,294.0,0.0" r="64" type="box" w="294" x="1956" y="-3"/>
     </regions>
     <terrainRegions>
-        <terrainRegion b="64" g="64" group="1" h="474" id="1" name="Terrain 1" pts="4,0.0,0.0,0.0,474.0,23.0,474.0,23.0,0.0" r="64" type="box" w="23" x="-3" y="-2"/>
-        <terrainRegion b="64" g="64" group="1" h="8" id="2" name="Terrain 2" pts="4,0.0,0.0,0.0,8.0,3.0,8.0,3.0,0.0" r="64" type="box" w="3" x="3255" y="347"/>
+        <terrainRegion b="64" g="64" group="1" h="474" id="1" name="Terrain 1" pts="4,23.0,0.0,23.0,474.0,0.0,474.0,0.0,0.0" r="64" type="box" w="23" x="-3" y="-2"/>
+        <terrainRegion b="64" g="64" group="1" h="8" id="2" name="Terrain 2" pts="4,3.0,0.0,3.0,8.0,0.0,8.0,0.0,0.0" r="64" type="box" w="3" x="3255" y="347"/>
     </terrainRegions>
     <actors>
         <actor a="0.0" aid="4" c="false" group="3" id="488" name="tree 4" sx="1.0" sy="1.0" x="771" y="73" z="5"/>
