@@ -100,7 +100,7 @@
         </debug-draw>
     </group>
     <group eventID="2" id="4">
-        <pick-type comment="false" x="139" y="429">
+        <pick-type comment="false" x="136" y="498">
             <ACTORTYPE eid="506" id="0"/>
         </pick-type>
     </group>
@@ -110,17 +110,17 @@
         </set-val-240-1>
     </group>
     <group eventID="2" id="-1">
-        <false comment="false" x="683" y="368"/>
-        <get-xy comment="false" x="560" y="550">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val="1"/>
-        </get-xy>
+        <collide-actor-of-type comment="false" x="241" y="425"/>
+        <get-val-240-1 comment="false" x="345" y="327"/>
         <get-xy comment="false" x="408" y="417">
             <ACTOR eid="this" id="0"/>
             <int id="1" val="0"/>
         </get-xy>
-        <get-val-240-1 comment="false" x="345" y="327"/>
-        <collide-actor-of-type comment="false" x="241" y="425"/>
+        <get-xy comment="false" x="560" y="550">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+        </get-xy>
+        <false comment="false" x="683" y="368"/>
     </group>
     <group eventID="3" id="0">
         <init comment="false" x="15" y="15">
