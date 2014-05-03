@@ -37,7 +37,7 @@
         <snippets>
             <s enabled="true" id="224">
                 <prop id="1" list="0" val="15"/>
-                <prop id="2" list="0" val="10"/>
+                <prop id="2" list="0" val="5"/>
                 <prop id="3" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
@@ -479,7 +479,7 @@
         <anim across="4" down="3" durations="100,100,100,100,100,100,100,100,100,100" height="210" id="18" loop="true" name="idle-l" numframes="10" originx="25" originy="35" sync="false" version="2" width="200">
             <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-l" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="3" down="3" durations="60,60,60,60,60,60,60" height="210" id="21" loop="false" name="push-r" numframes="7" originx="29" originy="35" sync="false" version="2" width="174">
+        <anim across="3" down="3" durations="60,60,60,60,60,60,60" height="210" id="21" loop="false" name="kick-r" numframes="7" originx="29" originy="35" sync="false" version="2" width="174">
             <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 21" rest="0.0" sensor="false"/>
         </anim>
         <anim across="3" down="3" durations="70,70,70,70,70,70,70,70,70" height="210" id="20" loop="true" name="idle2-l" numframes="9" originx="25" originy="35" sync="false" version="2" width="150">
@@ -488,7 +488,7 @@
         <anim across="4" down="3" durations="100,100,100,100,100,100,100,100,100,100" height="210" id="23" loop="true" name="hold-r" numframes="10" originx="25" originy="35" sync="false" version="2" width="200">
             <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 23" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="3" down="3" durations="60,60,60,60,60,60,60" height="210" id="22" loop="false" name="push-l" numframes="7" originx="29" originy="35" sync="false" version="2" width="174">
+        <anim across="3" down="3" durations="60,60,60,60,60,60,60" height="210" id="22" loop="false" name="kick-l" numframes="7" originx="29" originy="35" sync="false" version="2" width="174">
             <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 21" rest="0.0" sensor="false"/>
         </anim>
         <anim across="4" down="3" durations="55,55,55,55,55,55,55,55,55,55,55,55" height="210" id="25" loop="true" name="walk-hold-r" numframes="12" originx="25" originy="35" sync="false" version="2" width="200">
@@ -750,8 +750,8 @@
                 <prop id="50" list="0" val="hold-l"/>
                 <prop id="49" list="0" val="walk-hold-r"/>
                 <prop id="48" list="0" val="walk-hold-l"/>
-                <prop id="55" list="0" val="push-l"/>
-                <prop id="54" list="0" val="push-r"/>
+                <prop id="55" list="0" val="kick-l"/>
+                <prop id="54" list="0" val="kick-r"/>
                 <prop id="53" list="0" val="false"/>
                 <prop id="52" list="0" val="false"/>
                 <prop id="59" list="0" val="0"/>
@@ -815,7 +815,7 @@
             <poly data="4,0,0,50,0,50,70,0,70" density="0.1" fric="0.2" gid="-1000" id="0" name="ending" rest="0.0" sensor="false"/>
         </anim>
         <anim across="9" down="9" durations="40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40" height="630" id="3" loop="true" name="angry" numframes="75" originx="35" originy="35" sync="false" version="2" width="630">
-            <poly data="4,10,0,60,0,60,70,10,70" density="0.1" fric="0.2" gid="-1000" id="0" name="angry" rest="0.0" sensor="false"/>
+            <poly data="4,10,0,60,0,60,67,10,67" density="0.1" fric="0.2" gid="-1000" id="0" name="angry" rest="0.0" sensor="false"/>
         </anim>
         <anim across="6" down="5" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50" height="350" id="4" loop="true" name="happy" numframes="29" originx="25" originy="35" sync="false" version="2" width="300">
             <poly data="4,0,0,50,0,50,70,0,70" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
@@ -856,7 +856,7 @@
         <snippets>
             <s enabled="true" id="224">
                 <prop id="1" list="0" val="15"/>
-                <prop id="2" list="0" val="10"/>
+                <prop id="2" list="0" val="7"/>
                 <prop id="3" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>

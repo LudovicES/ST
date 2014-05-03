@@ -123,16 +123,16 @@
                                                     <group eventID="3" id="-1">
                                                         <setanim comment="false" x="81" y="764">
                                                             <ACTOR eid="this" id="0"/>
-                                                            <get-val-228-51 comment="false" id="1" x="0" y="0"/>
+                                                            <int id="1" val="hold-r"/>
                                                         </setanim>
                                                     </group>
                                                     <get-val-228-47 comment="false" id="0" x="0" y="0"/>
                                                 </if>
-                                                <else comment="false" x="70" y="808">
+                                                <else comment="false" x="70" y="803">
                                                     <group eventID="3" id="-1">
-                                                        <setanim comment="false" x="81" y="828">
+                                                        <setanim comment="false" x="81" y="823">
                                                             <ACTOR eid="this" id="0"/>
-                                                            <get-val-228-50 comment="false" id="1" x="0" y="0"/>
+                                                            <int id="1" val="hold-l"/>
                                                         </setanim>
                                                     </group>
                                                 </else>
@@ -143,22 +143,22 @@
                                                 <int id="2" val="_holding"/>
                                             </get-attribute>
                                         </if>
-                                        <else comment="false" x="59" y="884">
+                                        <else comment="false" x="59" y="874">
                                             <group eventID="3" id="-1">
-                                                <if comment="false" x="70" y="904">
+                                                <if comment="false" x="70" y="894">
                                                     <group eventID="3" id="-1">
-                                                        <setanim comment="false" x="81" y="929">
+                                                        <setanim comment="false" x="81" y="919">
                                                             <ACTOR eid="this" id="0"/>
-                                                            <get-val-228-43 comment="false" id="1" x="0" y="0"/>
+                                                            <int id="1" val="idle-r"/>
                                                         </setanim>
                                                     </group>
                                                     <get-val-228-47 comment="false" id="0" x="0" y="0"/>
                                                 </if>
-                                                <else comment="false" x="70" y="973">
+                                                <else comment="false" x="70" y="958">
                                                     <group eventID="3" id="-1">
-                                                        <setanim comment="false" x="81" y="993">
+                                                        <setanim comment="false" x="81" y="978">
                                                             <ACTOR eid="this" id="0"/>
-                                                            <get-val-228-41 comment="false" id="1" x="0" y="0"/>
+                                                            <int id="1" val="idle-l"/>
                                                         </setanim>
                                                     </group>
                                                 </else>
@@ -173,24 +173,24 @@
                                         <int id="1" val="0"/>
                                     </eq>
                                 </if>
-                                <else comment="false" x="48" y="1061">
+                                <else comment="false" x="48" y="1041">
                                     <group eventID="3" id="-1">
-                                        <if comment="false" x="59" y="1081">
+                                        <if comment="false" x="59" y="1061">
                                             <group eventID="3" id="-1">
-                                                <if comment="false" x="70" y="1114">
+                                                <if comment="false" x="70" y="1094">
                                                     <group eventID="3" id="-1">
-                                                        <setanim comment="false" x="81" y="1139">
+                                                        <setanim comment="false" x="81" y="1119">
                                                             <ACTOR eid="this" id="0"/>
-                                                            <get-val-228-49 comment="false" id="1" x="0" y="0"/>
+                                                            <int id="1" val="walk-hold-r"/>
                                                         </setanim>
                                                     </group>
                                                     <get-val-228-47 comment="false" id="0" x="0" y="0"/>
                                                 </if>
-                                                <else comment="false" x="70" y="1183">
+                                                <else comment="false" x="70" y="1158">
                                                     <group eventID="3" id="-1">
-                                                        <setanim comment="false" x="81" y="1203">
+                                                        <setanim comment="false" x="81" y="1178">
                                                             <ACTOR eid="this" id="0"/>
-                                                            <get-val-228-48 comment="false" id="1" x="0" y="0"/>
+                                                            <int id="1" val="walk-hold-l"/>
                                                         </setanim>
                                                     </group>
                                                 </else>
@@ -201,22 +201,22 @@
                                                 <int id="2" val="_holding"/>
                                             </get-attribute>
                                         </if>
-                                        <else comment="false" x="59" y="1259">
+                                        <else comment="false" x="59" y="1229">
                                             <group eventID="3" id="-1">
-                                                <if comment="false" x="70" y="1279">
+                                                <if comment="false" x="70" y="1249">
                                                     <group eventID="3" id="-1">
-                                                        <setanim comment="false" x="81" y="1304">
+                                                        <setanim comment="false" x="81" y="1274">
                                                             <ACTOR eid="this" id="0"/>
-                                                            <get-val-228-44 comment="false" id="1" x="0" y="0"/>
+                                                            <int id="1" val="walk-r"/>
                                                         </setanim>
                                                     </group>
                                                     <get-val-228-47 comment="false" id="0" x="0" y="0"/>
                                                 </if>
-                                                <else comment="false" x="70" y="1348">
+                                                <else comment="false" x="70" y="1313">
                                                     <group eventID="3" id="-1">
-                                                        <setanim comment="false" x="81" y="1368">
+                                                        <setanim comment="false" x="81" y="1333">
                                                             <ACTOR eid="this" id="0"/>
-                                                            <get-val-228-42 comment="false" id="1" x="0" y="0"/>
+                                                            <int id="1" val="walk-l"/>
                                                         </setanim>
                                                     </group>
                                                 </else>
@@ -279,9 +279,10 @@
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
                         <mod comment="false" id="0" x="0" y="0">
-                            <zindex comment="false" id="0" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
-                            </zindex>
+                                <int id="1" val="0"/>
+                            </get-xy>
                             <int id="1" val="3"/>
                         </mod>
                         <int id="1" val="0"/>
@@ -391,48 +392,48 @@
                             <group eventID="7" id="-1">
                                 <setanim comment="false" x="243" y="549">
                                     <ACTOR eid="this" id="0"/>
-                                    <get-val-228-56 comment="false" id="1" x="0" y="0"/>
+                                    <int id="1" val="stick-r"/>
                                 </setanim>
                             </group>
                             <get-val-228-47 comment="false" id="0" x="0" y="0"/>
                         </if>
-                        <else comment="false" x="232" y="593">
+                        <else comment="false" x="232" y="588">
                             <group eventID="7" id="-1">
-                                <setanim comment="false" x="243" y="613">
+                                <setanim comment="false" x="243" y="608">
                                     <ACTOR eid="this" id="0"/>
-                                    <get-val-228-57 comment="false" id="1" x="0" y="0"/>
+                                    <int id="1" val="stick-l"/>
                                 </setanim>
                             </group>
                         </else>
                     </group>
                     <get-val-228-53 comment="false" id="0" x="0" y="0"/>
                 </if>
-                <else comment="false" x="221" y="669">
+                <else comment="false" x="221" y="659">
                     <group eventID="7" id="-1">
-                        <if comment="false" x="232" y="689">
+                        <if comment="false" x="232" y="679">
                             <group eventID="7" id="-1">
-                                <setanim comment="false" x="243" y="714">
+                                <setanim comment="false" x="243" y="704">
                                     <ACTOR eid="this" id="0"/>
-                                    <get-val-228-54 comment="false" id="1" x="0" y="0"/>
+                                    <int id="1" val="kick-r"/>
                                 </setanim>
                             </group>
                             <get-val-228-47 comment="false" id="0" x="0" y="0"/>
                         </if>
-                        <else comment="false" x="232" y="758">
+                        <else comment="false" x="232" y="743">
                             <group eventID="7" id="-1">
-                                <setanim comment="false" x="243" y="778">
+                                <setanim comment="false" x="243" y="763">
                                     <ACTOR eid="this" id="0"/>
-                                    <get-val-228-55 comment="false" id="1" x="0" y="0"/>
+                                    <int id="1" val="kick-l"/>
                                 </setanim>
                             </group>
                         </else>
                     </group>
                 </else>
-                <dolater comment="false" x="221" y="834">
+                <dolater comment="false" x="221" y="814">
                     <group eventID="7" id="-1">
-                        <if comment="false" x="232" y="861">
+                        <if comment="false" x="232" y="841">
                             <group eventID="3" id="-1">
-                                <toggle-image comment="false" x="243" y="894">
+                                <toggle-image comment="false" x="243" y="874">
                                     <get-attribute comment="false" id="0" x="0" y="0">
                                         <ACTOR eid="this" id="0"/>
                                         <int id="1" val="holder"/>
@@ -447,7 +448,7 @@
                                 <int id="2" val="_holding"/>
                             </get-attribute>
                         </if>
-                        <set-val-228-52 comment="false" x="232" y="946">
+                        <set-val-228-52 comment="false" x="232" y="926">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-val-228-52>
                     </group>
@@ -485,21 +486,14 @@
                 <set-val-228-58 comment="false" x="99" y="172">
                     <true comment="false" id="0" x="0" y="0"/>
                 </set-val-228-58>
-                <actors-of-type3 comment="false" x="99" y="197">
+                <comment-short comment="false" x="99" y="197">
+                    <int id="0" val="lancement de l&amp;#039;animation de hit sur tout les scouts impactés"/>
+                </comment-short>
+                <actors-of-type3 comment="false" x="99" y="217">
                     <group eventID="9" id="-1">
-                        <print comment="false" x="110" y="229">
-                            <get-attribute comment="false" id="0" x="0" y="0">
-                                <actor-of-type comment="false" id="0" x="0" y="0"/>
-                                <int id="1" val="2 Way Horizontal Movement"/>
-                                <int id="2" val="_FacingRight"/>
-                            </get-attribute>
-                        </print>
-                        <comment-short comment="false" x="110" y="267">
-                            <int id="0" val="lancement de l&amp;#039;animation de hit sur tout les scouts impactés"/>
-                        </comment-short>
-                        <if comment="false" x="110" y="287">
+                        <if comment="false" x="110" y="249">
                             <group eventID="9" id="-1">
-                                <set-val-228-59 comment="false" x="121" y="325">
+                                <set-val-228-59 comment="false" x="121" y="287">
                                     <minus comment="false" id="0" x="0" y="0">
                                         <get-xy comment="false" id="0" x="0" y="0">
                                             <actor-of-type comment="false" id="0" x="0" y="0"/>
@@ -511,11 +505,11 @@
                                         </get-xy>
                                     </minus>
                                 </set-val-228-59>
-                                <if comment="false" x="121" y="368">
+                                <if comment="false" x="121" y="330">
                                     <group eventID="9" id="-1">
-                                        <if comment="false" x="132" y="413">
+                                        <if comment="false" x="132" y="375">
                                             <group eventID="8" id="-1">
-                                                <setanim comment="false" x="143" y="451">
+                                                <setanim comment="false" x="143" y="413">
                                                     <actor-of-type comment="false" id="0" x="0" y="0"/>
                                                     <int id="1" val="hit-r"/>
                                                 </setanim>
@@ -526,9 +520,9 @@
                                                 <int id="2" val="_FacingRight"/>
                                             </get-attribute>
                                         </if>
-                                        <else comment="false" x="132" y="495">
+                                        <else comment="false" x="132" y="457">
                                             <group eventID="8" id="-1">
-                                                <setanim comment="false" x="143" y="515">
+                                                <setanim comment="false" x="143" y="477">
                                                     <actor-of-type comment="false" id="0" x="0" y="0"/>
                                                     <int id="1" val="hit-l"/>
                                                 </setanim>
@@ -577,27 +571,27 @@
                     </group>
                     <ACTORTYPE eid="432" id="0"/>
                 </actors-of-type3>
-                <dolater comment="false" x="99" y="595">
+                <dolater comment="false" x="99" y="557">
                     <group eventID="9" id="-1">
-                        <set-val-228-58 comment="false" x="110" y="622">
+                        <set-val-228-58 comment="false" x="110" y="584">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-val-228-58>
                     </group>
                     <int id="0" val="1"/>
                     <ACTOR eid="this" id="2"/>
                 </dolater>
-                <dolater comment="false" x="99" y="659">
+                <dolater comment="false" x="99" y="621">
                     <group eventID="8" id="-1">
-                        <comment-short comment="false" x="110" y="686">
+                        <comment-short comment="false" x="110" y="648">
                             <int id="0" val="fin de l&amp;#039;animation de hit sur tout les scouts"/>
                         </comment-short>
-                        <actors-of-type3 comment="false" x="110" y="706">
+                        <actors-of-type3 comment="false" x="110" y="668">
                             <group eventID="9" id="-1">
-                                <if comment="false" x="121" y="738">
+                                <if comment="false" x="121" y="700">
                                     <group eventID="9" id="-1">
-                                        <if comment="false" x="132" y="776">
+                                        <if comment="false" x="132" y="738">
                                             <group eventID="8" id="-1">
-                                                <setanim comment="false" x="143" y="814">
+                                                <setanim comment="false" x="143" y="776">
                                                     <actor-of-type comment="false" id="0" x="0" y="0"/>
                                                     <int id="1" val="idle2-r"/>
                                                 </setanim>
@@ -608,9 +602,9 @@
                                                 <int id="2" val="_FacingRight"/>
                                             </get-attribute>
                                         </if>
-                                        <else comment="false" x="132" y="858">
+                                        <else comment="false" x="132" y="820">
                                             <group eventID="8" id="-1">
-                                                <setanim comment="false" x="143" y="878">
+                                                <setanim comment="false" x="143" y="840">
                                                     <actor-of-type comment="false" id="0" x="0" y="0"/>
                                                     <int id="1" val="idle2-l"/>
                                                 </setanim>

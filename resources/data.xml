@@ -37,7 +37,7 @@
         <snippets>
             <s enabled="true" id="224">
                 <prop id="1" list="0" val="15"/>
-                <prop id="2" list="0" val="10"/>
+                <prop id="2" list="0" val="5"/>
                 <prop id="3" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
@@ -349,6 +349,9 @@
     </custom-block>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="Simple template Actor demonstrates potential usage of Behaviors and Animations.  Please note that the Behavior Attributes are configured to work with an Actor mass of 1.0.   " eventsnippetid="223" fixedrot="true" fric="0.0" gid="11" id="479" ignoreg="false" inertia="0.01" ldamp="0.0" mass="1.0" name="ghost" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="480" static="false">
         <snippets>
+            <s enabled="true" id="237">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="false" id="169">
                 <prop id="1" list="0" val="false"/>
                 <prop id="2" list="0" val=""/>
@@ -367,9 +370,6 @@
                 </prop>
                 <prop id="6" list="0" val="false"/>
                 <prop id="7" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="237">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="306">
@@ -409,11 +409,11 @@
             <s enabled="true" id="313">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="false" id="242">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="123">
                 <prop id="1" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="false" id="242">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="226">
@@ -422,13 +422,13 @@
                 <prop id="3" list="0" val="0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="241">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="false" id="224">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="2" list="0" val="0.0"/>
                 <prop id="3" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="241">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -447,11 +447,11 @@
         <anim across="4" down="3" durations="60,60,60,60,60,60,60,60,60,60" height="300" id="0" loop="true" name="idle-l" numframes="10" originx="8" originy="16" sync="false" version="2" width="400">
             <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="idle-l" rest="0.0" sensor="true"/>
         </anim>
-        <anim across="4" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60" height="400" id="16" loop="true" name="duck-r" numframes="13" originx="8" originy="16" sync="false" version="2" width="400">
-            <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
-        </anim>
         <anim across="4" down="3" durations="60,60,60,60,60,60,60,60,60,60" height="300" id="1" loop="true" name="idle-r" numframes="10" originx="8" originy="16" sync="false" version="2" width="400">
             <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="idle-r" rest="0.0" sensor="true"/>
+        </anim>
+        <anim across="4" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60" height="400" id="16" loop="true" name="duck-r" numframes="13" originx="8" originy="16" sync="false" version="2" width="400">
+            <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
         </anim>
         <anim across="4" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60" height="400" id="6" loop="true" name="duck-l" numframes="13" originx="8" originy="16" sync="false" version="2" width="400">
             <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
@@ -479,7 +479,7 @@
         <anim across="4" down="3" durations="100,100,100,100,100,100,100,100,100,100" height="210" id="18" loop="true" name="idle-l" numframes="10" originx="25" originy="35" sync="false" version="2" width="200">
             <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-l" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="3" down="3" durations="60,60,60,60,60,60,60" height="210" id="21" loop="false" name="push-r" numframes="7" originx="29" originy="35" sync="false" version="2" width="174">
+        <anim across="3" down="3" durations="60,60,60,60,60,60,60" height="210" id="21" loop="false" name="kick-r" numframes="7" originx="29" originy="35" sync="false" version="2" width="174">
             <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 21" rest="0.0" sensor="false"/>
         </anim>
         <anim across="3" down="3" durations="70,70,70,70,70,70,70,70,70" height="210" id="20" loop="true" name="idle2-l" numframes="9" originx="25" originy="35" sync="false" version="2" width="150">
@@ -488,7 +488,7 @@
         <anim across="4" down="3" durations="100,100,100,100,100,100,100,100,100,100" height="210" id="23" loop="true" name="hold-r" numframes="10" originx="25" originy="35" sync="false" version="2" width="200">
             <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 23" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="3" down="3" durations="60,60,60,60,60,60,60" height="210" id="22" loop="false" name="push-l" numframes="7" originx="29" originy="35" sync="false" version="2" width="174">
+        <anim across="3" down="3" durations="60,60,60,60,60,60,60" height="210" id="22" loop="false" name="kick-l" numframes="7" originx="29" originy="35" sync="false" version="2" width="174">
             <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 21" rest="0.0" sensor="false"/>
         </anim>
         <anim across="4" down="3" durations="55,55,55,55,55,55,55,55,55,55,55,55" height="210" id="25" loop="true" name="walk-hold-r" numframes="12" originx="25" originy="35" sync="false" version="2" width="200">
@@ -555,8 +555,8 @@
                 <prop id="12" list="0" val="0.0"/>
                 <prop id="13" list="0" val="10"/>
                 <prop id="14" list="0" val="0.0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
     </actor>
@@ -587,7 +587,7 @@
     <music atlasID="0" desc="" id="598" loop="true" name="ourts_2" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="251" fixedrot="false" fric="0.2" gid="3" id="524" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Papa_scout_skull" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="525" static="false">
         <snippets>
-            <s enabled="true" id="330">
+            <s enabled="true" id="253">
                 <prop id="1" list="0" val="false"/>
                 <prop id="2" list="0" val="0.0"/>
                 <prop id="3" list="0" val="0.0"/>
@@ -750,8 +750,8 @@
                 <prop id="50" list="0" val="hold-l"/>
                 <prop id="49" list="0" val="walk-hold-r"/>
                 <prop id="48" list="0" val="walk-hold-l"/>
-                <prop id="55" list="0" val="push-l"/>
-                <prop id="54" list="0" val="push-r"/>
+                <prop id="55" list="0" val="kick-l"/>
+                <prop id="54" list="0" val="kick-r"/>
                 <prop id="53" list="0" val="false"/>
                 <prop id="52" list="0" val="false"/>
                 <prop id="59" list="0" val="0"/>
@@ -815,7 +815,7 @@
             <poly data="4,0,0,50,0,50,70,0,70" density="0.1" fric="0.2" gid="-1000" id="0" name="ending" rest="0.0" sensor="false"/>
         </anim>
         <anim across="9" down="9" durations="40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40" height="630" id="3" loop="true" name="angry" numframes="75" originx="35" originy="35" sync="false" version="2" width="630">
-            <poly data="4,10,0,60,0,60,70,10,70" density="0.1" fric="0.2" gid="-1000" id="0" name="angry" rest="0.0" sensor="false"/>
+            <poly data="4,10,0,60,0,60,67,10,67" density="0.1" fric="0.2" gid="-1000" id="0" name="angry" rest="0.0" sensor="false"/>
         </anim>
         <anim across="6" down="5" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50" height="350" id="4" loop="true" name="happy" numframes="29" originx="25" originy="35" sync="false" version="2" width="300">
             <poly data="4,0,0,50,0,50,70,0,70" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
@@ -856,7 +856,7 @@
         <snippets>
             <s enabled="true" id="224">
                 <prop id="1" list="0" val="15"/>
-                <prop id="2" list="0" val="10"/>
+                <prop id="2" list="0" val="7"/>
                 <prop id="3" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>

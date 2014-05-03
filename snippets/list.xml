@@ -101,8 +101,8 @@
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Distance X" hidden="true" id="12" name="_DistanceX" order="9"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Distance Y" hidden="true" id="13" name="_DistanceY" order="10"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Distance" hidden="true" id="14" name="_Distance" order="11"/>
-        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Direction" hidden="true" id="15" name="_Direction" order="12"/>
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="10.0" defaultValue="10.0" desc="The default speed to reach any node." dropdown="" fullname="Default Speed" hidden="false" id="17" name="_DefaultSpeed" order="21"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Current Speed" hidden="true" id="19" name="_CurrentSpeed" order="14"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Current Node" hidden="true" id="18" name="_CurrentNode" order="13"/>
@@ -118,11 +118,11 @@
         </blocks>
         <events>
             <event displayName="Custom Block" enabled="true" id="17" name="event-custom-block" order="16" repeats="true"/>
-            <event displayName="Drawing" enabled="true" id="1" name="draw" order="18" repeats="true"/>
             <event displayName="Custom Block" enabled="true" id="16" name="event-custom-block" order="3" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="1" name="draw" order="18" repeats="true"/>
             <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
-            <event displayName="Created" enabled="true" id="3" name="init" order="1" repeats="true"/>
             <event displayName="Custom Block" enabled="true" id="18" name="event-custom-block" order="17" repeats="true"/>
+            <event displayName="Created" enabled="true" id="3" name="init" order="1" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_536" classname="scripts.ActorEvents_536" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="309" language="" name="ActorEvents_536" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
@@ -148,8 +148,8 @@
         <number default="100.0" defaultValue="100.0" desc="The distance the actor will be moving down." dropdown="" fullname="Distance Down" hidden="false" id="18" name="_DistanceDown" order="6"/>
         <boolean default="true" defaultValue="true" desc="If selected, the actor will change the movement direction when colliding.&lt;br /&gt;&#10;If unselected, the actor will try to keep on moving in the current direction." dropdown="" fullname="Change Direction on Collision" hidden="false" id="20" name="_ChangeDirectiononCollision" order="7"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="Start" hidden="true" id="13" name="_Start" order="1"/>
-        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="End" hidden="true" id="15" name="_End" order="2"/>
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
             <event displayName="Updated" enabled="true" id="1" name="step" order="2" repeats="true"/>
@@ -310,7 +310,6 @@
         <events>
             <event displayName="Lancement du jeu" enabled="true" id="4" name="event-custom" order="4" repeats="true"/>
             <event displayName="Lancement de l'intro" enabled="true" id="5" name="event-delay" order="5" repeats="true"/>
-            <event displayName="Created" enabled="false" id="6" name="init" order="6" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_561" classname="scripts.ActorEvents_561" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="325" language="" name="ActorEvents_561" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
@@ -393,7 +392,7 @@
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_330_330_Papa" classname="scripts.Design_330_330_Papa" desc="" description="" design="true" drawOrder="0" id="330" language="" name="Papa" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+    <snippet attachedevent="false" class="scripts.Design_253_253_Papa" classname="scripts.Design_253_253_Papa" desc="" description="" design="true" drawOrder="0" id="253" language="" name="Papa" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="tree_moved?" hidden="false" id="1" name="_treemoved" order="1"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="x_origin" hidden="false" id="2" name="_xorigin" order="2"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="y_origin" hidden="false" id="3" name="_yorigin" order="3"/>
@@ -474,12 +473,6 @@
             <event displayName="Created" enabled="true" id="3" name="init" order="2" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_500" classname="scripts.ActorEvents_500" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="236" language="" name="ActorEvents_500" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <blocks/>
-        <events>
-            <event displayName="Actor - Type" enabled="true" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
-        </events>
-    </snippet>
     <snippet attachedevent="false" class="scripts.Design_511_511_RotateAroundPoint" classname="scripts.Design_511_511_RotateAroundPoint" desc="Make the actor rotate around a given point." description="Make the actor rotate around a given point." design="true" drawOrder="0" id="511" language="" name="Rotate Around Point" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <number default="0.0" defaultValue="0.0" desc="The x-coordinate of the center of rotation." dropdown="" fullname="Center X" hidden="false" id="1" name="_CenterX" order="7"/>
         <number default="0.0" defaultValue="0.0" desc="The y-coordinate of the center of rotation." dropdown="" fullname="Center Y" hidden="false" id="2" name="_CenterY" order="8"/>
@@ -493,8 +486,8 @@
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="New Distance" hidden="true" id="12" name="_NewDistance" order="6"/>
         <number default="10" defaultValue="10" desc="If the distance between the actor and the center changes be more than this, the radius of the rotation will be adjusted. &lt;br /&gt;&#10;Can be changed for fine tuning, should not be too small." dropdown="" fullname="Distance Threshold" hidden="false" id="13" name="_DistanceThreshold" order="13"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Step Seconds" hidden="true" id="14" name="_StepSeconds" order="1"/>
-        <boolean default="true" defaultValue="true" desc="If selected the radius will not be adjusted dynamically." dropdown="" fullname="Fixed Radius" hidden="false" id="15" name="_FixedRadius" order="12"/>
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="true" defaultValue="true" desc="If selected the radius will not be adjusted dynamically." dropdown="" fullname="Fixed Radius" hidden="false" id="15" name="_FixedRadius" order="12"/>
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="4" repeats="true"/>
@@ -503,16 +496,22 @@
             <event displayName="Actor - Any" enabled="true" id="4" name="collide" order="3" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_559" classname="scripts.ActorEvents_559" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="505" language="" name="ActorEvents_559" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+    <snippet attachedevent="true" class="scripts.ActorEvents_500" classname="scripts.ActorEvents_500" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="236" language="" name="ActorEvents_500" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events>
-            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_496" classname="scripts.ActorEvents_496" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="234" language="" name="ActorEvents_496" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events>
             <event displayName=" Actor - Group" enabled="false" id="2" name="event-collide-actortogroup" order="2" repeats="false"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_559" classname="scripts.ActorEvents_559" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="505" language="" name="ActorEvents_559" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_602" classname="scripts.ActorEvents_602" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="506" language="" name="ActorEvents_602" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
@@ -522,6 +521,14 @@
         <blocks/>
         <events>
             <event displayName="Actor - Type" enabled="false" id="2" name="event-collide-actortotype" order="2" repeats="false"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_490" classname="scripts.ActorEvents_490" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="232" language="" name="ActorEvents_490" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="fish" hidden="false" id="1" name="_fish" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Actor - Type" enabled="false" id="2" name="event-collide-actortotype" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_604" classname="scripts.ActorEvents_604" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="507" language="" name="ActorEvents_604" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
@@ -535,12 +542,13 @@
             <event displayName="Actor - Type" enabled="true" id="3" name="event-collide-actortotype" order="3" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_490" classname="scripts.ActorEvents_490" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="232" language="" name="ActorEvents_490" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <actor default="" defaultValue="" desc="" dropdown="" fullname="fish" hidden="false" id="1" name="_fish" order="0"/>
+    <snippet attachedevent="true" class="scripts.ActorEvents_488" classname="scripts.ActorEvents_488" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="231" language="" name="ActorEvents_488" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="x_origin" hidden="false" id="1" name="_xorigin" order="0"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="y_origin" hidden="false" id="2" name="_yorigin" order="1"/>
         <blocks/>
         <events>
-            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Actor - Type" enabled="false" id="2" name="event-collide-actortotype" order="2" repeats="true"/>
+            <event displayName="Actor - Type" enabled="false" id="1" name="event-collide-actortotype" order="2" repeats="true"/>
+            <event displayName="Created" enabled="false" id="2" name="init" order="1" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_329_329_Game" classname="scripts.Design_329_329_Game" desc="" description="" design="true" drawOrder="0" id="500" language="" name="Game" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
@@ -561,13 +569,10 @@
             <event displayName="souris sur écran de fin" enabled="true" id="6" name="event-mouse-press-release" order="6" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_488" classname="scripts.ActorEvents_488" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="231" language="" name="ActorEvents_488" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="x_origin" hidden="false" id="1" name="_xorigin" order="0"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="y_origin" hidden="false" id="2" name="_yorigin" order="1"/>
+    <snippet attachedevent="true" class="scripts.ActorEvents_486" classname="scripts.ActorEvents_486" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="230" language="" name="ActorEvents_486" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events>
-            <event displayName="Actor - Type" enabled="false" id="1" name="event-collide-actortotype" order="2" repeats="true"/>
-            <event displayName="Created" enabled="false" id="2" name="init" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_327_327_PlayButton" classname="scripts.Design_327_327_PlayButton" desc="" description="" design="true" drawOrder="0" id="501" language="" name="PlayButton" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
@@ -582,12 +587,6 @@
             <event displayName="On Actor" enabled="true" id="5" name="event-mouse-enter-exit-actor" order="5" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_486" classname="scripts.ActorEvents_486" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="230" language="" name="ActorEvents_486" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <blocks/>
-        <events>
-            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-        </events>
-    </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_484" classname="scripts.ActorEvents_484" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="229" language="" name="ActorEvents_484" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <animation default="" defaultValue="" desc="" dropdown="" fullname="off_anim" hidden="false" id="1" name="_offanim" order="0"/>
         <blocks/>
@@ -596,34 +595,22 @@
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_309_309_2WayHorizontalMovement" classname="scripts.Design_309_309_2WayHorizontalMovement" desc="Allows the actor to move left and right." description="Allows the actor to move left and right." design="true" drawOrder="0" id="228" language="" name="2 Way Horizontal Movement" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <number default="30.0" defaultValue="30.0" desc="The speed of the movement." dropdown="" fullname="Speed" hidden="false" id="11" name="_Speed" order="6"/>
-        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <control default="" defaultValue="" desc="" dropdown="" fullname="Right Control" hidden="false" id="34" name="_RightControl" order="5"/>
         <control default="" defaultValue="" desc="" dropdown="" fullname="Left Control" hidden="false" id="33" name="_LeftControl" order="4"/>
         <boolean default="true" defaultValue="true" desc="If selected, the control attributes will be used to control the movement.&lt;br /&gt;&#10;If unselected, the control attributes are ignored and the movement can be controlled by triggering custom events. &#10;Trigger the events &lt;var&gt;MoveLeft&lt;/var&gt; or &lt;var&gt;MoveRight&lt;/var&gt; to make the actor move as if the keys were pressed." dropdown="" fullname="Use Controls" hidden="false" id="38" name="_UseControls" order="3"/>
         <boolean default="false" defaultValue="false" desc="If selected, the actor will not be able to move vertically." dropdown="" fullname="Prevent Vertical Movement" hidden="false" id="39" name="_PreventVerticalMovement" order="7"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="Move X" hidden="true" id="37" name="_MoveX" order="1"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Left Animation" hidden="false" id="42" name="_LeftAnimation" order="11"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Right Animation (Idle)" hidden="false" id="43" name="_RightAnimationIdle" order="12"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Start Y" hidden="true" id="40" name="_StartY" order="2"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Left Animation (Idle)" hidden="false" id="41" name="_LeftAnimationIdle" order="10"/>
+        <number default="30.0" defaultValue="30.0" desc="The speed of the movement." dropdown="" fullname="Speed" hidden="false" id="11" name="_Speed" order="6"/>
         <boolean default="true" defaultValue="true" desc="If selected, the actor will not be able to turn while moving." dropdown="" fullname="Stop Turning" hidden="false" id="46" name="_StopTurning" order="8"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Facing Right" hidden="true" id="47" name="_FacingRight" order="22"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Right Animation" hidden="false" id="44" name="_RightAnimation" order="13"/>
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <boolean default="true" defaultValue="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="45" name="_UseAnimations" order="9"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Hold Right Animation (idle)" hidden="false" id="51" name="_HoldRightAnimationidle" order="17"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Hold Left Animation (idle)" hidden="false" id="50" name="_HoldLeftAnimationidle" order="16"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Hold Right Animation" hidden="false" id="49" name="_HoldRightAnimation" order="15"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Hold Left Animation" hidden="false" id="48" name="_HoldLeftAnimation" order="14"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="KickEmpty Left" hidden="false" id="55" name="_KickEmptyLeft" order="19"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="KickEmpty Right" hidden="false" id="54" name="_KickEmptyRight" order="18"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="kickstick" hidden="true" id="53" name="_kickstick" order="24"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="kicking" hidden="true" id="52" name="_kicking" order="23"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="tmp" hidden="true" id="59" name="_tmp" order="26"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="kicked" hidden="true" id="58" name="_kicked" order="25"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="KickStick Left" hidden="false" id="57" name="_KickStickLeft" order="21"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="KickStick Right" hidden="false" id="56" name="_KickStickRight" order="20"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="activated" hidden="true" id="60" name="_activated" order="27"/>
+        <boolean default="true" defaultValue="true" desc="" dropdown="" fullname="activated" hidden="true" id="60" name="_activated" order="27"/>
         <blocks/>
         <events>
             <event displayName="Updated" enabled="true" id="3" name="step" order="5" repeats="true"/>
@@ -744,19 +731,19 @@
             <event displayName="Every N secs" enabled="false" id="2" name="event-periodic" order="2" repeats="true"/>
         </events>
     </snippet>
+    <snippet attachedevent="false" class="scripts.Design_242_242_ghostkill" classname="scripts.Design_242_242_ghostkill" desc="" description="" design="true" drawOrder="0" id="242" language="" name="ghost_kill" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="Actor - Type" enabled="true" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
+        </events>
+    </snippet>
     <snippet attachedevent="false" class="scripts.Design_123_123_AlwaysSimulate" classname="scripts.Design_123_123_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="123" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
         <boolean default="false" defaultValue="false" desc="Enable continuous collision? " dropdown="" fullname="Continuous Collision?" hidden="false" id="1" name="_ContinuousCollision" order="1"/>
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-        </events>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_242_242_ghostkill" classname="scripts.Design_242_242_ghostkill" desc="" description="" design="true" drawOrder="0" id="242" language="" name="ghost_kill" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
-        <blocks/>
-        <events>
-            <event displayName="Actor - Type" enabled="true" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_243_243_ghostrepop" classname="scripts.Design_243_243_ghostrepop" desc="" description="" design="true" drawOrder="0" id="243" language="" name="ghost_repop" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">

@@ -310,7 +310,6 @@
         <events>
             <event displayName="Lancement du jeu" enabled="true" id="4" name="event-custom" order="4" repeats="true"/>
             <event displayName="Lancement de l'intro" enabled="true" id="5" name="event-delay" order="5" repeats="true"/>
-            <event displayName="Created" enabled="false" id="6" name="init" order="6" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_561" classname="scripts.ActorEvents_561" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="325" language="" name="ActorEvents_561" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
@@ -603,27 +602,15 @@
         <boolean default="true" defaultValue="true" desc="If selected, the control attributes will be used to control the movement.&lt;br /&gt;&#10;If unselected, the control attributes are ignored and the movement can be controlled by triggering custom events. &#10;Trigger the events &lt;var&gt;MoveLeft&lt;/var&gt; or &lt;var&gt;MoveRight&lt;/var&gt; to make the actor move as if the keys were pressed." dropdown="" fullname="Use Controls" hidden="false" id="38" name="_UseControls" order="3"/>
         <boolean default="false" defaultValue="false" desc="If selected, the actor will not be able to move vertically." dropdown="" fullname="Prevent Vertical Movement" hidden="false" id="39" name="_PreventVerticalMovement" order="7"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="Move X" hidden="true" id="37" name="_MoveX" order="1"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Left Animation" hidden="false" id="42" name="_LeftAnimation" order="11"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Right Animation (Idle)" hidden="false" id="43" name="_RightAnimationIdle" order="12"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Start Y" hidden="true" id="40" name="_StartY" order="2"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Left Animation (Idle)" hidden="false" id="41" name="_LeftAnimationIdle" order="10"/>
         <boolean default="true" defaultValue="true" desc="If selected, the actor will not be able to turn while moving." dropdown="" fullname="Stop Turning" hidden="false" id="46" name="_StopTurning" order="8"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Facing Right" hidden="true" id="47" name="_FacingRight" order="22"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Right Animation" hidden="false" id="44" name="_RightAnimation" order="13"/>
         <boolean default="true" defaultValue="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="45" name="_UseAnimations" order="9"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Hold Right Animation (idle)" hidden="false" id="51" name="_HoldRightAnimationidle" order="17"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Hold Left Animation (idle)" hidden="false" id="50" name="_HoldLeftAnimationidle" order="16"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Hold Right Animation" hidden="false" id="49" name="_HoldRightAnimation" order="15"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Hold Left Animation" hidden="false" id="48" name="_HoldLeftAnimation" order="14"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="KickEmpty Left" hidden="false" id="55" name="_KickEmptyLeft" order="19"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="KickEmpty Right" hidden="false" id="54" name="_KickEmptyRight" order="18"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="kickstick" hidden="true" id="53" name="_kickstick" order="24"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="kicking" hidden="true" id="52" name="_kicking" order="23"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="tmp" hidden="true" id="59" name="_tmp" order="26"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="kicked" hidden="true" id="58" name="_kicked" order="25"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="KickStick Left" hidden="false" id="57" name="_KickStickLeft" order="21"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="KickStick Right" hidden="false" id="56" name="_KickStickRight" order="20"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="activated" hidden="true" id="60" name="_activated" order="27"/>
+        <boolean default="true" defaultValue="true" desc="" dropdown="" fullname="activated" hidden="true" id="60" name="_activated" order="27"/>
         <blocks/>
         <events>
             <event displayName="Updated" enabled="true" id="3" name="step" order="5" repeats="true"/>
