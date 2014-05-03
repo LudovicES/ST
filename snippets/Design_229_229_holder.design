@@ -13,11 +13,39 @@
                                 <set-val-226-1 comment="false" x="48" y="143">
                                     <collide-member-of-group comment="false" id="0" x="0" y="0"/>
                                 </set-val-226-1>
-                                <backforward comment="false" x="48" y="175">
+                                <setlayer comment="false" x="48" y="175">
+                                    <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                                    <getlayer comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                    </getlayer>
+                                </setlayer>
+                                <movewithinlayer comment="false" x="48" y="215">
                                     <get-val-226-1 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="3"/>
-                                </backforward>
-                                <apply-filter comment="false" x="48" y="207">
+                                </movewithinlayer>
+                                <set-val-226-3 comment="false" x="48" y="247">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <zindex comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                        </zindex>
+                                        <int id="1" val="1"/>
+                                    </plus>
+                                </set-val-226-3>
+                                <while comment="false" x="48" y="285">
+                                    <group eventID="2" id="-1">
+                                        <movewithinlayer comment="false" x="59" y="328">
+                                            <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="0"/>
+                                        </movewithinlayer>
+                                    </group>
+                                    <noteq comment="false" id="0" x="0" y="0">
+                                        <zindex comment="false" id="0" x="0" y="0">
+                                            <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                                        </zindex>
+                                        <get-val-226-3 comment="false" id="1" x="0" y="0"/>
+                                    </noteq>
+                                </while>
+                                <apply-filter comment="false" x="48" y="372">
                                     <get-val-226-1 comment="false" id="0" x="0" y="0"/>
                                     <filter-tint comment="false" id="1" x="0" y="0">
                                         <color b="255" g="255" id="0" r="51"/>
@@ -35,18 +63,18 @@
                                 </keystate>
                             </and>
                         </if>
-                        <else-if comment="false" x="37" y="259">
+                        <else-if comment="false" x="37" y="424">
                             <group eventID="2" id="-1">
-                                <set-val-226-2 comment="false" x="48" y="302">
+                                <set-val-226-2 comment="false" x="48" y="467">
                                     <false comment="false" id="0" x="0" y="0"/>
                                 </set-val-226-2>
-                                <set-attribute comment="false" x="48" y="327">
+                                <set-attribute comment="false" x="48" y="492">
                                     <get-val-226-1 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="item"/>
                                     <int id="2" val="_dropping"/>
                                     <true comment="false" id="3" x="0" y="0"/>
                                 </set-attribute>
-                                <clear-filter comment="false" x="48" y="359">
+                                <clear-filter comment="false" x="48" y="524">
                                     <get-val-226-1 comment="false" id="0" x="0" y="0"/>
                                 </clear-filter>
                             </group>
@@ -83,7 +111,11 @@
                     <group eventID="3" id="-1">
                         <if comment="false" x="55" y="206">
                             <group eventID="3" id="-1">
-                                <set-xy comment="false" x="66" y="239">
+                                <setanim comment="false" x="66" y="239">
+                                    <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="right"/>
+                                </setanim>
+                                <set-xy comment="false" x="66" y="271">
                                     <get-val-226-1 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="0"/>
                                     <plus comment="false" id="2" x="0" y="0">
@@ -111,9 +143,13 @@
                                 <int id="2" val="_FacingRight"/>
                             </get-attribute>
                         </if>
-                        <else comment="false" x="55" y="306">
+                        <else comment="false" x="55" y="338">
                             <group eventID="3" id="-1">
-                                <set-xy comment="false" x="66" y="326">
+                                <setanim comment="false" x="66" y="358">
+                                    <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="left"/>
+                                </setanim>
+                                <set-xy comment="false" x="66" y="390">
                                     <get-val-226-1 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="0"/>
                                     <minus comment="false" id="2" x="0" y="0">
@@ -136,7 +172,7 @@
                                 </set-xy>
                             </group>
                         </else>
-                        <set-xy comment="false" x="55" y="393">
+                        <set-xy comment="false" x="55" y="457">
                             <get-val-226-1 comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="1"/>
                             <plus comment="false" id="2" x="0" y="0">

@@ -28,20 +28,20 @@
     </group>
     <group eventID="4" id="-1"/>
     <group eventID="5" id="0">
-        <event-delay comment="false" x="15" y="15">
+        <event-delay comment="false" x="33" y="12">
             <group eventID="5" id="-1">
-                <if comment="false" x="26" y="42">
+                <if comment="false" x="44" y="39">
                     <group eventID="1" id="-1">
-                        <create-actor3 comment="false" x="37" y="72">
+                        <create-actor3 comment="false" x="55" y="69">
                             <ACTORTYPE eid="586" id="0"/>
                             <int id="1" val="0"/>
                             <int id="2" val="20"/>
                             <int id="3" val="0"/>
                         </create-actor3>
-                        <set-val-324-2 comment="false" x="37" y="99">
+                        <set-val-324-2 comment="false" x="55" y="96">
                             <ACTOR eid="lastcreated" id="0"/>
                         </set-val-324-2>
-                        <set-xy comment="false" x="37" y="126">
+                        <set-xy comment="false" x="55" y="123">
                             <ACTOR eid="var" id="0" vid="2"/>
                             <int id="1" val="0"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -62,22 +62,22 @@
                                 </get-wh>
                             </minus>
                         </set-xy>
-                        <fadeInOut comment="false" x="37" y="181">
+                        <fadeInOut comment="false" x="55" y="178">
                             <ACTOR eid="var" id="0" vid="2"/>
                             <int id="1" val="1"/>
                             <int id="2" val="0"/>
                             <int id="3" val="0"/>
                         </fadeInOut>
-                        <create-actor3 comment="false" x="37" y="208">
+                        <create-actor3 comment="false" x="55" y="205">
                             <ACTORTYPE eid="588" id="0"/>
                             <int id="1" val="0"/>
                             <int id="2" val="120"/>
                             <int id="3" val="0"/>
                         </create-actor3>
-                        <set-val-324-3 comment="false" x="37" y="235">
+                        <set-val-324-3 comment="false" x="55" y="232">
                             <ACTOR eid="lastcreated" id="0"/>
                         </set-val-324-3>
-                        <set-xy comment="false" x="37" y="262">
+                        <set-xy comment="false" x="55" y="259">
                             <ACTOR eid="var" id="0" vid="3"/>
                             <int id="1" val="0"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -98,42 +98,42 @@
                                 </get-wh>
                             </minus>
                         </set-xy>
-                        <fadeInOut comment="false" x="37" y="317">
+                        <fadeInOut comment="false" x="55" y="314">
                             <ACTOR eid="var" id="0" vid="3"/>
                             <int id="1" val="1"/>
                             <int id="2" val="0"/>
                             <int id="3" val="0"/>
                         </fadeInOut>
-                        <if comment="false" x="37" y="344">
+                        <if comment="false" x="55" y="341">
                             <group eventID="5" id="-1">
-                                <set-game-val-3 comment="false" x="48" y="369">
+                                <set-game-val-3 comment="false" x="66" y="366">
                                     <false comment="false" id="0" x="0" y="0"/>
                                 </set-game-val-3>
-                                <dolater comment="false" x="48" y="394">
+                                <dolater comment="false" x="66" y="391">
                                     <group eventID="1" id="-1">
-                                        <fadeInOut comment="false" x="59" y="421">
+                                        <fadeInOut comment="false" x="77" y="418">
                                             <ACTOR eid="var" id="0" vid="2"/>
                                             <int id="1" val="0"/>
                                             <int id="2" val="1"/>
                                             <int id="3" val="8"/>
                                         </fadeInOut>
-                                        <dolater comment="false" x="59" y="448">
+                                        <dolater comment="false" x="77" y="445">
                                             <group eventID="1" id="-1">
-                                                <fadeInOut comment="false" x="70" y="475">
+                                                <fadeInOut comment="false" x="88" y="472">
                                                     <ACTOR eid="var" id="0" vid="2"/>
                                                     <int id="1" val="1"/>
                                                     <int id="2" val="1"/>
                                                     <int id="3" val="8"/>
                                                 </fadeInOut>
-                                                <dolater comment="false" x="70" y="502">
+                                                <dolater comment="false" x="88" y="499">
                                                     <group eventID="1" id="-1">
-                                                        <set-attribute comment="false" x="81" y="529">
+                                                        <set-attribute comment="false" x="99" y="526">
                                                             <get-val-324-3 comment="false" id="0" x="0" y="0"/>
                                                             <int id="1" val="PlayButton"/>
                                                             <int id="2" val="_ready"/>
                                                             <true comment="false" id="3" x="0" y="0"/>
                                                         </set-attribute>
-                                                        <fadeInOut comment="false" x="81" y="561">
+                                                        <fadeInOut comment="false" x="99" y="558">
                                                             <ACTOR eid="var" id="0" vid="3"/>
                                                             <int id="1" val="0"/>
                                                             <int id="2" val="1"/>
@@ -154,15 +154,15 @@
                             </group>
                             <get-game-val-3 comment="false" id="0" x="0" y="0"/>
                         </if>
-                        <else comment="false" x="37" y="636">
+                        <else comment="false" x="55" y="633">
                             <group eventID="5" id="-1">
-                                <set-attribute comment="false" x="48" y="656">
+                                <set-attribute comment="false" x="66" y="653">
                                     <get-val-324-3 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="PlayButton"/>
                                     <int id="2" val="_ready"/>
                                     <true comment="false" id="3" x="0" y="0"/>
                                 </set-attribute>
-                                <fadeInOut comment="false" x="48" y="688">
+                                <fadeInOut comment="false" x="66" y="685">
                                     <ACTOR eid="var" id="0" vid="3"/>
                                     <int id="1" val="0"/>
                                     <int id="2" val="1"/>
@@ -181,4 +181,55 @@
         </event-delay>
     </group>
     <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="6" id="-1"/>
+        </init>
+    </group>
+    <group eventID="6" id="1">
+        <comment-short comment="false" x="144" y="244">
+            <int id="0" val="pas terrible"/>
+        </comment-short>
+        <if comment="false" x="144" y="264">
+            <group eventID="6" id="-1">
+                <setanim comment="false" x="155" y="294">
+                    <get-val-324-5 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="walk-l"/>
+                </setanim>
+                <set-xy comment="false" x="155" y="326">
+                    <get-val-324-5 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="0"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <get-val-324-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                        </get-xy>
+                        <int id="1" val="300"/>
+                    </plus>
+                </set-xy>
+                <moveToBy comment="false" x="155" y="376">
+                    <get-val-324-5 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="-300"/>
+                    <int id="3" val="0"/>
+                    <int id="4" val="2"/>
+                    <int id="5" val="0"/>
+                </moveToBy>
+                <dolater comment="false" x="155" y="408">
+                    <group eventID="6" id="-1">
+                        <setanim comment="false" x="166" y="435">
+                            <get-val-324-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="angry"/>
+                        </setanim>
+                    </group>
+                    <int id="0" val="2"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <not comment="false" id="0" x="0" y="0">
+                <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+            </not>
+        </if>
+    </group>
+    <group eventID="6" id="-1"/>
 </groups>
