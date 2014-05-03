@@ -24,7 +24,7 @@
     <group eventID="2" id="1">
         <false comment="false" x="844" y="144"/>
     </group>
-    <group eventID="2" id="3">
+    <group eventID="2" id="2">
         <set-val-507-1 comment="false" x="155" y="285">
             <true comment="false" id="0" x="0" y="0"/>
         </set-val-507-1>

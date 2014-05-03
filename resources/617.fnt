@@ -1,0 +1,19 @@
+#
+#Sat May 03 14:14:36 CEST 2014
+monospace=false
+monospace.numerals=false
+style=plain
+alphabet=
+tracking=0
+stroke.color=\#ffffff
+color=\#ffffff
+shadow.y=0
+family=Journal.ttf
+shadow.x=0
+shadow.color=\#000000
+gradient.offset=0
+shadow.blur=3
+chars=all
+stroke.size=1
+antialias=true
+size=20

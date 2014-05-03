@@ -5,31 +5,28 @@
             <group eventID="1" id="-1">
                 <if comment="false" x="26" y="47">
                     <group eventID="1" id="-1">
-                        <print comment="false" x="37" y="90">
-                            <int id="0" val="IF_01"/>
-                        </print>
-                        <if comment="false" x="37" y="110">
+                        <if comment="false" x="37" y="90">
                             <group eventID="1" id="-1">
-                                <set-val-327-2 comment="false" x="48" y="171">
+                                <set-val-327-2 comment="false" x="48" y="151">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-val-327-2>
-                                <actor-enabledisable-snippet comment="false" x="48" y="196">
+                                <actor-enabledisable-snippet comment="false" x="48" y="176">
                                     <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="1"/>
                                     <int id="2" val="2 Way Horizontal Movement"/>
                                 </actor-enabledisable-snippet>
-                                <set-dxy comment="false" x="48" y="228">
+                                <set-dxy comment="false" x="48" y="208">
                                     <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="0"/>
                                     <int id="2" val="0"/>
                                 </set-dxy>
-                                <if comment="false" x="48" y="260">
+                                <if comment="false" x="48" y="240">
                                     <group eventID="3" id="-1">
-                                        <setanim comment="false" x="59" y="298">
+                                        <setanim comment="false" x="59" y="278">
                                             <ACTOR eid="this" id="0"/>
                                             <int id="1" val="2"/>
                                         </setanim>
-                                        <create-actor3 comment="false" x="59" y="325">
+                                        <create-actor3 comment="false" x="59" y="305">
                                             <ACTORTYPE eid="567" id="0"/>
                                             <minus comment="false" id="1" x="0" y="0">
                                                 <get-xy comment="false" id="0" x="0" y="0">
@@ -54,13 +51,13 @@
                                         <int id="2" val="_FacingRight"/>
                                     </get-attribute>
                                 </if>
-                                <else comment="false" x="48" y="387">
+                                <else comment="false" x="48" y="367">
                                     <group eventID="3" id="-1">
-                                        <setanim comment="false" x="59" y="407">
+                                        <setanim comment="false" x="59" y="387">
                                             <ACTOR eid="this" id="0"/>
                                             <int id="1" val="2"/>
                                         </setanim>
-                                        <create-actor3 comment="false" x="59" y="434">
+                                        <create-actor3 comment="false" x="59" y="414">
                                             <ACTORTYPE eid="569" id="0"/>
                                             <minus comment="false" id="1" x="0" y="0">
                                                 <get-xy comment="false" id="0" x="0" y="0">
@@ -80,15 +77,12 @@
                                         </create-actor3>
                                     </group>
                                 </else>
-                                <print comment="false" x="48" y="496">
-                                    <int id="0" val="IF_02"/>
-                                </print>
-                                <die comment="false" x="48" y="516">
+                                <die comment="false" x="48" y="476">
                                     <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                                 </die>
-                                <dolater comment="false" x="48" y="548">
+                                <dolater comment="false" x="48" y="508">
                                     <group eventID="1" id="-1">
-                                        <die comment="false" x="59" y="575">
+                                        <die comment="false" x="59" y="535">
                                             <ACTOR eid="this" id="0"/>
                                         </die>
                                     </group>
@@ -207,6 +201,16 @@
                 </get-attribute>
             </minus>
         </set-xy>
+    </group>
+    <group eventID="1" id="5">
+        <print comment="false" x="39" y="791">
+            <int id="0" val="IF_02"/>
+        </print>
+    </group>
+    <group eventID="1" id="7">
+        <print comment="false" x="1024" y="175">
+            <int id="0" val="IF_01"/>
+        </print>
     </group>
     <group eventID="1" id="-1">
         <get-val-327-1 comment="false" x="838" y="46"/>

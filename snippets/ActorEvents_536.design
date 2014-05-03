@@ -15,13 +15,31 @@
                             <int id="1" val="0"/>
                             <int id="2" val="0"/>
                         </set-dxy>
-                        <setanim comment="false" x="37" y="144">
+                        <create-actor3 comment="false" x="37" y="144">
+                            <ACTORTYPE eid="538" id="0"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                                <int id="1" val="60"/>
+                            </minus>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                                <int id="1" val="55"/>
+                            </minus>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <setanim comment="false" x="37" y="189">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="rock_break"/>
                         </setanim>
-                        <dolater comment="false" x="37" y="171">
+                        <dolater comment="false" x="37" y="216">
                             <group eventID="1" id="-1">
-                                <create-actor3 comment="false" x="48" y="198">
+                                <create-actor3 comment="false" x="48" y="243">
                                     <ACTORTYPE eid="540" id="0"/>
                                     <minus comment="false" id="1" x="0" y="0">
                                         <get-xy comment="false" id="0" x="0" y="0">
@@ -39,27 +57,9 @@
                                     </minus>
                                     <int id="3" val="1"/>
                                 </create-actor3>
-                                <die comment="false" x="48" y="248">
+                                <die comment="false" x="48" y="293">
                                     <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                                 </die>
-                                <create-actor3 comment="false" x="48" y="280">
-                                    <ACTORTYPE eid="538" id="0"/>
-                                    <minus comment="false" id="1" x="0" y="0">
-                                        <get-xy comment="false" id="0" x="0" y="0">
-                                            <ACTOR eid="this" id="0"/>
-                                            <int id="1" val="2"/>
-                                        </get-xy>
-                                        <int id="1" val="60"/>
-                                    </minus>
-                                    <minus comment="false" id="2" x="0" y="0">
-                                        <get-xy comment="false" id="0" x="0" y="0">
-                                            <ACTOR eid="this" id="0"/>
-                                            <int id="1" val="3"/>
-                                        </get-xy>
-                                        <int id="1" val="55"/>
-                                    </minus>
-                                    <int id="3" val="0"/>
-                                </create-actor3>
                                 <dolater comment="false" x="48" y="325">
                                     <group eventID="1" id="-1">
                                         <die comment="false" x="59" y="352">
@@ -104,18 +104,18 @@
             <int id="3" val="0"/>
         </create-actor3-next>
     </group>
-    <group eventID="1" id="2">
-        <if comment="false" x="725" y="402">
+    <group eventID="1" id="3">
+        <if comment="false" x="397" y="551">
             <group eventID="1" id="-1">
-                <print comment="false" x="736" y="440">
+                <print comment="false" x="408" y="589">
                     <int id="0" val="IF_01"/>
                 </print>
-                <if comment="false" x="736" y="460">
+                <if comment="false" x="408" y="609">
                     <group eventID="1" id="-1">
-                        <print comment="false" x="747" y="516">
+                        <print comment="false" x="419" y="665">
                             <int id="0" val="IF_02"/>
                         </print>
-                        <setanim comment="false" x="747" y="536">
+                        <setanim comment="false" x="419" y="685">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="off"/>
                         </setanim>
@@ -140,7 +140,7 @@
                 <int id="2" val="_holding"/>
             </get-attribute>
         </if>
-        <set-xy comment="false" x="725" y="587">
+        <set-xy comment="false" x="397" y="736">
             <ACTOR eid="this" id="0"/>
             <int id="1" val="1"/>
             <plus comment="false" id="2" x="0" y="0">
@@ -151,12 +151,10 @@
                 <int id="1" val="20"/>
             </plus>
         </set-xy>
-        <die comment="false" x="725" y="632">
+        <die comment="false" x="397" y="781">
             <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
         </die>
-    </group>
-    <group eventID="1" id="3">
-        <create-actor3-next comment="false" x="397" y="737">
+        <create-actor3-next comment="false" x="397" y="813">
             <ACTORTYPE eid="540" id="0"/>
             <int id="1" val=""/>
             <int id="2" val=""/>
@@ -175,10 +173,10 @@
         </die>
     </group>
     <group eventID="1" id="-1">
+        <collide-actor-of-type comment="false" x="76" y="471"/>
         <string-to-anim comment="false" x="1067" y="133">
             <int id="0" val=""/>
         </string-to-anim>
-        <collide-actor-of-type comment="false" x="76" y="471"/>
     </group>
     <group eventID="2" id="0">
         <event-key-press-release comment="false" x="15" y="15">

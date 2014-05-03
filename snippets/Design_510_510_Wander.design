@@ -43,14 +43,14 @@
                         </dolater>
                         <setvel comment="false" x="37" y="174">
                             <ACTOR eid="this" id="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
                         </setvel>
                         <set-val-510-20 comment="false" x="37" y="201">
-                            <int id="0" val="0"/>
+                            <int id="0" val="1"/>
                         </set-val-510-20>
                         <set-val-510-21 comment="false" x="37" y="221">
-                            <int id="0" val="0"/>
+                            <int id="0" val="1"/>
                         </set-val-510-21>
                     </group>
                     <get-val-510-9 comment="false" id="0" x="0" y="0"/>

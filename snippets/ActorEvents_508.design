@@ -5,43 +5,37 @@
             <group eventID="1" id="-1">
                 <if comment="false" x="26" y="47">
                     <group eventID="1" id="-1">
-                        <print comment="false" x="37" y="85">
-                            <int id="0" val="IF_01"/>
-                        </print>
-                        <if comment="false" x="37" y="105">
+                        <if comment="false" x="37" y="85">
                             <group eventID="1" id="-1">
-                                <actor-enabledisable-snippet comment="false" x="48" y="166">
+                                <actor-enabledisable-snippet comment="false" x="48" y="146">
                                     <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="1"/>
                                     <int id="2" val="2 Way Horizontal Movement"/>
                                 </actor-enabledisable-snippet>
-                                <set-dxy comment="false" x="48" y="198">
+                                <set-dxy comment="false" x="48" y="178">
                                     <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="0"/>
                                     <int id="2" val="0"/>
                                 </set-dxy>
-                                <print comment="false" x="48" y="230">
-                                    <int id="0" val="IF_02"/>
-                                </print>
-                                <create-actor3 comment="false" x="48" y="250">
+                                <create-actor3 comment="false" x="48" y="210">
                                     <ACTORTYPE eid="551" id="0"/>
                                     <int id="1" val="64"/>
                                     <int id="2" val="285"/>
                                     <int id="3" val="1"/>
                                 </create-actor3>
-                                <set-val-240-2 comment="false" x="48" y="277">
+                                <set-val-240-2 comment="false" x="48" y="237">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-val-240-2>
-                                <die comment="false" x="48" y="302">
+                                <die comment="false" x="48" y="262">
                                     <get-attribute comment="false" id="0" x="0" y="0">
                                         <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                                         <int id="1" val="holder"/>
                                         <int id="2" val="_hold"/>
                                     </get-attribute>
                                 </die>
-                                <dolater comment="false" x="48" y="347">
+                                <dolater comment="false" x="48" y="307">
                                     <group eventID="2" id="-1">
-                                        <die comment="false" x="59" y="374">
+                                        <die comment="false" x="59" y="334">
                                             <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                                         </die>
                                     </group>
@@ -108,6 +102,16 @@
         <set-val-240-1 comment="false" x="818" y="155">
             <ACTOR eid="this" id="0"/>
         </set-val-240-1>
+    </group>
+    <group eventID="2" id="6">
+        <print comment="false" x="983" y="493">
+            <int id="0" val="IF_01"/>
+        </print>
+    </group>
+    <group eventID="2" id="7">
+        <print comment="false" x="842" y="453">
+            <int id="0" val="IF_02"/>
+        </print>
     </group>
     <group eventID="2" id="-1">
         <collide-actor-of-type comment="false" x="241" y="425"/>
