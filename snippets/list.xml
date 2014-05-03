@@ -164,6 +164,10 @@
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
         </events>
     </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_571" classname="scripts.ActorEvents_571" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="514" language="" name="ActorEvents_571" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
     <snippet attachedevent="false" class="scripts.Design_311_311_snakerock" classname="scripts.Design_311_311_snakerock" desc="" description="" design="true" drawOrder="0" id="311" language="" name="snake_rock" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
         <blocks/>
@@ -390,17 +394,6 @@
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-        </events>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_253_253_Papa" classname="scripts.Design_253_253_Papa" desc="" description="" design="true" drawOrder="0" id="253" language="" name="Papa" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="tree_moved?" hidden="false" id="1" name="_treemoved" order="1"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="x_origin" hidden="false" id="2" name="_xorigin" order="2"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="y_origin" hidden="false" id="3" name="_yorigin" order="3"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="stick_created ?" hidden="false" id="4" name="_stickcreated" order="4"/>
-        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <blocks/>
-        <events>
-            <event displayName="Created" enabled="false" id="1" name="init" order="1" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_573" classname="scripts.ActorEvents_573" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="331" language="" name="ActorEvents_573" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
@@ -683,6 +676,13 @@
     <snippet attachedevent="true" class="scripts.ActorEvents_526" classname="scripts.ActorEvents_526" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="252" language="" name="ActorEvents_526" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_253_253_Papa" classname="scripts.Design_253_253_Papa" desc="" description="" design="true" drawOrder="0" id="253" language="" name="Papa" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_250_250_wave" classname="scripts.Design_250_250_wave" desc="" description="" design="true" drawOrder="0" id="250" language="" name="wave" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Start Y" hidden="true" id="1" name="_StartY" order="1"/>

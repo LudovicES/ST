@@ -23,13 +23,13 @@
     </foregrounds>
     <joints/>
     <regions>
-        <region b="64" g="64" h="71" id="0" name="Region 0" pts="4,94.0,0.0,94.0,71.0,0.0,71.0,0.0,0.0" r="64" type="box" w="94" x="1033" y="296"/>
+        <region b="64" g="64" h="71" id="0" name="Region 0" pts="4,0.0,0.0,0.0,71.0,94.0,71.0,94.0,0.0" r="64" type="box" w="94" x="1033" y="296"/>
     </regions>
     <terrainRegions>
-        <terrainRegion b="64" g="64" group="1" h="474" id="1" name="Terrain 1" pts="4,23.0,0.0,23.0,474.0,0.0,474.0,0.0,0.0" r="64" type="box" w="23" x="-3" y="-2"/>
-        <terrainRegion b="64" g="64" group="1" h="8" id="2" name="Terrain 2" pts="4,3.0,0.0,3.0,8.0,0.0,8.0,0.0,0.0" r="64" type="box" w="3" x="3255" y="347"/>
-        <terrainRegion b="64" g="64" group="1" h="62" id="3" name="Terrain 3" pts="4,0.0,0.0,0.0,62.0,3573.0,62.0,3573.0,0.0" r="64" type="box" w="3573" x="12" y="-22"/>
-        <terrainRegion b="64" g="64" group="1" h="530" id="4" name="Terrain 4" pts="4,0.0,0.0,0.0,530.0,249.0,530.0,249.0,0.0" r="64" type="box" w="249" x="3378" y="-40"/>
+        <terrainRegion b="64" g="64" group="1" h="474" id="1" name="Terrain 1" pts="4,0.0,0.0,0.0,474.0,23.0,474.0,23.0,0.0" r="64" type="box" w="23" x="-3" y="-2"/>
+        <terrainRegion b="64" g="64" group="1" h="8" id="2" name="Terrain 2" pts="4,0.0,0.0,0.0,8.0,3.0,8.0,3.0,0.0" r="64" type="box" w="3" x="3255" y="347"/>
+        <terrainRegion b="64" g="64" group="1" h="62" id="3" name="Terrain 3" pts="4,3573.0,0.0,3573.0,62.0,0.0,62.0,0.0,0.0" r="64" type="box" w="3573" x="12" y="-22"/>
+        <terrainRegion b="64" g="64" group="1" h="530" id="4" name="Terrain 4" pts="4,249.0,0.0,249.0,530.0,0.0,530.0,0.0,0.0" r="64" type="box" w="249" x="3378" y="-40"/>
     </terrainRegions>
     <actors>
         <actor a="0.0" aid="68" c="false" group="3" id="610" name="Tree_02 68" sx="1.0" sy="1.0" x="766" y="-6" z="5"/>
@@ -56,8 +56,8 @@
                     <prop id="12" list="0" val="0.0"/>
                     <prop id="13" list="0" val="190"/>
                     <prop id="14" list="0" val="0.0"/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="15" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
                 <s enabled="true" id="506">
                     <prop id="1" list="0" val="false"/>
@@ -81,8 +81,8 @@
                     <prop id="12" list="0" val="0.0"/>
                     <prop id="13" list="0" val="300"/>
                     <prop id="14" list="0" val="0.0"/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="15" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
                 <s enabled="true" id="506">
                     <prop id="1" list="0" val="false"/>
@@ -106,8 +106,8 @@
                     <prop id="12" list="0" val="0.0"/>
                     <prop id="13" list="0" val="200"/>
                     <prop id="14" list="0" val="0.0"/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="15" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
                 <s enabled="true" id="506">
                     <prop id="1" list="0" val="false"/>
@@ -134,8 +134,8 @@
                     <prop id="12" list="0" val="0.0"/>
                     <prop id="13" list="0" val="300"/>
                     <prop id="14" list="0" val="0.0"/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="15" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
                 <s enabled="true" id="506">
                     <prop id="1" list="0" val="false"/>
@@ -159,8 +159,8 @@
                     <prop id="12" list="0" val="0.0"/>
                     <prop id="13" list="0" val="400"/>
                     <prop id="14" list="0" val="0.0"/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="15" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
                 <s enabled="true" id="506">
                     <prop id="1" list="0" val="false"/>
@@ -186,8 +186,8 @@
                     <prop id="12" list="0" val="0.0"/>
                     <prop id="13" list="0" val="80"/>
                     <prop id="14" list="0" val="0.0"/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="15" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
                 <s enabled="true" id="506">
                     <prop id="1" list="0" val="false"/>
@@ -212,8 +212,8 @@
                     <prop id="12" list="0" val="0.0"/>
                     <prop id="13" list="0" val="200"/>
                     <prop id="14" list="0" val="0.0"/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="15" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
                 <s enabled="true" id="506">
                     <prop id="1" list="0" val="false"/>
@@ -237,8 +237,8 @@
                     <prop id="12" list="0" val="0.0"/>
                     <prop id="13" list="0" val="60"/>
                     <prop id="14" list="0" val="0.0"/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="15" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
                 <s enabled="true" id="506">
                     <prop id="1" list="0" val="false"/>
@@ -264,8 +264,8 @@
                     <prop id="12" list="0" val="0.0"/>
                     <prop id="13" list="0" val="10"/>
                     <prop id="14" list="0" val="0.0"/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="15" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
                 <s enabled="true" id="506">
                     <prop id="1" list="0" val="false"/>

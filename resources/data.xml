@@ -522,7 +522,7 @@
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="133" id="574" name="lighr_tree" shared="false" width="32">
         <anim across="1" down="1" durations="100" height="133" id="0" loop="true" name="Animation 0" numframes="1" originx="16" originy="66" sync="false" version="2" width="32"/>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="330" fixedrot="false" fric="0.2" gid="3" id="571" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="light_tree1" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="572" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="514" fixedrot="false" fric="0.2" gid="3" id="571" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="light_tree1" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="572" static="false">
         <snippets/>
     </actor>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="331" fixedrot="false" fric="0.2" gid="3" id="573" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="light_tree2" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="574" static="false">
@@ -808,7 +808,7 @@
         </anim>
     </sprite>
     <sprite atlasID="0" default="3" defaultAnimation="3" desc="" height="70" id="525" name="scout_squelette" shared="false" width="70">
-        <anim across="4" down="4" durations="150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150" height="280" id="0" loop="true" name="deg" numframes="16" originx="25" originy="35" sync="false" version="2" width="200">
+        <anim across="4" down="4" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="280" id="0" loop="false" name="deg" numframes="16" originx="25" originy="35" sync="false" version="2" width="200">
             <poly data="4,0,0,50,0,50,70,0,70" density="0.1" fric="0.2" gid="-1000" id="0" name="deg" rest="0.0" sensor="false"/>
         </anim>
         <anim across="5" down="4" durations="90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90" height="280" id="2" loop="true" name="ending" numframes="20" originx="25" originy="35" sync="false" version="2" width="250">
