@@ -10,22 +10,22 @@
                         </comment-short>
                         <if comment="false" x="37" y="105">
                             <group eventID="1" id="-1">
-                                <stop comment="false" x="48" y="138"/>
+                                <stop comment="false" x="48" y="143"/>
                             </group>
                             <get-attribute comment="false" id="0" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
+                                <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="holder"/>
                                 <int id="2" val="_holding"/>
                             </get-attribute>
                         </if>
-                        <set-val-516-1 comment="false" x="37" y="170">
+                        <set-val-516-1 comment="false" x="37" y="175">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-val-516-1>
-                        <play-sound4 comment="false" x="37" y="195">
+                        <play-sound4 comment="false" x="37" y="200">
                             <int id="0" val="0"/>
                             <SOUND eid="577" id="1"/>
                         </play-sound4>
-                        <moveToBy comment="false" x="37" y="222">
+                        <moveToBy comment="false" x="37" y="227">
                             <first-actor comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="0"/>
                             <int id="2" val="3"/>
@@ -33,9 +33,9 @@
                             <int id="4" val="0.1"/>
                             <int id="5" val="11"/>
                         </moveToBy>
-                        <dolater comment="false" x="37" y="254">
+                        <dolater comment="false" x="37" y="259">
                             <group eventID="5" id="-1">
-                                <moveToBy comment="false" x="48" y="281">
+                                <moveToBy comment="false" x="48" y="286">
                                     <first-actor comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="1"/>
                                     <get-val-516-2 comment="false" id="2" x="0" y="0"/>
@@ -43,14 +43,14 @@
                                     <int id="4" val="0.1"/>
                                     <int id="5" val="11"/>
                                 </moveToBy>
-                                <set-val-516-1 comment="false" x="48" y="313">
+                                <set-val-516-1 comment="false" x="48" y="318">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-val-516-1>
                             </group>
                             <int id="0" val="0.1"/>
                             <ACTOR eid="lastcreated" id="2"/>
                         </dolater>
-                        <create-actor3 comment="false" x="37" y="350">
+                        <create-actor3 comment="false" x="37" y="355">
                             <ACTORTYPE eid="549" id="0"/>
                             <plus comment="false" id="1" x="0" y="0">
                                 <get-xy comment="false" id="0" x="0" y="0">

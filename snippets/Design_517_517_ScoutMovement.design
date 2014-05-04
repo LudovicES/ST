@@ -493,7 +493,7 @@
                                             </group>
                                             <get-attribute comment="false" id="0" x="0" y="0">
                                                 <actor-of-type comment="false" id="0" x="0" y="0"/>
-                                                <int id="1" val="2 Way Horizontal Movement"/>
+                                                <int id="1" val="Scout Movement"/>
                                                 <int id="2" val="_FacingRight"/>
                                             </get-attribute>
                                         </if>
@@ -575,7 +575,7 @@
                                             </group>
                                             <get-attribute comment="false" id="0" x="0" y="0">
                                                 <actor-of-type comment="false" id="0" x="0" y="0"/>
-                                                <int id="1" val="2 Way Horizontal Movement"/>
+                                                <int id="1" val="Scout Movement"/>
                                                 <int id="2" val="_FacingRight"/>
                                             </get-attribute>
                                         </if>
