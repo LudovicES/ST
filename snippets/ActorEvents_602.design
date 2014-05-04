@@ -13,56 +13,5 @@
             <ACTORTYPE eid="432" id="1"/>
         </event-collide-actortotype>
     </group>
-    <group eventID="2" id="2">
-        <and comment="false" x="895" y="352">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-        </and>
-    </group>
-    <group eventID="2" id="3">
-        <debug-draw comment="false" x="956" y="231">
-            <int id="0" val="0"/>
-        </debug-draw>
-    </group>
-    <group eventID="2" id="4">
-        <pick-type comment="false" x="136" y="498">
-            <ACTORTYPE eid="506" id="0"/>
-        </pick-type>
-    </group>
-    <group eventID="2" id="5">
-        <set-val-506-2 comment="false" x="818" y="155">
-            <ACTOR eid="this" id="0"/>
-        </set-val-506-2>
-    </group>
-    <group eventID="2" id="6">
-        <print comment="false" x="983" y="493">
-            <int id="0" val="IF_01"/>
-        </print>
-    </group>
-    <group eventID="2" id="7">
-        <print comment="false" x="842" y="453">
-            <int id="0" val="IF_02"/>
-        </print>
-    </group>
-    <group eventID="2" id="8">
-        <collide-actor-of-type comment="false" x="241" y="425"/>
-        <get-val-506-2 comment="false" x="241" y="444"/>
-        <get-xy comment="false" x="241" y="463">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val="0"/>
-        </get-xy>
-        <get-xy comment="false" x="241" y="490">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val="1"/>
-        </get-xy>
-        <false comment="false" x="241" y="517"/>
-    </group>
-    <group eventID="2" id="10">
-        <dolater comment="false" x="410" y="203">
-            <group eventID="2" id="-1"/>
-            <int id="0" val=""/>
-            <ACTOR eid="this" id="2"/>
-        </dolater>
-    </group>
     <group eventID="2" id="-1"/>
 </groups>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-actortotype comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="47">
+                    <group eventID="1" id="-1">
+                        <comment-short comment="false" x="37" y="85">
+                            <int id="0" val="on ne peut pas secouer l&amp;#039;arbre si on tient quelque chose"/>
+                        </comment-short>
+                        <if comment="false" x="37" y="105">
+                            <group eventID="1" id="-1">
+                                <stop comment="false" x="48" y="138"/>
+                            </group>
+                            <get-attribute comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="holder"/>
+                                <int id="2" val="_holding"/>
+                            </get-attribute>
+                        </if>
+                        <set-val-516-1 comment="false" x="37" y="170">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-516-1>
+                        <play-sound4 comment="false" x="37" y="195">
+                            <int id="0" val="0"/>
+                            <SOUND eid="577" id="1"/>
+                        </play-sound4>
+                        <moveToBy comment="false" x="37" y="222">
+                            <first-actor comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="3"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val="0.1"/>
+                            <int id="5" val="11"/>
+                        </moveToBy>
+                        <dolater comment="false" x="37" y="254">
+                            <group eventID="5" id="-1">
+                                <moveToBy comment="false" x="48" y="281">
+                                    <first-actor comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="1"/>
+                                    <get-val-516-2 comment="false" id="2" x="0" y="0"/>
+                                    <get-val-516-3 comment="false" id="3" x="0" y="0"/>
+                                    <int id="4" val="0.1"/>
+                                    <int id="5" val="11"/>
+                                </moveToBy>
+                                <set-val-516-1 comment="false" x="48" y="313">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-516-1>
+                            </group>
+                            <int id="0" val="0.1"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                        <create-actor3 comment="false" x="37" y="350">
+                            <ACTORTYPE eid="549" id="0"/>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <randint comment="false" id="1" x="0" y="0">
+                                    <int id="0" val="16"/>
+                                    <minus comment="false" id="1" x="0" y="0">
+                                        <get-wh comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                        </get-wh>
+                                        <int id="1" val="16"/>
+                                    </minus>
+                                </randint>
+                            </plus>
+                            <get-val-516-4 comment="false" id="2" x="0" y="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <keystate comment="false" id="0" x="0" y="0">
+                            <int id="0" val="2"/>
+                            <CONTROL eid="9" id="1"/>
+                        </keystate>
+                        <eq comment="false" id="1" x="0" y="0">
+                            <get-val-516-1 comment="false" id="0" x="0" y="0"/>
+                            <true comment="false" id="1" x="0" y="0"/>
+                        </eq>
+                    </and>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <ACTORTYPE eid="432" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-516-1 comment="false" x="26" y="40">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-516-1>
+                <set-val-516-2 comment="false" x="26" y="65">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                </set-val-516-2>
+                <set-val-516-3 comment="false" x="26" y="98">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                </set-val-516-3>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

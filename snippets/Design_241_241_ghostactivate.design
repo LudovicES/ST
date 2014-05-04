@@ -6,7 +6,7 @@
                 <actor-enabledisable-snippet comment="false" x="26" y="47">
                     <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                     <int id="1" val="0"/>
-                    <int id="2" val="2 Way Horizontal Movement"/>
+                    <int id="2" val="Scout Movement"/>
                 </actor-enabledisable-snippet>
                 <actor-enabledisable-snippet comment="false" x="26" y="79">
                     <second-actor comment="false" id="0" x="0" y="0"/>
@@ -81,7 +81,7 @@
             <int id="1" val="8"/>
         </set-blend-actor>
     </group>
-    <group eventID="5" id="6">
+    <group eventID="5" id="5">
         <print comment="false" x="484" y="541">
             <int id="0" val="colle"/>
         </print>

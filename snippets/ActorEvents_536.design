@@ -8,7 +8,7 @@
                         <actor-enabledisable-snippet comment="false" x="37" y="80">
                             <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="1"/>
-                            <int id="2" val="2 Way Horizontal Movement"/>
+                            <int id="2" val="Scout Movement"/>
                         </actor-enabledisable-snippet>
                         <set-dxy comment="false" x="37" y="112">
                             <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
@@ -84,106 +84,5 @@
             <ACTORTYPE eid="432" id="1"/>
         </event-collide-actortotype>
     </group>
-    <group eventID="1" id="1">
-        <create-actor3-next comment="false" x="375" y="786">
-            <ACTORTYPE eid="540" id="0"/>
-            <minus comment="false" id="1" x="0" y="0">
-                <get-xy comment="false" id="0" x="0" y="0">
-                    <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
-                    <int id="1" val="2"/>
-                </get-xy>
-                <int id="1" val="0"/>
-            </minus>
-            <minus comment="false" id="2" x="0" y="0">
-                <get-xy comment="false" id="0" x="0" y="0">
-                    <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
-                    <int id="1" val="3"/>
-                </get-xy>
-                <int id="1" val="0"/>
-            </minus>
-            <int id="3" val="0"/>
-        </create-actor3-next>
-    </group>
-    <group eventID="1" id="3">
-        <if comment="false" x="397" y="551">
-            <group eventID="1" id="-1">
-                <print comment="false" x="408" y="589">
-                    <int id="0" val="IF_01"/>
-                </print>
-                <if comment="false" x="408" y="609">
-                    <group eventID="1" id="-1">
-                        <print comment="false" x="419" y="665">
-                            <int id="0" val="IF_02"/>
-                        </print>
-                        <setanim comment="false" x="419" y="685">
-                            <ACTOR eid="this" id="0"/>
-                            <int id="1" val="off"/>
-                        </setanim>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <getatype comment="false" id="0" x="0" y="0">
-                            <get-attribute comment="false" id="0" x="0" y="0">
-                                <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
-                                <int id="1" val="holder"/>
-                                <int id="2" val="_hold"/>
-                            </get-attribute>
-                        </getatype>
-                        <pick-type comment="false" id="1" x="0" y="0">
-                            <ACTORTYPE eid="496" id="0"/>
-                        </pick-type>
-                    </eq>
-                </if>
-            </group>
-            <get-attribute comment="false" id="0" x="0" y="0">
-                <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
-                <int id="1" val="holder"/>
-                <int id="2" val="_holding"/>
-            </get-attribute>
-        </if>
-        <set-xy comment="false" x="397" y="736">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val="1"/>
-            <plus comment="false" id="2" x="0" y="0">
-                <get-xy comment="false" id="0" x="0" y="0">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="1"/>
-                </get-xy>
-                <int id="1" val="20"/>
-            </plus>
-        </set-xy>
-        <die comment="false" x="397" y="781">
-            <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
-        </die>
-        <create-actor3-next comment="false" x="397" y="813">
-            <ACTORTYPE eid="540" id="0"/>
-            <int id="1" val=""/>
-            <int id="2" val=""/>
-            <int id="3" val="0"/>
-        </create-actor3-next>
-    </group>
-    <group eventID="1" id="4">
-        <if comment="false" x="1067" y="257">
-            <group eventID="1" id="-1"/>
-            <int id="0" val=""/>
-        </if>
-    </group>
-    <group eventID="1" id="5">
-        <die comment="false" x="168" y="538">
-            <ACTOR eid="this" id="0"/>
-        </die>
-    </group>
-    <group eventID="1" id="-1">
-        <collide-actor-of-type comment="false" x="76" y="471"/>
-        <string-to-anim comment="false" x="1067" y="133">
-            <int id="0" val=""/>
-        </string-to-anim>
-    </group>
-    <group eventID="2" id="0">
-        <event-key-press-release comment="false" x="15" y="15">
-            <group eventID="2" id="-1"/>
-            <CONTROL id="0"/>
-            <int id="1" val="0"/>
-        </event-key-press-release>
-    </group>
-    <group eventID="2" id="-1"/>
+    <group eventID="1" id="-1"/>
 </groups>

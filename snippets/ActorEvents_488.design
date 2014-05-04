@@ -48,12 +48,12 @@
             <int id="0" val=""/>
         </set-val-231-2>
     </group>
-    <group eventID="1" id="5">
+    <group eventID="1" id="3">
         <print comment="false" x="67" y="230">
             <int id="0" val="slide?"/>
         </print>
     </group>
-    <group eventID="1" id="7">
+    <group eventID="1" id="4">
         <print comment="false" x="47" y="355">
             <int id="0" val="kick?"/>
         </print>

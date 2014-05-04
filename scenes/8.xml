@@ -170,7 +170,6 @@
             </snippets>
         </actor>
         <actor a="0.0" aid="16" c="false" group="10" id="508" name="acteur_grotte 16" sx="1.0" sy="1.0" x="62" y="277" z="4"/>
-        <actor a="0.0" aid="86" c="false" group="9" id="545" name="stick_item 86" sx="1.0" sy="1.0" x="2238" y="196" z="7"/>
         <actor a="0.0" aid="81" c="true" group="6" id="600" name="luciole 81" sx="1.0" sy="1.0" x="1434" y="124" z="5">
             <snippets>
                 <s enabled="true" id="511">
@@ -274,11 +273,11 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="25" c="false" group="0" id="432" name="Jumper 25" sx="1.0" sy="1.0" x="720" y="288" z="0"/>
+        <actor a="0.0" aid="25" c="false" group="0" id="432" name="Jumper 25" sx="1.0" sy="1.0" x="717" y="288" z="0"/>
         <actor a="0.0" aid="24" c="false" group="3" id="517" name="ponton 24" sx="1.0" sy="1.0" x="3118" y="337" z="2"/>
-        <actor a="0.0" aid="27" c="false" group="0" id="432" name="Jumper 27" sx="1.0" sy="1.0" x="688" y="288" z="0"/>
-        <actor a="0.0" aid="26" c="false" group="0" id="432" name="Jumper 26" sx="1.0" sy="1.0" x="516" y="288" z="0"/>
-        <actor a="0.0" aid="29" c="false" group="0" id="432" name="Jumper 29" sx="1.0" sy="1.0" x="481" y="286" z="0"/>
+        <actor a="0.0" aid="27" c="false" group="0" id="432" name="Jumper 27" sx="1.0" sy="1.0" x="686" y="288" z="0"/>
+        <actor a="0.0" aid="26" c="false" group="0" id="432" name="Jumper 26" sx="1.0" sy="1.0" x="519" y="288" z="0"/>
+        <actor a="0.0" aid="29" c="false" group="0" id="432" name="Jumper 29" sx="1.0" sy="1.0" x="483" y="286" z="0"/>
         <actor a="0.0" aid="28" c="false" group="0" id="432" name="Jumper 28" sx="1.0" sy="1.0" x="580" y="287" z="0"/>
         <actor a="0.0" aid="30" c="false" group="3" id="519" name="tombe 30" sx="1.0" sy="1.0" x="894" y="288" z="1"/>
         <actor a="0.0" aid="34" c="false" group="9" id="542" name="fork 34" sx="1.0" sy="1.0" x="3298" y="392" z="2"/>
@@ -296,11 +295,11 @@
             </snippets>
         </actor>
         <actor a="0.0" aid="33" c="false" group="3" id="536" name="rock_snake 33" sx="1.0" sy="1.0" x="1872" y="258" z="1"/>
-        <actor a="0.0" aid="39" c="false" group="0" id="432" name="Scout 39" sx="1.0" sy="1.0" x="2241" y="181" z="0"/>
+        <actor a="0.0" aid="39" c="false" group="0" id="432" name="Scout 39" sx="1.0" sy="1.0" x="753" y="287" z="0"/>
         <actor a="0.0" aid="37" c="false" group="0" id="432" name="Scout 37" sx="1.0" sy="1.0" x="656" y="287" z="0"/>
         <actor a="0.0" aid="42" c="false" group="3" id="547" name="Tre_of_death 42" sx="1.0" sy="1.0" x="1590" y="30" z="5"/>
         <actor a="0.0" aid="43" c="false" group="3" id="484" name="wolf_trap 43" sx="1.0" sy="1.0" x="1307" y="307" z="4"/>
-        <actor a="0.0" aid="41" c="false" group="0" id="432" name="Scout 41" sx="1.0" sy="1.0" x="550" y="288" z="0"/>
+        <actor a="0.0" aid="41" c="false" group="0" id="432" name="Scout 41" sx="1.0" sy="1.0" x="553" y="288" z="0"/>
         <actor a="0.0" aid="46" c="false" group="3" id="565" name="champi 46" sx="1.0" sy="1.0" x="2776" y="328" z="7"/>
         <actor a="0.0" aid="47" c="false" group="8" id="553" name="ruche 47" sx="1.0" sy="1.0" x="2458" y="252" z="5"/>
         <actor a="0.0" aid="44" c="false" group="3" id="561" name="pluie 44" sx="1.0" sy="1.0" x="2013" y="-213" z="7"/>

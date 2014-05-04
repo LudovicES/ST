@@ -245,9 +245,17 @@
             <poly data="4,12,13,18,13,18,19,12,19" density="0.1" fric="0.2" gid="6" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="319" fixedrot="false" fric="0.2" gid="3" id="549" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="feuille" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="550" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="319" fixedrot="false" fric="0.2" gid="15" id="549" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="feuille" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="550" static="false">
         <snippets>
-            <s enabled="true" id="301">
+            <s enabled="true" id="515">
+                <prop id="3" list="0" val="17"/>
+                <prop id="4" list="0" val="0.0"/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="10"/>
+                <prop id="7" list="0" val="5"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="false" id="301">
                 <prop id="1" list="0" val="Animation 0"/>
                 <prop id="2" list="0" val="Animation 0"/>
                 <prop id="3" list="0" val="Animation 0"/>
@@ -266,9 +274,7 @@
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="6" id="550" name="feuille" shared="false" width="6">
-        <anim across="1" down="1" durations="100" height="6" id="0" loop="true" name="Animation 0" numframes="1" originx="3" originy="3" sync="false" version="2" width="6">
-            <poly data="4,0,0,6,0,6,6,0,6" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
-        </anim>
+        <anim across="1" down="1" durations="100" height="6" id="0" loop="true" name="Animation 0" numframes="1" originx="3" originy="3" sync="false" version="2" width="6"/>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="322" fixedrot="false" fric="0.2" gid="3" id="555" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="fil ruche" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="556" static="true">
         <snippets/>
@@ -352,26 +358,6 @@
             <s enabled="true" id="237">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="false" id="169">
-                <prop id="1" list="0" val="false"/>
-                <prop id="2" list="0" val=""/>
-                <prop id="3" list="0" val="idle-r"/>
-                <prop id="4" list="0" val="idle-l"/>
-                <prop id="5" list="1" val="">
-                    <text order="0" value="Ground Pounding"/>
-                    <text order="1" value="Ducking"/>
-                    <text order="2" value="Wall Sliding"/>
-                    <text order="3" value="Falling"/>
-                    <text order="4" value="Wall Jumping"/>
-                    <text order="5" value="Air Jumping"/>
-                    <text order="6" value="Jumping"/>
-                    <text order="7" value="Running"/>
-                    <text order="8" value="Walking"/>
-                </prop>
-                <prop id="6" list="0" val="false"/>
-                <prop id="7" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="306">
                 <prop id="34" list="0" val="right"/>
                 <prop id="35" list="0" val="0.0"/>
@@ -401,31 +387,7 @@
                 <prop id="2" list="0" val="0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="202">
-                <prop id="1" list="0" val="0.3"/>
-                <prop id="2" list="0" val="0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="313">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="123">
-                <prop id="1" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="false" id="242">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="226">
-                <prop id="1" list="0" val=""/>
-                <prop id="2" list="0" val="false"/>
-                <prop id="3" list="0" val="0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="false" id="224">
-                <prop id="1" list="0" val="0.0"/>
-                <prop id="2" list="0" val="0.0"/>
-                <prop id="3" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="241">
@@ -435,7 +397,7 @@
     </actor>
     <music atlasID="0" desc="" id="590" loop="true" name="ghost_move" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="194" id="503" name="grotte" shared="false" width="172">
-        <anim across="1" down="1" durations="100" height="194" id="0" loop="true" name="Animation 0" numframes="1" originx="86" originy="97" sync="false" version="1" width="172"/>
+        <anim across="1" down="1" durations="100" height="194" id="0" loop="true" name="Animation 0" numframes="1" originx="86" originy="97" sync="false" version="2" width="172"/>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="238" fixedrot="false" fric="0.2" gid="3" id="502" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="grotte" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="503" static="true">
         <snippets/>
@@ -656,7 +618,7 @@
         <blank name="Prevent" order="1" type="BOOLEAN"/>
     </custom-block>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="113" id="511" name="rocher_eau" shared="false" width="184">
-        <anim across="1" down="1" durations="100" height="113" id="0" loop="true" name="Animation 0" numframes="1" originx="92" originy="56" sync="false" version="1" width="184"/>
+        <anim across="1" down="1" durations="100" height="113" id="0" loop="true" name="Animation 0" numframes="1" originx="92" originy="56" sync="false" version="2" width="184"/>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="244" fixedrot="false" fric="0.2" gid="3" id="510" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="rocher_eau" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="511" static="true">
         <snippets/>
@@ -2068,16 +2030,48 @@
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="507" fixedrot="true" fric="0.2" gid="3" id="604" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Tree_01" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="605" static="true">
-        <snippets/>
+        <snippets>
+            <s enabled="true" id="516">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="0" val="128"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="509" fixedrot="true" fric="0.2" gid="3" id="610" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Tree_02" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="611" static="true">
-        <snippets/>
+        <snippets>
+            <s enabled="true" id="516">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="0" val="128"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="508" fixedrot="true" fric="0.2" gid="3" id="608" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Tree_03" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="609" static="true">
-        <snippets/>
+        <snippets>
+            <s enabled="true" id="516">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="0" val="128"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="318" fixedrot="true" fric="0.2" gid="3" id="547" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Tree_of_death" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="548" static="true">
-        <snippets/>
+        <snippets>
+            <s enabled="true" id="516">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="0" val="128"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
     <custom-block blocktag="custom-361" blocktype="ACTION" code="" desc="" global="false" gui="For %0 Set Walk Accel to %1" id="361" message="WalkAccel" name="WalkAccel" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>

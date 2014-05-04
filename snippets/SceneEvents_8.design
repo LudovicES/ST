@@ -63,13 +63,13 @@
         </print>
     </group>
     <group eventID="18" id="-1">
-        <get-xy comment="false" x="320" y="306">
-            <ACTOR eid="25" id="0"/>
-            <int id="1" val="0"/>
-        </get-xy>
         <get-xy comment="false" x="557" y="241">
             <ACTOR eid="25" id="0"/>
             <int id="1" val="1"/>
+        </get-xy>
+        <get-xy comment="false" x="320" y="306">
+            <ACTOR eid="25" id="0"/>
+            <int id="1" val="0"/>
         </get-xy>
     </group>
     <group eventID="13" id="0">

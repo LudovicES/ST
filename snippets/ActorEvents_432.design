@@ -6,54 +6,10 @@
                 <actor-enabledisable-snippet comment="false" x="26" y="40">
                     <ACTOR eid="this" id="0"/>
                     <int id="1" val="1"/>
-                    <int id="2" val="2 Way Horizontal Movement"/>
-                </actor-enabledisable-snippet>
-                <actor-enabledisable-snippet comment="false" x="26" y="67">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="1"/>
                     <int id="2" val="Camera Follow Player"/>
                 </actor-enabledisable-snippet>
             </group>
         </init>
     </group>
     <group eventID="1" id="-1"/>
-    <group eventID="2" id="0">
-        <init comment="false" x="15" y="15">
-            <group eventID="2" id="-1"/>
-        </init>
-    </group>
-    <group eventID="2" id="1">
-        <set-blend-actor comment="false" x="721" y="180">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val="0"/>
-        </set-blend-actor>
-    </group>
-    <group eventID="2" id="2">
-        <set-blend-actor comment="false" x="19" y="163">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val="1"/>
-        </set-blend-actor>
-    </group>
-    <group eventID="2" id="3">
-        <apply-filter comment="false" x="452" y="66">
-            <ACTOR eid="this" id="0"/>
-            <filter-bright comment="false" id="1" x="0" y="0">
-                <int id="0" val="80"/>
-            </filter-bright>
-        </apply-filter>
-    </group>
-    <group eventID="2" id="4">
-        <apply-filter comment="false" x="24" y="78">
-            <ACTOR eid="this" id="0"/>
-            <filter-tint comment="false" id="1" x="0" y="0">
-                <color b="255" g="255" id="0" r="153"/>
-                <int id="1" val="60"/>
-            </filter-tint>
-        </apply-filter>
-    </group>
-    <group eventID="2" id="-1">
-        <filter-sat comment="false" x="879" y="399">
-            <int id="0" val=""/>
-        </filter-sat>
-    </group>
 </groups>

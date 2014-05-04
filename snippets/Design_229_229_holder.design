@@ -95,7 +95,7 @@
                     </group>
                     <is-snippet-enableda comment="false" id="0" x="0" y="0">
                         <ACTOR eid="this" id="0"/>
-                        <int id="1" val="2 Way Horizontal Movement"/>
+                        <int id="1" val="Scout Movement"/>
                     </is-snippet-enableda>
                 </if>
             </group>
@@ -139,7 +139,7 @@
                             </group>
                             <get-attribute comment="false" id="0" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
-                                <int id="1" val="2 Way Horizontal Movement"/>
+                                <int id="1" val="Scout Movement"/>
                                 <int id="2" val="_FacingRight"/>
                             </get-attribute>
                         </if>
