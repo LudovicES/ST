@@ -103,7 +103,9 @@
             <GROUP eid="9" id="1"/>
         </event-collide-actortogroup>
     </group>
-    <group eventID="2" id="-1"/>
+    <group eventID="2" id="-1">
+        <get-val-226-2 comment="false" x="1067" y="347"/>
+    </group>
     <group eventID="3" id="0">
         <step comment="false" x="33" y="156">
             <group eventID="3" id="-1">

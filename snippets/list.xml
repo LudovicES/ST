@@ -99,44 +99,6 @@
             <event displayName="Custom Event" enabled="true" id="9" name="event-custom" order="7" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_512_512_FollowPath" classname="scripts.Design_512_512_FollowPath" desc="Make the actor follow a given path." description="Make the actor follow a given path." design="true" drawOrder="0" id="512" language="" name="Follow Path" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <list default="list" defaultValue="list" desc="The list of coordinates for the nodes of the path. &lt;br /&gt;&lt;br /&gt;&#10;Each entry must be of type Text and must be one of the following formats:&lt;br /&gt;&#10;&lt;pre&gt;  &lt;var&gt;X,Y&lt;/var&gt;&lt;br /&gt;&lt;/pre&gt;&#10;or&lt;br /&gt;&#10;&lt;pre&gt;  &lt;var&gt;X,Y,Speed&lt;/var&gt;&lt;br /&gt;&lt;/pre&gt;&#10;&lt;var&gt;X&lt;/var&gt; and &lt;var&gt;Y&lt;/var&gt; are the scene coordinates of the node.&lt;br /&gt;&#10;&lt;var&gt;Speed&lt;/var&gt; is optional and is the speed to reach this node. If no &lt;var&gt;Speed&lt;/var&gt; is specified the &lt;var&gt;Default Speed&lt;/var&gt; will be used.&lt;br /&gt;&#10;You can use the custom blocks that come with this behavior to add nodes or clear the path.&#10;" dropdown="" fullname="Coordinates" hidden="false" id="1" name="_Coordinates" order="20"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="X" hidden="true" id="2" name="_X" order="1"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Y" hidden="true" id="3" name="_Y" order="2"/>
-        <list default="list" defaultValue="list" desc="" dropdown="" fullname="XY" hidden="true" id="4" name="_XY" order="5"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Previous X" hidden="true" id="5" name="_PreviousX" order="3"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Previous Y" hidden="true" id="6" name="_PreviousY" order="4"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="First" hidden="true" id="7" name="_First" order="6"/>
-        <boolean default="true" defaultValue="true" desc="If selected, the actor will continue to move to the first node after reaching the last node.&lt;br /&gt;&#10;If unselected, the actor will stop after reaching the last node." dropdown="" fullname="Loop" hidden="false" id="8" name="_Loop" order="22"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="First X" hidden="true" id="9" name="_FirstX" order="7"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="First Y" hidden="true" id="10" name="_FirstY" order="8"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Distance X" hidden="true" id="12" name="_DistanceX" order="9"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Distance Y" hidden="true" id="13" name="_DistanceY" order="10"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Distance" hidden="true" id="14" name="_Distance" order="11"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Direction" hidden="true" id="15" name="_Direction" order="12"/>
-        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <number default="10.0" defaultValue="10.0" desc="The default speed to reach any node." dropdown="" fullname="Default Speed" hidden="false" id="17" name="_DefaultSpeed" order="21"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Current Speed" hidden="true" id="19" name="_CurrentSpeed" order="14"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Current Node" hidden="true" id="18" name="_CurrentNode" order="13"/>
-        <boolean default="true" defaultValue="true" desc="If selected and the actor's position is different from the first node of the path, the actor will jump immediately to the first node.&lt;br /&gt;&#10;If unselected, the actor will instead move at the given speed to the first node." dropdown="" fullname="Jump to Start" hidden="false" id="23" name="_JumptoStart" order="23"/>
-        <blocks>
-            <receiver blockID="15" id="1"/>
-            <receiver blockID="15" id="2"/>
-            <receiver blockID="16" id="3"/>
-            <receiver blockID="17" id="4"/>
-            <receiver blockID="613" id="5"/>
-            <receiver blockID="612" id="6"/>
-            <receiver blockID="614" id="7"/>
-        </blocks>
-        <events>
-            <event displayName="Custom Block" enabled="true" id="17" name="event-custom-block" order="16" repeats="true"/>
-            <event displayName="Custom Block" enabled="true" id="16" name="event-custom-block" order="3" repeats="true"/>
-            <event displayName="Drawing" enabled="true" id="1" name="draw" order="18" repeats="true"/>
-            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
-            <event displayName="Custom Block" enabled="true" id="18" name="event-custom-block" order="17" repeats="true"/>
-            <event displayName="Created" enabled="true" id="3" name="init" order="1" repeats="true"/>
-        </events>
-    </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_536" classname="scripts.ActorEvents_536" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="309" language="" name="ActorEvents_536" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events>
@@ -368,11 +330,16 @@
         <actortype default="" defaultValue="" desc="" dropdown="" fullname="Jumper_type" hidden="false" id="1" name="_Jumpertype" order="0"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="draw_text?" hidden="false" id="2" name="_drawtext" order="1"/>
         <actortype default="" defaultValue="" desc="" dropdown="" fullname="scout" hidden="false" id="3" name="_scout" order="2"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="sound_pluie?" hidden="false" id="4" name="_soundpluie" order="3"/>
         <blocks/>
         <events>
-            <event displayName="boolean_draw_text" enabled="true" id="17" name="event-type-region" order="17" repeats="true"/>
-            <event displayName="boolean_draw_text_exit" enabled="true" id="19" name="event-type-region" order="18" repeats="true"/>
+            <event displayName="boolean_draw_text" enabled="true" id="17" name="event-type-region" order="17" repeats="false"/>
+            <event displayName="boolean_draw_text_exit" enabled="true" id="19" name="event-type-region" order="18" repeats="false"/>
             <event displayName="draw_text" enabled="true" id="18" name="draw" order="19" repeats="true"/>
+            <event displayName="son_pluie_start" enabled="true" id="23" name="event-type-region" order="24" repeats="false"/>
+            <event displayName="son abeille start" enabled="true" id="25" name="event-type-region" order="26" repeats="false"/>
+            <event displayName="son_pluie_stop" enabled="true" id="24" name="event-type-region" order="25" repeats="true"/>
+            <event displayName="son abeille_stop" enabled="true" id="26" name="event-type-region" order="27" repeats="true"/>
             <event displayName="zik_foret" enabled="true" id="13" name="init" order="13" repeats="true"/>
         </events>
     </snippet>
@@ -383,9 +350,15 @@
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_432" classname="scripts.ActorEvents_432" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="218" language="" name="ActorEvents_432" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="draw_z?" hidden="false" id="1" name="_drawz" order="0"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="create region" hidden="false" id="2" name="_createregion" order="1"/>
         <blocks/>
         <events>
-            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Created" enabled="false" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Drawing" enabled="false" id="2" name="draw" order="2" repeats="true"/>
+            <event displayName="Actor - Type" enabled="false" id="3" name="event-collide-actortotype" order="3" repeats="false"/>
+            <event displayName="Enters Region" enabled="false" id="4" name="event-actor-region" order="4" repeats="false"/>
+            <event displayName="Updated" enabled="false" id="5" name="step" order="5" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_553" classname="scripts.ActorEvents_553" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="321" language="" name="ActorEvents_553" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
@@ -451,27 +424,6 @@
         <blocks/>
         <events/>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_510_510_Wander" classname="scripts.Design_510_510_Wander" desc="Make the actor move around and wait randomly." description="Make the actor move around and wait randomly." design="true" drawOrder="0" id="510" language="" name="Wander" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <number default="1.0" defaultValue="1.0" desc="The minimum time the actor keeps on moving before waiting." dropdown="" fullname="Minimum Moving Time" hidden="false" id="1" name="_MinimumMovingTime" order="7"/>
-        <number default="2.0" defaultValue="2.0" desc="The maximum time the actor keeps on moving before waiting." dropdown="" fullname="Maximum Moving Time" hidden="false" id="2" name="_MaximumMovingTime" order="8"/>
-        <number default="1.0" defaultValue="1.0" desc="The minimum time the actor keeps on waiting before moving again." dropdown="" fullname="Minimum Waiting Time" hidden="false" id="3" name="_MinimumWaitingTime" order="9"/>
-        <number default="2.0" defaultValue="2.0" desc="The maximum time the actor keeps on waiting before moving again." dropdown="" fullname="Maximum Waiting Time" hidden="false" id="4" name="_MaximumWaitingTime" order="10"/>
-        <boolean default="true" defaultValue="true" desc="If selected, start with waiting.&lt;br /&gt;&#10;If unselected, move right away." dropdown="" fullname="Start with Waiting" hidden="false" id="5" name="_StartwithWaiting" order="11"/>
-        <number default="10.0" defaultValue="10.0" desc="The maximum moving speed." dropdown="" fullname="Maximum Speed" hidden="false" id="6" name="_MaximumSpeed" order="6"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Wait" hidden="true" id="9" name="_Wait" order="1"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Move" hidden="true" id="10" name="_Move" order="2"/>
-        <number default="5.0" defaultValue="5.0" desc="The minimum moving speed." dropdown="" fullname="Minimum Speed" hidden="false" id="11" name="_MinimumSpeed" order="5"/>
-        <boolean default="true" defaultValue="true" desc="If selected, the actor will change the movement direction when colliding.&lt;br /&gt;&#10;If unselected, the actor will try to keep on moving in the current direction." dropdown="" fullname="Change Direction when Colliding" hidden="false" id="13" name="_ChangeDirectionwhenColliding" order="12"/>
-        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Speed Y" hidden="true" id="21" name="_SpeedY" order="4"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Speed X" hidden="true" id="20" name="_SpeedX" order="3"/>
-        <blocks/>
-        <events>
-            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
-            <event displayName="Actor - Any" enabled="true" id="3" name="collide" order="3" repeats="true"/>
-        </events>
-    </snippet>
     <snippet attachedevent="false" class="scripts.Design_237_237_CannotExitScreen" classname="scripts.Design_237_237_CannotExitScreen" desc="Prevent the actor from leaving the screen." description="Prevent the actor from leaving the screen." design="true" drawOrder="0" id="237" language="" name="Cannot Exit Screen" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
@@ -510,8 +462,17 @@
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_496" classname="scripts.ActorEvents_496" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="234" language="" name="ActorEvents_496" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="draw_text?" hidden="false" id="1" name="_drawtext" order="0"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="holding" hidden="true" id="2" name="_holding" order="1"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="draw_z?" hidden="false" id="3" name="_drawz" order="2"/>
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Actor - Type" enabled="false" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
+            <event displayName="Created" enabled="false" id="2" name="init" order="2" repeats="true"/>
+            <event displayName="Drawing" enabled="false" id="3" name="draw" order="3" repeats="true"/>
+            <event displayName="Copy of Actor - Type" enabled="false" id="4" name="event-collide-actortotype" order="4" repeats="true"/>
+            <event displayName="Updated" enabled="false" id="5" name="step" order="5" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_559" classname="scripts.ActorEvents_559" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="505" language="" name="ActorEvents_559" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
@@ -725,9 +686,10 @@
     <snippet attachedevent="true" class="scripts.ActorEvents_508" classname="scripts.ActorEvents_508" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="240" language="" name="ActorEvents_508" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <actor default="" defaultValue="" desc="" dropdown="" fullname="fish" hidden="false" id="1" name="_fish" order="0"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="ours?" hidden="false" id="2" name="_ours" order="1"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="son_grognement" hidden="false" id="3" name="_songrognement" order="2"/>
         <blocks/>
         <events>
-            <event displayName="Actor - Type" enabled="true" id="2" name="event-collide-actortotype" order="3" repeats="false"/>
+            <event displayName="Actor - Type" enabled="true" id="2" name="event-collide-actortotype" order="3" repeats="true"/>
             <event displayName="Created" enabled="true" id="3" name="init" order="2" repeats="true"/>
         </events>
     </snippet>
