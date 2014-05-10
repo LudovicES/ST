@@ -20,5 +20,15 @@
             </group>
         </init>
     </group>
+    <group eventID="1" id="1">
+        <actors-of-type3 comment="false" x="45" y="232">
+            <group eventID="1" id="-1">
+                <die comment="false" x="56" y="264">
+                    <actor-of-type comment="false" id="0" x="0" y="0"/>
+                </die>
+            </group>
+            <ACTORTYPE eid="561" id="0"/>
+        </actors-of-type3>
+    </group>
     <group eventID="1" id="-1"/>
 </groups>

@@ -8,12 +8,6 @@
                     <int id="1" val="1"/>
                     <int id="2" val="Camera Follow Player"/>
                 </actor-enabledisable-snippet>
-                <set-val-218-1 comment="false" x="26" y="67">
-                    <false comment="false" id="0" x="0" y="0"/>
-                </set-val-218-1>
-                <set-val-218-2 comment="false" x="26" y="92">
-                    <false comment="false" id="0" x="0" y="0"/>
-                </set-val-218-2>
             </group>
         </init>
     </group>
@@ -59,6 +53,14 @@
             <int id="0" val="1"/>
             <ACTOR eid="this" id="2"/>
         </dolater>
+    </group>
+    <group eventID="1" id="4">
+        <set-val-218-1 comment="false" x="189" y="482">
+            <false comment="false" id="0" x="0" y="0"/>
+        </set-val-218-1>
+        <set-val-218-2 comment="false" x="189" y="507">
+            <false comment="false" id="0" x="0" y="0"/>
+        </set-val-218-2>
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
@@ -167,12 +169,12 @@
             </group>
         </step>
     </group>
-    <group eventID="5" id="2">
+    <group eventID="5" id="1">
         <set-val-218-1 comment="false" x="57" y="384">
             <false comment="false" id="0" x="0" y="0"/>
         </set-val-218-1>
     </group>
-    <group eventID="5" id="4">
+    <group eventID="5" id="2">
         <set-val-218-2 comment="false" x="212" y="318">
             <false comment="false" id="0" x="0" y="0"/>
         </set-val-218-2>
