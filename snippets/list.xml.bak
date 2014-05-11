@@ -626,10 +626,10 @@
         <number default="64.0" defaultValue="64.0" desc="The distance between the peak and the initial axis." dropdown="" fullname="AmplitudeY" hidden="false" id="2" name="_AmplitudeY" order="2"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="WavenumberY" hidden="false" id="3" name="_WavenumberY" order="3"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Start X" hidden="true" id="4" name="_StartX" order="4"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="time_waveY" hidden="true" id="5" name="_timewaveY" order="5"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="AmplitudeX" hidden="false" id="6" name="_AmplitudeX" order="6"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="time_waveY" hidden="true" id="5" name="_timewaveY" order="5"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="AmplitudeX" hidden="false" id="6" name="_AmplitudeX" order="6"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="time_waveX" hidden="true" id="7" name="_timewaveX" order="7"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="WavenumberX" hidden="false" id="8" name="_WavenumberX" order="8"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="WavenumberX" hidden="false" id="8" name="_WavenumberX" order="8"/>
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>

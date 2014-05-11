@@ -45,7 +45,7 @@
                                 <trig-master comment="false" id="1" x="0" y="0">
                                     <int id="0" val="0"/>
                                     <get-val-250-5 comment="false" id="1" x="0" y="0"/>
-                                    <int id="2" val="0"/>
+                                    <int id="2" val="1"/>
                                 </trig-master>
                             </times>
                             <get-wh comment="false" id="1" x="0" y="0">
@@ -66,7 +66,7 @@
                                 <trig-master comment="false" id="1" x="0" y="0">
                                     <int id="0" val="0"/>
                                     <get-val-250-7 comment="false" id="1" x="0" y="0"/>
-                                    <int id="2" val="0"/>
+                                    <int id="2" val="1"/>
                                 </trig-master>
                             </times>
                             <get-wh comment="false" id="1" x="0" y="0">
@@ -85,7 +85,7 @@
         </set-val-250-3>
     </group>
     <group eventID="2" id="2">
-        <set-val-250-5 comment="false" x="97" y="332">
+        <set-val-250-5 comment="false" x="170" y="355">
             <plus comment="false" id="0" x="0" y="0">
                 <get-val-250-5 comment="false" id="0" x="0" y="0"/>
                 <get-val-250-3 comment="false" id="1" x="0" y="0"/>
@@ -97,17 +97,10 @@
         <get-val-250-3 comment="false" x="571" y="638"/>
         <get-val-250-2 comment="false" x="550" y="336"/>
         <get-val-250-1 comment="false" x="249" y="245"/>
-        <minus comment="false" x="745" y="151">
-            <get-val-250-4 comment="false" id="0" x="0" y="0"/>
-            <get-xy comment="false" id="1" x="0" y="0">
-                <ACTOR eid="this" id="0"/>
-                <int id="1" val="2"/>
-            </get-xy>
-        </minus>
-        <get-val-250-3 comment="false" x="368" y="215"/>
         <times comment="false" x="513" y="246">
             <int id="0" val=""/>
             <int id="1" val=""/>
         </times>
+        <get-val-250-3 comment="false" x="488" y="408"/>
     </group>
 </groups>

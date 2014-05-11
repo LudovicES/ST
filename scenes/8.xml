@@ -22,16 +22,16 @@
     </foregrounds>
     <joints/>
     <regions>
-        <region b="64" g="64" h="71" id="0" name="Region 0" pts="4,94.0,0.0,94.0,71.0,0.0,71.0,0.0,0.0" r="64" type="box" w="94" x="1033" y="296"/>
-        <region b="64" g="64" h="180" id="1" name="Region 1" pts="4,0.0,0.0,0.0,180.0,412.0,180.0,412.0,0.0" r="64" type="box" w="412" x="1901" y="117"/>
-        <region b="64" g="64" h="121" id="2" name="Region 2" pts="4,0.0,0.0,0.0,121.0,219.0,121.0,219.0,0.0" r="64" type="box" w="219" x="2413" y="242"/>
-        <region b="64" g="64" h="35" id="3" name="Region 3" pts="4,25.0,0.0,25.0,35.0,0.0,35.0,0.0,0.0" r="64" type="box" w="25" x="176" y="320"/>
+        <region b="64" g="64" h="71" id="0" name="Region 0" pts="4,0.0,0.0,0.0,71.0,94.0,71.0,94.0,0.0" r="64" type="box" w="94" x="1033" y="296"/>
+        <region b="64" g="64" h="180" id="1" name="Region 1" pts="4,412.0,0.0,412.0,180.0,0.0,180.0,0.0,0.0" r="64" type="box" w="412" x="1901" y="117"/>
+        <region b="64" g="64" h="121" id="2" name="Region 2" pts="4,219.0,0.0,219.0,121.0,0.0,121.0,0.0,0.0" r="64" type="box" w="219" x="2413" y="242"/>
+        <region b="64" g="64" h="35" id="3" name="Region 3" pts="4,0.0,0.0,0.0,35.0,25.0,35.0,25.0,0.0" r="64" type="box" w="25" x="176" y="320"/>
     </regions>
     <terrainRegions>
-        <terrainRegion b="64" g="64" group="1" h="474" id="1" name="Terrain 1" pts="4,23.0,0.0,23.0,474.0,0.0,474.0,0.0,0.0" r="64" type="box" w="23" x="-3" y="-2"/>
-        <terrainRegion b="64" g="64" group="1" h="8" id="2" name="Terrain 2" pts="4,3.0,0.0,3.0,8.0,0.0,8.0,0.0,0.0" r="64" type="box" w="3" x="3255" y="347"/>
-        <terrainRegion b="64" g="64" group="1" h="62" id="3" name="Terrain 3" pts="4,0.0,0.0,0.0,62.0,3573.0,62.0,3573.0,0.0" r="64" type="box" w="3573" x="12" y="-22"/>
-        <terrainRegion b="64" g="64" group="1" h="530" id="4" name="Terrain 4" pts="4,0.0,0.0,0.0,530.0,249.0,530.0,249.0,0.0" r="64" type="box" w="249" x="3378" y="-40"/>
+        <terrainRegion b="64" g="64" group="1" h="474" id="1" name="Terrain 1" pts="4,0.0,0.0,0.0,474.0,23.0,474.0,23.0,0.0" r="64" type="box" w="23" x="-3" y="-2"/>
+        <terrainRegion b="64" g="64" group="1" h="8" id="2" name="Terrain 2" pts="4,0.0,0.0,0.0,8.0,3.0,8.0,3.0,0.0" r="64" type="box" w="3" x="3255" y="347"/>
+        <terrainRegion b="64" g="64" group="1" h="62" id="3" name="Terrain 3" pts="4,3573.0,0.0,3573.0,62.0,0.0,62.0,0.0,0.0" r="64" type="box" w="3573" x="12" y="-22"/>
+        <terrainRegion b="64" g="64" group="1" h="530" id="4" name="Terrain 4" pts="4,249.0,0.0,249.0,530.0,0.0,530.0,0.0,0.0" r="64" type="box" w="249" x="3378" y="-40"/>
     </terrainRegions>
     <actors>
         <actor a="0.0" aid="68" c="false" group="3" id="610" name="Tree_02 68" sx="1.0" sy="1.0" x="766" y="-6" z="5"/>
@@ -282,8 +282,8 @@
         <actor a="0.0" aid="29" c="false" group="0" id="432" name="Jumper 29" sx="1.0" sy="1.0" x="483" y="286" z="0"/>
         <actor a="0.0" aid="28" c="false" group="0" id="432" name="Jumper 28" sx="1.0" sy="1.0" x="580" y="287" z="0"/>
         <actor a="0.0" aid="30" c="false" group="15" id="519" name="tombe 30" sx="1.0" sy="1.0" x="894" y="288" z="1"/>
-        <actor a="0.0" aid="34" c="false" group="9" id="542" name="fork 34" sx="1.0" sy="1.0" x="3298" y="392" z="2"/>
-        <actor a="0.0" aid="35" c="false" group="9" id="506" name="fish 35" sx="1.0" sy="1.0" x="3286" y="390" z="2"/>
+        <actor a="0.0" aid="34" c="false" group="9" id="542" name="fork 34" sx="1.0" sy="1.0" x="3300" y="396" z="2"/>
+        <actor a="0.0" aid="35" c="false" group="9" id="506" name="fish 35" sx="1.0" sy="1.0" x="3291" y="394" z="2"/>
         <actor a="0.0" aid="32" c="true" group="3" id="528" name="canne_peche 32" sx="1.0" sy="1.0" x="3145" y="191" z="4">
             <snippets>
                 <s enabled="true" id="304"/>
