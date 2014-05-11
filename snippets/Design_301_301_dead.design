@@ -369,14 +369,7 @@
             <group eventID="4" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="4" id="-1">
-                        <comment-short comment="false" x="37" y="70">
-                            <int id="0" val="on indique au behavior Game qu&amp;#039;il y a eu un nouveau mort"/>
-                        </comment-short>
-                        <scene-say comment="false" x="37" y="90">
-                            <int id="0" val="Game"/>
-                            <int id="1" val="newdead"/>
-                        </scene-say>
-                        <set-val-301-22 comment="false" x="37" y="110">
+                        <set-val-301-22 comment="false" x="37" y="70">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-val-301-22>
                     </group>

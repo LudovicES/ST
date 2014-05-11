@@ -75,13 +75,13 @@
         </print>
     </group>
     <group eventID="2" id="-1">
+        <collide-actor-of-type comment="false" x="687" y="247"/>
+        <collide-actor-of-type comment="false" x="386" y="223"/>
+        <actor-created-killed comment="false" x="518" y="335"/>
+        <actor-created-killed comment="false" x="686" y="342"/>
         <plus comment="false" x="897" y="189">
             <int id="0" val=""/>
             <int id="1" val=""/>
         </plus>
-        <actor-created-killed comment="false" x="686" y="342"/>
-        <actor-created-killed comment="false" x="518" y="335"/>
-        <collide-actor-of-type comment="false" x="386" y="223"/>
-        <collide-actor-of-type comment="false" x="687" y="247"/>
     </group>
 </groups>

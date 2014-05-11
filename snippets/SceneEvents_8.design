@@ -5,16 +5,13 @@
             <group eventID="33" id="-1">
                 <if comment="false" x="26" y="47">
                     <group eventID="31" id="-1">
-                        <print comment="false" x="37" y="85">
-                            <int id="0" val="test_text1"/>
-                        </print>
-                        <set-val-217-6 comment="false" x="37" y="105">
+                        <set-val-217-6 comment="false" x="37" y="85">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-val-217-6>
-                        <set-val-217-5 comment="false" x="37" y="130">
+                        <set-val-217-5 comment="false" x="37" y="110">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-val-217-5>
-                        <delete-region comment="false" x="37" y="155">
+                        <delete-region comment="false" x="37" y="135">
                             <REGION eid="3" id="0"/>
                         </delete-region>
                     </group>
@@ -34,12 +31,17 @@
             <ACTORTYPE eid="432" id="1"/>
         </event-collide-actortotype>
     </group>
+    <group eventID="33" id="1">
+        <print comment="false" x="264" y="311">
+            <int id="0" val="test_text1"/>
+        </print>
+    </group>
     <group eventID="33" id="-1">
-        <actor-entered-exited comment="false" x="86" y="356"/>
         <is-in-region comment="false" x="469" y="314">
             <ACTOR eid="lastcreated" id="0"/>
             <REGION eid="3" id="1"/>
         </is-in-region>
+        <actor-entered-exited comment="false" x="86" y="356"/>
     </group>
     <group eventID="13" id="0">
         <init comment="false" x="15" y="15">
@@ -184,7 +186,7 @@
         </event-type-region>
     </group>
     <group eventID="23" id="1">
-        <play-sound4 comment="false" x="274" y="197">
+        <play-sound4 comment="false" x="513" y="249">
             <int id="0" val="0"/>
             <SOUND id="1"/>
         </play-sound4>
@@ -219,16 +221,16 @@
         </dolater>
     </group>
     <group eventID="23" id="-1">
+        <false comment="false" x="553" y="76"/>
+        <text-to-sound comment="false" x="815" y="235">
+            <int id="0" val=""/>
+        </text-to-sound>
         <and comment="false" x="648" y="55">
             <int id="0" val=""/>
             <isalive comment="false" id="1" x="0" y="0">
                 <ACTOR eid="44" id="0"/>
             </isalive>
         </and>
-        <text-to-sound comment="false" x="815" y="235">
-            <int id="0" val=""/>
-        </text-to-sound>
-        <false comment="false" x="553" y="76"/>
     </group>
     <group eventID="25" id="0">
         <event-type-region comment="false" x="15" y="15">
@@ -363,14 +365,14 @@
         </event-actor-create-kill>
     </group>
     <group eventID="28" id="-1">
-        <isalive comment="false" x="692" y="325">
-            <ACTOR eid="lastcreated" id="0"/>
-        </isalive>
         <not comment="false" x="421" y="47">
             <isonscreen comment="false" id="0" x="0" y="0">
                 <ACTOR eid="46" id="0"/>
             </isonscreen>
         </not>
+        <isalive comment="false" x="692" y="325">
+            <ACTOR eid="lastcreated" id="0"/>
+        </isalive>
     </group>
     <group eventID="31" id="0">
         <event-type-region comment="false" x="15" y="15">
@@ -456,13 +458,13 @@
         </print>
     </group>
     <group eventID="30" id="-1">
-        <get-xy comment="false" x="320" y="306">
-            <ACTOR eid="25" id="0"/>
-            <int id="1" val="0"/>
-        </get-xy>
         <get-xy comment="false" x="557" y="241">
             <ACTOR eid="25" id="0"/>
             <int id="1" val="1"/>
+        </get-xy>
+        <get-xy comment="false" x="320" y="306">
+            <ACTOR eid="25" id="0"/>
+            <int id="1" val="0"/>
         </get-xy>
     </group>
 </groups>

@@ -32,22 +32,22 @@
         <group desc="" id="15" name="nocollision"/>
     </groups>
     <cgroups>
+        <cgroup g1="7" g2="0"/>
         <cgroup g1="3" g2="4"/>
         <cgroup g1="3" g2="0"/>
-        <cgroup g1="8" g2="1"/>
-        <cgroup g1="8" g2="0"/>
-        <cgroup g1="9" g2="1"/>
-        <cgroup g1="9" g2="0"/>
-        <cgroup g1="10" g2="0"/>
-        <cgroup g1="1" g2="4"/>
-        <cgroup g1="1" g2="14"/>
-        <cgroup g1="1" g2="12"/>
+        <cgroup g1="4" g2="1"/>
+        <cgroup g1="6" g2="1"/>
         <cgroup g1="1" g2="5"/>
-        <cgroup g1="1" g2="6"/>
-        <cgroup g1="14" g2="14"/>
-        <cgroup g1="12" g2="12"/>
+        <cgroup g1="1" g2="8"/>
+        <cgroup g1="1" g2="12"/>
+        <cgroup g1="1" g2="14"/>
+        <cgroup g1="1" g2="9"/>
+        <cgroup g1="0" g2="8"/>
+        <cgroup g1="0" g2="10"/>
+        <cgroup g1="0" g2="9"/>
         <cgroup g1="0" g2="11"/>
-        <cgroup g1="0" g2="7"/>
+        <cgroup g1="12" g2="12"/>
+        <cgroup g1="14" g2="14"/>
     </cgroups>
     <input>
         <key id="2" keyname="LEFT" name="left" vk="37" vks="37"/>
@@ -68,7 +68,7 @@
     </props>
     <attributes>
         <bool cid="-1" id="1" name="GameStart" save="true" value="true"/>
-        <bool cid="-1" id="2" name="Gameover" save="true" value="false"/>
+        <bool cid="-1" id="2" name="Gameover" save="true" value="true"/>
         <number cid="0" id="0" name="Score" save="true" value="0.0"/>
         <bool cid="-1" id="3" name="Gamefirst" save="true" value="false"/>
     </attributes>
@@ -97,7 +97,7 @@
         <poly id="22" name="Half Square" pts="0.0,0.49#0.0,0.99#1.0,0.99#1.0,0.49"/>
     </collisions>
     <atlases>
-        <atlas dirty="true" id="0" members="432,479,484,486,488,490,496,500,502,506,508,510,513,515,517,519,524,526,528,530,532,534,536,538,540,542,545,547,549,551,553,555,557,559,561,563,565,567,569,571,573,575,586,588,600,602,604,608,610,494,495,512,493,504,505,521,522,523,615,617,261,577,578,579,580,581,582,583,584,585,590,591,592,593,595,596,597,598,599,616,618,619,620," name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="0" members="432,479,484,486,488,490,496,500,502,506,508,510,513,515,517,519,524,526,528,530,532,534,536,538,540,542,545,547,549,551,553,555,557,559,561,563,565,567,569,571,573,575,586,588,600,602,604,608,610,621,494,495,512,493,504,505,521,522,523,615,617,261,577,578,579,580,581,582,583,584,585,590,591,592,593,595,596,597,598,599,616,618,619,620," name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>

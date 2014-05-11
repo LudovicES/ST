@@ -50,10 +50,7 @@
                 </comment-short>
                 <if comment="false" x="26" y="280">
                     <group eventID="1" id="-1">
-                        <print comment="false" x="37" y="310">
-                            <int id="0" val="stop singing"/>
-                        </print>
-                        <control-sound-channel comment="false" x="37" y="330">
+                        <control-sound-channel comment="false" x="37" y="310">
                             <int id="0" val="0"/>
                             <int id="1" val="0"/>
                         </control-sound-channel>
@@ -101,6 +98,11 @@
             <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
             <int id="1" val="8"/>
         </set-blend-actor>
+    </group>
+    <group eventID="5" id="6">
+        <print comment="false" x="297" y="394">
+            <int id="0" val="stop singing"/>
+        </print>
     </group>
     <group eventID="5" id="-1">
         <second-actor comment="false" x="566" y="228"/>

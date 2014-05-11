@@ -4,7 +4,7 @@
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="tree_moved?" hidden="true" id="1" name="_treemoved" order="1"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="x_origin" hidden="true" id="2" name="_xorigin" order="2"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="y_origin" hidden="true" id="3" name="_yorigin" order="3"/>
-        <number default="128" defaultValue="128" desc="" dropdown="" fullname="Hauteur" hidden="false" id="4" name="_Hauteur" order="4"/>
+        <number default="128.0" defaultValue="128.0" desc="" dropdown="" fullname="Hauteur" hidden="false" id="4" name="_Hauteur" order="4"/>
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
@@ -17,6 +17,10 @@
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
         </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_621" classname="scripts.ActorEvents_621" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="517" language="" name="ActorEvents_621" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_528" classname="scripts.ActorEvents_528" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="304" language="" name="ActorEvents_528" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
@@ -258,7 +262,8 @@
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_303_303_Dying" classname="scripts.Design_303_303_Dying" desc="" description="" design="true" drawOrder="0" id="303" language="" name="Dying" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <actor default="" defaultValue="" desc="" dropdown="" fullname="hold" hidden="true" id="1" name="_hold" order="1"/>
-        <number default="1" defaultValue="1" desc="" dropdown="" fullname="Temps avant la mort" hidden="false" id="2" name="_Tempsavantlamort" order="2"/>
+        <number default="1.0" defaultValue="1.0" desc="" dropdown="" fullname="Temps avant la mort" hidden="false" id="2" name="_Tempsavantlamort" order="2"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="activated" hidden="true" id="3" name="_activated" order="3"/>
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
@@ -363,10 +368,6 @@
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Drawing" enabled="false" id="2" name="draw" order="2" repeats="true"/>
-            <event displayName="Actor - Type" enabled="false" id="3" name="event-collide-actortotype" order="3" repeats="false"/>
-            <event displayName="Enters Region" enabled="false" id="4" name="event-actor-region" order="4" repeats="false"/>
-            <event displayName="Updated" enabled="false" id="5" name="step" order="5" repeats="false"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_553" classname="scripts.ActorEvents_553" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="321" language="" name="ActorEvents_553" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
@@ -480,13 +481,7 @@
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="holding" hidden="true" id="2" name="_holding" order="1"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="draw_z?" hidden="false" id="3" name="_drawz" order="2"/>
         <blocks/>
-        <events>
-            <event displayName="Actor - Type" enabled="false" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
-            <event displayName="Created" enabled="false" id="2" name="init" order="2" repeats="true"/>
-            <event displayName="Drawing" enabled="false" id="3" name="draw" order="3" repeats="true"/>
-            <event displayName="Copy of Actor - Type" enabled="false" id="4" name="event-collide-actortotype" order="4" repeats="true"/>
-            <event displayName="Updated" enabled="false" id="5" name="step" order="5" repeats="true"/>
-        </events>
+        <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_602" classname="scripts.ActorEvents_602" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="506" language="" name="ActorEvents_602" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="ruche?" hidden="false" id="1" name="_ruche" order="0"/>
@@ -501,7 +496,7 @@
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="stick_created ?" hidden="false" id="1" name="_stickcreated" order="0"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="tree_moved?" hidden="false" id="2" name="_treemoved" order="1"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="x_origin" hidden="false" id="3" name="_xorigin" order="2"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="y_origin" hidden="false" id="4" name="_yorigin" order="3"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="y_origin" hidden="false" id="4" name="_yorigin" order="3"/>
         <blocks/>
         <events/>
     </snippet>
@@ -523,11 +518,12 @@
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Start Event" enabled="true" id="2" name="event-custom" order="2" repeats="true"/>
-            <event displayName="traitement sur chaque mort" enabled="true" id="3" name="event-custom" order="3" repeats="true"/>
-            <event displayName="reload_game" enabled="true" id="4" name="event-key-press-release" order="4" repeats="true"/>
-            <event displayName="touche sur écran de fin" enabled="true" id="5" name="event-key-any-press-release" order="5" repeats="true"/>
-            <event displayName="souris sur écran de fin" enabled="true" id="6" name="event-mouse-press-release" order="6" repeats="true"/>
+            <event displayName="Start Event" enabled="true" id="2" name="event-custom" order="3" repeats="true"/>
+            <event displayName="traitement sur chaque mort" enabled="true" id="3" name="event-custom" order="5" repeats="true"/>
+            <event displayName="reload_game" enabled="true" id="4" name="event-key-press-release" order="6" repeats="true"/>
+            <event displayName="touche sur écran de fin" enabled="true" id="5" name="event-key-any-press-release" order="7" repeats="true"/>
+            <event displayName="souris sur écran de fin" enabled="true" id="6" name="event-mouse-press-release" order="8" repeats="true"/>
+            <event displayName="Every N secs" enabled="true" id="7" name="event-periodic" order="4" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_488" classname="scripts.ActorEvents_488" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="231" language="" name="ActorEvents_488" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">

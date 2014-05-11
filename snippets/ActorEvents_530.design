@@ -3,18 +3,13 @@
     <group eventID="1" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <set-volume-channel comment="false" x="26" y="40">
-                    <int id="0" val="130"/>
-                    <int id="1" val="3"/>
-                </set-volume-channel>
-                <play-sound-channel comment="false" x="26" y="60">
+                <play-sound4 comment="false" x="26" y="40">
                     <int id="0" val="0"/>
                     <SOUND eid="591" id="1"/>
-                    <int id="2" val="3"/>
-                </play-sound-channel>
-                <dolater comment="false" x="26" y="87">
+                </play-sound4>
+                <dolater comment="false" x="26" y="67">
                     <group eventID="5" id="-1">
-                        <die comment="false" x="37" y="114">
+                        <die comment="false" x="37" y="94">
                             <ACTOR eid="this" id="0"/>
                         </die>
                     </group>
