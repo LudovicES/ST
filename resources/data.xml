@@ -411,11 +411,11 @@
         <anim across="4" down="3" durations="60,60,60,60,60,60,60,60,60,60" height="300" id="0" loop="true" name="idle-l" numframes="10" originx="8" originy="16" sync="false" version="2" width="400">
             <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="idle-l" rest="0.0" sensor="true"/>
         </anim>
-        <anim across="4" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60" height="400" id="16" loop="true" name="duck-r" numframes="13" originx="8" originy="16" sync="false" version="2" width="400">
-            <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
-        </anim>
         <anim across="4" down="3" durations="60,60,60,60,60,60,60,60,60,60" height="300" id="1" loop="true" name="idle-r" numframes="10" originx="8" originy="16" sync="false" version="2" width="400">
             <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="idle-r" rest="0.0" sensor="true"/>
+        </anim>
+        <anim across="4" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60" height="400" id="16" loop="true" name="duck-r" numframes="13" originx="8" originy="16" sync="false" version="2" width="400">
+            <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
         </anim>
         <anim across="4" down="4" durations="60,60,60,60,60,60,60,60,60,60,60,60,60" height="400" id="6" loop="true" name="duck-l" numframes="13" originx="8" originy="16" sync="false" version="2" width="400">
             <poly data="4,39,30,55,30,55,62,39,62" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
@@ -519,8 +519,8 @@
                 <prop id="12" list="0" val="0.0"/>
                 <prop id="13" list="0" val="10"/>
                 <prop id="14" list="0" val="0.0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
     </actor>
