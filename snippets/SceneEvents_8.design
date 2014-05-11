@@ -35,11 +35,11 @@
         </event-collide-actortotype>
     </group>
     <group eventID="33" id="-1">
+        <actor-entered-exited comment="false" x="86" y="356"/>
         <is-in-region comment="false" x="469" y="314">
             <ACTOR eid="lastcreated" id="0"/>
             <REGION eid="3" id="1"/>
         </is-in-region>
-        <actor-entered-exited comment="false" x="86" y="356"/>
     </group>
     <group eventID="13" id="0">
         <init comment="false" x="15" y="15">
@@ -47,7 +47,7 @@
                 <play-sound-channel comment="false" x="26" y="40">
                     <int id="0" val="1"/>
                     <SOUND eid="595" id="1"/>
-                    <int id="2" val="4"/>
+                    <int id="2" val="1"/>
                 </play-sound-channel>
                 <set-val-217-4 comment="false" x="26" y="67">
                     <false comment="false" id="0" x="0" y="0"/>
@@ -160,15 +160,15 @@
                         <play-sound-channel comment="false" x="37" y="102">
                             <int id="0" val="1"/>
                             <SOUND eid="597" id="1"/>
-                            <int id="2" val="6"/>
+                            <int id="2" val="3"/>
                         </play-sound-channel>
                         <set-volume-channel comment="false" x="37" y="129">
                             <int id="0" val="0"/>
-                            <int id="1" val="6"/>
+                            <int id="1" val="3"/>
                         </set-volume-channel>
                         <fade-sound-channel comment="false" x="37" y="149">
                             <int id="0" val="0"/>
-                            <int id="1" val="6"/>
+                            <int id="1" val="3"/>
                             <int id="2" val="3"/>
                         </fade-sound-channel>
                     </group>
@@ -236,15 +236,15 @@
                 <play-sound-channel comment="false" x="26" y="47">
                     <int id="0" val="1"/>
                     <SOUND eid="579" id="1"/>
-                    <int id="2" val="6"/>
+                    <int id="2" val="3"/>
                 </play-sound-channel>
                 <set-volume-channel comment="false" x="26" y="74">
                     <int id="0" val="0"/>
-                    <int id="1" val="6"/>
+                    <int id="1" val="3"/>
                 </set-volume-channel>
                 <fade-sound-channel comment="false" x="26" y="94">
                     <int id="0" val="0"/>
-                    <int id="1" val="6"/>
+                    <int id="1" val="3"/>
                     <int id="2" val="3"/>
                 </fade-sound-channel>
             </group>
@@ -259,7 +259,7 @@
             <group eventID="23" id="-1">
                 <fade-sound-channel comment="false" x="26" y="47">
                     <int id="0" val="1"/>
-                    <int id="1" val="6"/>
+                    <int id="1" val="3"/>
                     <int id="2" val="3"/>
                 </fade-sound-channel>
                 <set-val-217-4 comment="false" x="26" y="74">
@@ -314,7 +314,7 @@
             <group eventID="23" id="-1">
                 <fade-sound-channel comment="false" x="26" y="47">
                     <int id="0" val="1"/>
-                    <int id="1" val="6"/>
+                    <int id="1" val="3"/>
                     <int id="2" val="3"/>
                 </fade-sound-channel>
             </group>
@@ -384,24 +384,24 @@
             <ACTORTYPE eid="432" id="2"/>
         </event-type-region>
     </group>
-    <group eventID="31" id="3">
+    <group eventID="31" id="1">
         <set-val-217-2 comment="false" x="391" y="190">
             <true comment="false" id="0" x="0" y="0"/>
         </set-val-217-2>
     </group>
-    <group eventID="31" id="4">
+    <group eventID="31" id="2">
         <move-region comment="false" x="832" y="98">
             <REGION eid="lastcreated" id="0"/>
             <int id="1" val="0"/>
             <int id="2" val="900"/>
         </move-region>
     </group>
-    <group eventID="31" id="6">
+    <group eventID="31" id="3">
         <print comment="false" x="84" y="320">
             <int id="0" val="delete_region"/>
         </print>
     </group>
-    <group eventID="31" id="7">
+    <group eventID="31" id="4">
         <if comment="false" x="339" y="360">
             <group eventID="31" id="-1">
                 <print comment="false" x="350" y="403">

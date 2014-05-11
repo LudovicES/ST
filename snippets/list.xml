@@ -573,13 +573,14 @@
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Start Y" hidden="true" id="40" name="_StartY" order="2"/>
         <number default="30.0" defaultValue="30.0" desc="The speed of the movement." dropdown="" fullname="Speed" hidden="false" id="11" name="_Speed" order="6"/>
         <boolean default="true" defaultValue="true" desc="If selected, the actor will not be able to turn while moving." dropdown="" fullname="Stop Turning" hidden="false" id="46" name="_StopTurning" order="8"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Facing Right" hidden="true" id="47" name="_FacingRight" order="22"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Facing Right" hidden="true" id="47" name="_FacingRight" order="10"/>
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <boolean default="true" defaultValue="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="45" name="_UseAnimations" order="9"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="kickstick" hidden="true" id="53" name="_kickstick" order="24"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="kicking" hidden="true" id="52" name="_kicking" order="23"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="tmp" hidden="true" id="59" name="_tmp" order="26"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="kicked" hidden="true" id="58" name="_kicked" order="25"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="kickstick" hidden="true" id="53" name="_kickstick" order="12"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="kicking" hidden="true" id="52" name="_kicking" order="11"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="tmp" hidden="true" id="59" name="_tmp" order="14"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="kicked" hidden="true" id="58" name="_kicked" order="13"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="hit" hidden="true" id="60" name="_hit" order="15"/>
         <blocks/>
         <events>
             <event displayName="Updated" enabled="true" id="3" name="step" order="5" repeats="true"/>

@@ -45,6 +45,27 @@
                 <die comment="false" x="26" y="233">
                     <ACTOR eid="this" id="0"/>
                 </die>
+                <comment-short comment="false" x="26" y="260">
+                    <int id="0" val="on arrête les chants dès qu&amp;#039;on incarne le dernier scout"/>
+                </comment-short>
+                <if comment="false" x="26" y="280">
+                    <group eventID="1" id="-1">
+                        <print comment="false" x="37" y="310">
+                            <int id="0" val="stop singing"/>
+                        </print>
+                        <control-sound-channel comment="false" x="37" y="330">
+                            <int id="0" val="0"/>
+                            <int id="1" val="0"/>
+                        </control-sound-channel>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <scene-get-attribute comment="false" id="0" x="0" y="0">
+                            <int id="0" val="Game"/>
+                            <int id="1" val="_NbToKill"/>
+                        </scene-get-attribute>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
             </group>
             <ACTOR eid="this" id="0"/>
             <ACTORTYPE eid="432" id="1"/>
@@ -62,7 +83,7 @@
         </dolater>
     </group>
     <group eventID="5" id="2">
-        <apply-filter comment="false" x="37" y="307">
+        <apply-filter comment="false" x="426" y="465">
             <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
             <filter-hsb comment="false" id="1" x="0" y="0">
                 <int id="0" val="30"/>
@@ -80,11 +101,6 @@
             <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
             <int id="1" val="8"/>
         </set-blend-actor>
-    </group>
-    <group eventID="5" id="5">
-        <print comment="false" x="484" y="541">
-            <int id="0" val="colle"/>
-        </print>
     </group>
     <group eventID="5" id="-1">
         <second-actor comment="false" x="566" y="228"/>
