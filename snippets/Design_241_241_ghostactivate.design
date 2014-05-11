@@ -45,82 +45,113 @@
                 <die comment="false" x="26" y="233">
                     <ACTOR eid="this" id="0"/>
                 </die>
-                <comment-short comment="false" x="26" y="260">
-                    <int id="0" val="on arrête les chants dès qu&amp;#039;on incarne le dernier scout"/>
-                </comment-short>
-                <if comment="false" x="26" y="280">
-                    <group eventID="1" id="-1">
-                        <control-sound-channel comment="false" x="37" y="310">
+                <set-val-241-2 comment="false" x="26" y="260">
+                    <scene-get-attribute comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Game"/>
+                        <int id="1" val="_NbToKill"/>
+                    </scene-get-attribute>
+                </set-val-241-2>
+                <print comment="false" x="26" y="285">
+                    <int id="0" val="nb singing"/>
+                </print>
+                <print comment="false" x="26" y="305">
+                    <get-val-241-2 comment="false" id="0" x="0" y="0"/>
+                </print>
+                <set-attribute comment="false" x="26" y="330">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Game"/>
+                    <int id="2" val="_NbToKill"/>
+                    <get-val-241-2 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <if comment="false" x="26" y="362">
+                    <group eventID="3" id="-1">
+                        <play-sound-channel comment="false" x="37" y="392">
+                            <int id="0" val="1"/>
+                            <SOUND eid="584" id="1"/>
+                            <int id="2" val="0"/>
+                        </play-sound-channel>
+                        <set-volume-channel comment="false" x="37" y="419">
+                            <int id="0" val="100"/>
+                            <int id="1" val="0"/>
+                        </set-volume-channel>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-241-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="8"/>
+                    </eq>
+                </if>
+                <else-if comment="false" x="26" y="451">
+                    <group eventID="3" id="-1">
+                        <play-sound-channel comment="false" x="37" y="481">
+                            <int id="0" val="1"/>
+                            <SOUND eid="585" id="1"/>
+                            <int id="2" val="0"/>
+                        </play-sound-channel>
+                        <set-volume-channel comment="false" x="37" y="508">
+                            <int id="0" val="100"/>
+                            <int id="1" val="0"/>
+                        </set-volume-channel>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-241-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="6"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="26" y="540">
+                    <group eventID="3" id="-1">
+                        <play-sound-channel comment="false" x="37" y="570">
+                            <int id="0" val="1"/>
+                            <SOUND eid="619" id="1"/>
+                            <int id="2" val="0"/>
+                        </play-sound-channel>
+                        <set-volume-channel comment="false" x="37" y="597">
+                            <int id="0" val="100"/>
+                            <int id="1" val="0"/>
+                        </set-volume-channel>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-241-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="4"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="26" y="629">
+                    <group eventID="3" id="-1">
+                        <play-sound-channel comment="false" x="37" y="659">
+                            <int id="0" val="1"/>
+                            <SOUND eid="620" id="1"/>
+                            <int id="2" val="0"/>
+                        </play-sound-channel>
+                        <set-volume-channel comment="false" x="37" y="686">
+                            <int id="0" val="100"/>
+                            <int id="1" val="0"/>
+                        </set-volume-channel>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-241-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="2"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="26" y="718">
+                    <group eventID="3" id="-1">
+                        <control-sound-channel comment="false" x="37" y="748">
                             <int id="0" val="0"/>
                             <int id="1" val="0"/>
                         </control-sound-channel>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
-                        <scene-get-attribute comment="false" id="0" x="0" y="0">
-                            <int id="0" val="Game"/>
-                            <int id="1" val="_NbToKill"/>
-                        </scene-get-attribute>
+                        <get-val-241-2 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="1"/>
                     </eq>
-                </if>
+                </else-if>
             </group>
             <ACTOR eid="this" id="0"/>
             <ACTORTYPE eid="432" id="1"/>
         </event-collide-actortotype>
     </group>
-    <group eventID="5" id="1">
-        <dolater comment="false" x="601" y="337">
-            <group eventID="5" id="-1">
-                <die comment="false" x="612" y="364">
-                    <ACTOR eid="lastcreated" id="0"/>
-                </die>
-            </group>
-            <int id="0" val="1"/>
-            <ACTOR eid="this" id="2"/>
-        </dolater>
-    </group>
-    <group eventID="5" id="2">
-        <apply-filter comment="false" x="426" y="465">
-            <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
-            <filter-hsb comment="false" id="1" x="0" y="0">
-                <int id="0" val="30"/>
-            </filter-hsb>
-        </apply-filter>
-    </group>
-    <group eventID="5" id="3">
-        <setanim comment="false" x="844" y="277">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val=""/>
-        </setanim>
-    </group>
-    <group eventID="5" id="4">
-        <set-blend-actor comment="false" x="70" y="549">
-            <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
-            <int id="1" val="8"/>
-        </set-blend-actor>
-    </group>
-    <group eventID="5" id="6">
-        <print comment="false" x="297" y="394">
-            <int id="0" val="stop singing"/>
-        </print>
-    </group>
     <group eventID="5" id="-1">
-        <second-actor comment="false" x="566" y="228"/>
-        <filter-bright comment="false" x="103" y="532">
-            <int id="0" val="10"/>
-        </filter-bright>
-        <plus comment="false" x="992" y="174">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-        </plus>
         <plus comment="false" x="1068" y="212">
             <int id="0" val=""/>
             <int id="1" val=""/>
         </plus>
-        <pick-type comment="false" x="157" y="438">
-            <ACTORTYPE id="0"/>
-        </pick-type>
-        <first-actor comment="false" x="666" y="75"/>
-        <second-actor comment="false" x="567" y="62"/>
     </group>
 </groups>

@@ -29,11 +29,11 @@
                                     </minus>
                                     <int id="3" val="0"/>
                                 </create-actor3>
-                                <set-xy comment="true" x="48" y="213">
+                                <set-xy comment="false" x="48" y="213">
                                     <ACTOR eid="this" id="0"/>
                                     <int id="1" val="1"/>
-                                    <plus comment="true" id="2" x="0" y="0">
-                                        <get-xy comment="true" id="0" x="0" y="0">
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
                                             <ACTOR eid="this" id="0"/>
                                             <int id="1" val="1"/>
                                         </get-xy>

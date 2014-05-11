@@ -281,10 +281,10 @@
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="80" id="501" name="fire" shared="false" width="70">
         <anim across="3" down="3" durations="90,90,90,90,90,90,90,90,90" height="240" id="0" loop="true" name="Animation 0" numframes="9" originx="35" originy="40" sync="false" version="2" width="210">
-            <poly data="4,18,29,50,29,50,61,18,61" density="0.1" fric="0.2" gid="10" id="0" name="Animation 0" rest="0.0" sensor="true"/>
+            <poly data="4,18,29,50,29,50,61,18,61" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
         </anim>
         <anim across="1" down="1" durations="100" height="17" id="1" loop="true" name="off" numframes="1" originx="15" originy="8" sync="false" version="2" width="31">
-            <poly data="4,0,0,31,0,31,17,0,17" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+            <poly data="4,40,40,71,40,71,57,40,57" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="236" fixedrot="false" fric="0.2" gid="10" id="500" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="fire" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="501" static="true">

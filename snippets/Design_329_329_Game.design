@@ -327,90 +327,17 @@
                         <int id="1" val="1"/>
                     </minus>
                 </set-val-500-2>
-                <set-val-500-3 comment="false" x="26" y="70">
-                    <get-position-channel comment="false" id="0" x="0" y="0">
-                        <int id="0" val="0"/>
-                    </get-position-channel>
-                </set-val-500-3>
-                <if comment="false" x="26" y="95">
+                <if comment="false" x="26" y="70">
                     <group eventID="3" id="-1">
-                        <play-sound-channel comment="false" x="37" y="125">
-                            <int id="0" val="1"/>
-                            <SOUND eid="584" id="1"/>
-                            <int id="2" val="0"/>
-                        </play-sound-channel>
-                        <set-volume-channel comment="false" x="37" y="152">
-                            <int id="0" val="100"/>
-                            <int id="1" val="0"/>
-                        </set-volume-channel>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <get-val-500-2 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="7"/>
-                    </eq>
-                </if>
-                <else-if comment="false" x="26" y="184">
-                    <group eventID="3" id="-1">
-                        <play-sound-channel comment="false" x="37" y="214">
-                            <int id="0" val="1"/>
-                            <SOUND eid="585" id="1"/>
-                            <int id="2" val="0"/>
-                        </play-sound-channel>
-                        <set-volume-channel comment="false" x="37" y="241">
-                            <int id="0" val="100"/>
-                            <int id="1" val="0"/>
-                        </set-volume-channel>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <get-val-500-2 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="5"/>
-                    </eq>
-                </else-if>
-                <else-if comment="false" x="26" y="273">
-                    <group eventID="3" id="-1">
-                        <play-sound-channel comment="false" x="37" y="303">
-                            <int id="0" val="1"/>
-                            <SOUND eid="619" id="1"/>
-                            <int id="2" val="0"/>
-                        </play-sound-channel>
-                        <set-volume-channel comment="false" x="37" y="330">
-                            <int id="0" val="100"/>
-                            <int id="1" val="0"/>
-                        </set-volume-channel>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <get-val-500-2 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="3"/>
-                    </eq>
-                </else-if>
-                <else-if comment="false" x="26" y="362">
-                    <group eventID="3" id="-1">
-                        <play-sound-channel comment="false" x="37" y="392">
-                            <int id="0" val="1"/>
-                            <SOUND eid="620" id="1"/>
-                            <int id="2" val="0"/>
-                        </play-sound-channel>
-                        <set-volume-channel comment="false" x="37" y="419">
-                            <int id="0" val="100"/>
-                            <int id="1" val="0"/>
-                        </set-volume-channel>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <get-val-500-2 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="1"/>
-                    </eq>
-                </else-if>
-                <else-if comment="false" x="26" y="451">
-                    <group eventID="3" id="-1">
-                        <dolater comment="false" x="37" y="481">
+                        <dolater comment="false" x="37" y="100">
                             <group eventID="3" id="-1">
-                                <comment-short comment="false" x="48" y="508">
+                                <comment-short comment="false" x="48" y="127">
                                     <int id="0" val="on recharge la scène en mode gameover, ça va lancer la cutscene"/>
                                 </comment-short>
-                                <set-game-val-2 comment="false" x="48" y="528">
+                                <set-game-val-2 comment="false" x="48" y="147">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-game-val-2>
-                                <scene-reload-new comment="false" x="48" y="553">
+                                <scene-reload-new comment="false" x="48" y="172">
                                     <int id="0" val="0"/>
                                     <int id="1" val="2"/>
                                     <int id="2" val="0"/>
@@ -425,10 +352,83 @@
                         <get-val-500-2 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="0"/>
                     </eq>
-                </else-if>
+                </if>
             </group>
             <int id="0" val="newdead"/>
         </event-custom>
+    </group>
+    <group eventID="3" id="2">
+        <else-if comment="false" x="152" y="449">
+            <group eventID="3" id="-1"/>
+            <eq comment="false" id="0" x="0" y="0">
+                <get-val-500-2 comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="0"/>
+            </eq>
+        </else-if>
+    </group>
+    <group eventID="3" id="5">
+        <else-if comment="false" x="716" y="422">
+            <group eventID="3" id="-1">
+                <play-sound-channel comment="false" x="727" y="452">
+                    <int id="0" val="1"/>
+                    <SOUND eid="585" id="1"/>
+                    <int id="2" val="0"/>
+                </play-sound-channel>
+                <set-volume-channel comment="false" x="727" y="479">
+                    <int id="0" val="100"/>
+                    <int id="1" val="0"/>
+                </set-volume-channel>
+            </group>
+            <eq comment="false" id="0" x="0" y="0">
+                <get-val-500-2 comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="5"/>
+            </eq>
+        </else-if>
+        <else-if comment="false" x="716" y="511">
+            <group eventID="3" id="-1">
+                <play-sound-channel comment="false" x="727" y="541">
+                    <int id="0" val="1"/>
+                    <SOUND eid="619" id="1"/>
+                    <int id="2" val="0"/>
+                </play-sound-channel>
+                <set-volume-channel comment="false" x="727" y="568">
+                    <int id="0" val="100"/>
+                    <int id="1" val="0"/>
+                </set-volume-channel>
+            </group>
+            <eq comment="false" id="0" x="0" y="0">
+                <get-val-500-2 comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="3"/>
+            </eq>
+        </else-if>
+        <else-if comment="false" x="716" y="600">
+            <group eventID="3" id="-1">
+                <play-sound-channel comment="false" x="727" y="630">
+                    <int id="0" val="1"/>
+                    <SOUND eid="620" id="1"/>
+                    <int id="2" val="0"/>
+                </play-sound-channel>
+                <set-volume-channel comment="false" x="727" y="657">
+                    <int id="0" val="100"/>
+                    <int id="1" val="0"/>
+                </set-volume-channel>
+            </group>
+            <eq comment="false" id="0" x="0" y="0">
+                <get-val-500-2 comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="1"/>
+            </eq>
+        </else-if>
+    </group>
+    <group eventID="3" id="6">
+        <play-sound-channel comment="false" x="555" y="301">
+            <int id="0" val="1"/>
+            <SOUND eid="584" id="1"/>
+            <int id="2" val="0"/>
+        </play-sound-channel>
+        <set-volume-channel comment="false" x="555" y="328">
+            <int id="0" val="100"/>
+            <int id="1" val="0"/>
+        </set-volume-channel>
     </group>
     <group eventID="3" id="-1"/>
     <group eventID="4" id="0">
@@ -529,15 +529,13 @@
                         <set-val-500-3 comment="false" x="37" y="202">
                             <minus comment="false" id="0" x="0" y="0">
                                 <get-val-500-3 comment="false" id="0" x="0" y="0"/>
-                                <int id="1" val="200"/>
+                                <int id="1" val="400"/>
                             </minus>
                         </set-val-500-3>
                         <if comment="false" x="37" y="232">
                             <group eventID="7" id="-1">
                                 <set-val-500-3 comment="false" x="48" y="262">
-                                    <neg comment="false" id="0" x="0" y="0">
-                                        <get-val-500-3 comment="false" id="0" x="0" y="0"/>
-                                    </neg>
+                                    <int id="0" val="0"/>
                                 </set-val-500-3>
                             </group>
                             <less comment="false" id="0" x="0" y="0">
@@ -545,15 +543,15 @@
                                 <int id="1" val="0"/>
                             </less>
                         </if>
-                        <set-val-500-3 comment="false" x="37" y="304">
+                        <set-val-500-3 comment="false" x="37" y="294">
                             <times comment="false" id="0" x="0" y="0">
                                 <get-val-500-3 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="0.05"/>
                             </times>
                         </set-val-500-3>
-                        <if comment="false" x="37" y="334">
+                        <if comment="false" x="37" y="324">
                             <group eventID="7" id="-1">
-                                <set-val-500-3 comment="false" x="48" y="364">
+                                <set-val-500-3 comment="false" x="48" y="354">
                                     <int id="0" val="80"/>
                                 </set-val-500-3>
                             </group>
@@ -562,7 +560,7 @@
                                 <int id="1" val="80"/>
                             </more>
                         </if>
-                        <set-volume-channel comment="false" x="37" y="396">
+                        <set-volume-channel comment="false" x="37" y="386">
                             <minus comment="false" id="0" x="0" y="0">
                                 <int id="0" val="100"/>
                                 <get-val-500-3 comment="false" id="1" x="0" y="0"/>

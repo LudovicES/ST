@@ -523,7 +523,7 @@
             <event displayName="reload_game" enabled="true" id="4" name="event-key-press-release" order="6" repeats="true"/>
             <event displayName="touche sur écran de fin" enabled="true" id="5" name="event-key-any-press-release" order="7" repeats="true"/>
             <event displayName="souris sur écran de fin" enabled="true" id="6" name="event-mouse-press-release" order="8" repeats="true"/>
-            <event displayName="Every N secs" enabled="true" id="7" name="event-periodic" order="4" repeats="true"/>
+            <event displayName="chants qui diminuent" enabled="true" id="7" name="event-periodic" order="4" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_488" classname="scripts.ActorEvents_488" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="231" language="" name="ActorEvents_488" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
@@ -590,7 +590,7 @@
     <snippet attachedevent="false" class="scripts.Design_229_229_holder" classname="scripts.Design_229_229_holder" desc="" description="" design="true" drawOrder="0" id="226" language="" name="holder" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <actor default="" defaultValue="" desc="" dropdown="" fullname="hold" hidden="true" id="1" name="_hold" order="1"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="holding" hidden="true" id="2" name="_holding" order="2"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="index" hidden="true" id="3" name="_index" order="3"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="index" hidden="true" id="3" name="_index" order="3"/>
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
@@ -699,7 +699,9 @@
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_241_241_ghostactivate" classname="scripts.Design_241_241_ghostactivate" desc="" description="" design="true" drawOrder="0" id="241" language="" name="ghost_activate" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <number default="3.0" defaultValue="3.0" desc="" dropdown="" fullname="Nb To Kill" hidden="false" id="1" name="_NbToKill" order="1"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="tmp" hidden="true" id="2" name="_tmp" order="2"/>
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
             <event displayName="Actor - Type" enabled="true" id="5" name="event-collide-actortotype" order="5" repeats="false"/>

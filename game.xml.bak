@@ -32,22 +32,22 @@
         <group desc="" id="15" name="nocollision"/>
     </groups>
     <cgroups>
-        <cgroup g1="7" g2="0"/>
+        <cgroup g1="6" g2="1"/>
         <cgroup g1="3" g2="4"/>
         <cgroup g1="3" g2="0"/>
-        <cgroup g1="4" g2="1"/>
-        <cgroup g1="6" g2="1"/>
-        <cgroup g1="1" g2="5"/>
-        <cgroup g1="1" g2="8"/>
-        <cgroup g1="1" g2="12"/>
-        <cgroup g1="1" g2="14"/>
-        <cgroup g1="1" g2="9"/>
-        <cgroup g1="0" g2="8"/>
-        <cgroup g1="0" g2="10"/>
-        <cgroup g1="0" g2="9"/>
-        <cgroup g1="0" g2="11"/>
+        <cgroup g1="9" g2="1"/>
+        <cgroup g1="9" g2="0"/>
+        <cgroup g1="10" g2="0"/>
         <cgroup g1="12" g2="12"/>
+        <cgroup g1="12" g2="1"/>
+        <cgroup g1="7" g2="0"/>
+        <cgroup g1="1" g2="5"/>
+        <cgroup g1="1" g2="4"/>
+        <cgroup g1="1" g2="8"/>
+        <cgroup g1="1" g2="14"/>
+        <cgroup g1="8" g2="0"/>
         <cgroup g1="14" g2="14"/>
+        <cgroup g1="0" g2="11"/>
     </cgroups>
     <input>
         <key id="2" keyname="LEFT" name="left" vk="37" vks="37"/>
@@ -68,7 +68,7 @@
     </props>
     <attributes>
         <bool cid="-1" id="1" name="GameStart" save="true" value="true"/>
-        <bool cid="-1" id="2" name="Gameover" save="true" value="true"/>
+        <bool cid="-1" id="2" name="Gameover" save="true" value="false"/>
         <number cid="0" id="0" name="Score" save="true" value="0.0"/>
         <bool cid="-1" id="3" name="Gamefirst" save="true" value="false"/>
     </attributes>
