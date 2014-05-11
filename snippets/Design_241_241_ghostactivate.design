@@ -51,79 +51,33 @@
                         <int id="1" val="_NbToKill"/>
                     </scene-get-attribute>
                 </set-val-241-2>
-                <print comment="false" x="26" y="285">
-                    <int id="0" val="nb singing"/>
-                </print>
-                <print comment="false" x="26" y="305">
-                    <get-val-241-2 comment="false" id="0" x="0" y="0"/>
-                </print>
-                <set-attribute comment="false" x="26" y="330">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="Game"/>
-                    <int id="2" val="_NbToKill"/>
-                    <get-val-241-2 comment="false" id="3" x="0" y="0"/>
-                </set-attribute>
-                <if comment="false" x="26" y="362">
+                <if comment="false" x="26" y="285">
                     <group eventID="3" id="-1">
-                        <play-sound-channel comment="false" x="37" y="392">
-                            <int id="0" val="1"/>
-                            <SOUND eid="584" id="1"/>
-                            <int id="2" val="0"/>
-                        </play-sound-channel>
-                        <set-volume-channel comment="false" x="37" y="419">
-                            <int id="0" val="100"/>
+                        <scene-set-attribute comment="false" x="37" y="315">
+                            <int id="0" val="Game"/>
+                            <int id="1" val="_NbSingers"/>
+                            <int id="2" val="2"/>
+                        </scene-set-attribute>
+                        <set-volume-channel comment="false" x="37" y="335">
+                            <int id="0" val="0"/>
                             <int id="1" val="0"/>
                         </set-volume-channel>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
                         <get-val-241-2 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="8"/>
+                        <int id="1" val="5"/>
                     </eq>
                 </if>
-                <else-if comment="false" x="26" y="451">
+                <else-if comment="false" x="26" y="367">
                     <group eventID="3" id="-1">
-                        <play-sound-channel comment="false" x="37" y="481">
-                            <int id="0" val="1"/>
-                            <SOUND eid="585" id="1"/>
-                            <int id="2" val="0"/>
-                        </play-sound-channel>
-                        <set-volume-channel comment="false" x="37" y="508">
+                        <scene-set-attribute comment="false" x="37" y="397">
+                            <int id="0" val="Game"/>
+                            <int id="1" val="_NbSingers"/>
+                            <int id="2" val="1"/>
+                        </scene-set-attribute>
+                        <set-volume-channel comment="false" x="37" y="417">
                             <int id="0" val="100"/>
-                            <int id="1" val="0"/>
-                        </set-volume-channel>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <get-val-241-2 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="6"/>
-                    </eq>
-                </else-if>
-                <else-if comment="false" x="26" y="540">
-                    <group eventID="3" id="-1">
-                        <play-sound-channel comment="false" x="37" y="570">
-                            <int id="0" val="1"/>
-                            <SOUND eid="619" id="1"/>
-                            <int id="2" val="0"/>
-                        </play-sound-channel>
-                        <set-volume-channel comment="false" x="37" y="597">
-                            <int id="0" val="100"/>
-                            <int id="1" val="0"/>
-                        </set-volume-channel>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <get-val-241-2 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="4"/>
-                    </eq>
-                </else-if>
-                <else-if comment="false" x="26" y="629">
-                    <group eventID="3" id="-1">
-                        <play-sound-channel comment="false" x="37" y="659">
-                            <int id="0" val="1"/>
-                            <SOUND eid="620" id="1"/>
-                            <int id="2" val="0"/>
-                        </play-sound-channel>
-                        <set-volume-channel comment="false" x="37" y="686">
-                            <int id="0" val="100"/>
-                            <int id="1" val="0"/>
+                            <int id="1" val="2"/>
                         </set-volume-channel>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
@@ -131,12 +85,17 @@
                         <int id="1" val="2"/>
                     </eq>
                 </else-if>
-                <else-if comment="false" x="26" y="718">
+                <else-if comment="false" x="26" y="449">
                     <group eventID="3" id="-1">
-                        <control-sound-channel comment="false" x="37" y="748">
-                            <int id="0" val="0"/>
-                            <int id="1" val="0"/>
-                        </control-sound-channel>
+                        <scene-set-attribute comment="false" x="37" y="479">
+                            <int id="0" val="Game"/>
+                            <int id="1" val="_NbSingers"/>
+                            <int id="2" val="0"/>
+                        </scene-set-attribute>
+                        <set-volume-channel comment="false" x="37" y="499">
+                            <int id="0" val="100"/>
+                            <int id="1" val="3"/>
+                        </set-volume-channel>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
                         <get-val-241-2 comment="false" id="0" x="0" y="0"/>

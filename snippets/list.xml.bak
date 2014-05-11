@@ -458,7 +458,7 @@
         <number default="0.0" defaultValue="0.0" desc="Only used if &lt;var&gt;Point Away&lt;/var&gt; is selected.&lt;br /&gt;&#10;The facing of the actor's sprite." dropdown="Up=-90&#10;Down=90&#10;Left=180&#10;Right=0&#10;" fullname="Facing" hidden="false" id="10" name="_Facing" order="11"/>
         <boolean default="true" defaultValue="true" desc="If selected, point the actor away from the center.&lt;br /&gt;&#10;If unselected, don't change the facing of the actor while rotating." dropdown="" fullname="Point Away" hidden="false" id="11" name="_PointAway" order="10"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="New Distance" hidden="true" id="12" name="_NewDistance" order="6"/>
-        <number default="10" defaultValue="10" desc="If the distance between the actor and the center changes be more than this, the radius of the rotation will be adjusted. &lt;br /&gt;&#10;Can be changed for fine tuning, should not be too small." dropdown="" fullname="Distance Threshold" hidden="false" id="13" name="_DistanceThreshold" order="13"/>
+        <number default="10.0" defaultValue="10.0" desc="If the distance between the actor and the center changes be more than this, the radius of the rotation will be adjusted. &lt;br /&gt;&#10;Can be changed for fine tuning, should not be too small." dropdown="" fullname="Distance Threshold" hidden="false" id="13" name="_DistanceThreshold" order="13"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Step Seconds" hidden="true" id="14" name="_StepSeconds" order="1"/>
         <boolean default="true" defaultValue="true" desc="If selected the radius will not be adjusted dynamically." dropdown="" fullname="Fixed Radius" hidden="false" id="15" name="_FixedRadius" order="12"/>
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
@@ -515,6 +515,7 @@
         <actor default="" defaultValue="" desc="" dropdown="" fullname="play" hidden="true" id="5" name="_play" order="5"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="readyToReplay" hidden="true" id="6" name="_readyToReplay" order="6"/>
         <actor default="" defaultValue="" desc="" dropdown="" fullname="Fire" hidden="false" id="7" name="_Fire" order="1"/>
+        <number default="3.0" defaultValue="3.0" desc="" dropdown="" fullname="Nb Singers" hidden="true" id="8" name="_NbSingers" order="7"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>

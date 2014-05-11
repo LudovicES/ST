@@ -65,7 +65,7 @@
                                                                     <get-val-301-14 comment="false" id="1" x="0" y="0"/>
                                                                 </minus>
                                                             </times>
-                                                            <int id="2" val="0"/>
+                                                            <int id="2" val="1"/>
                                                         </trig-master>
                                                     </times>
                                                     <get-wh comment="false" id="1" x="0" y="0">

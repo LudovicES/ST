@@ -531,8 +531,6 @@
     <music atlasID="0" desc="" id="583" loop="true" name="niania1" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="584" loop="true" name="niania2" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="585" loop="true" name="niania3" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
-    <music atlasID="0" desc="" id="619" loop="true" name="niania4" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
-    <music atlasID="0" desc="" id="620" loop="true" name="niania5" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="552" name="ours" shared="false" width="180">
         <anim across="7" down="6" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,100,100,100,100,100" height="600" id="0" loop="false" name="ON" numframes="37" originx="90" originy="50" sync="false" version="2" width="1260"/>
     </sprite>
