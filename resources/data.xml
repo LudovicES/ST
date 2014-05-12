@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
     <music atlasID="0" desc="" id="579" loop="true" name="abeilles" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="506" fixedrot="true" fric="0.2" gid="3" id="602" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="abeilles_01" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="603" static="false">
-        <snippets/>
-    </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="70" id="603" name="abeilles_01" shared="false" width="70">
-        <anim across="5" down="4" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50" height="280" id="0" loop="true" name="Animation 0" numframes="17" originx="35" originy="35" sync="false" version="2" width="350">
-            <poly data="4,0,0,100,0,100,100,0,100" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="70" id="624" name="abeilles_01" shared="false" width="70">
+        <anim across="4" down="4" durations="40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40" height="280" id="0" loop="true" name="abeilles" numframes="16" originx="35" originy="35" sync="false" version="2" width="280">
+            <poly data="4,0,0,70,0,70,70,0,70" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="518" fixedrot="true" fric="0.2" gid="3" id="623" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="abeilles_01" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="624" static="false">
+        <snippets/>
+    </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="509" name="acteur_grotte" shared="false" width="180">
         <anim across="5" down="5" durations="60,60,60,60,60,60,60,60,60,60,800,60,60,60,60,1500,60,60,60,60,60" height="500" id="0" loop="true" name="1" numframes="21" originx="90" originy="50" sync="false" version="2" width="900">
             <poly data="4,16,13,56,13,56,77,16,77" density="0.1" fric="0.2" gid="10" id="0" name="Animation 0" rest="0.0" sensor="true"/>
@@ -65,8 +65,8 @@
         <tile collision="-1" data="" durations="100" frames="16" id="14" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="17" id="17" order="-1"/>
     </tileset>
-    <background atlasID="0" desc="" durations="100" dx="0.8" dy="-0.0" height="480" id="505" name="brume_01" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1600" xpf="1.0" ypf="1.0"/>
-    <background atlasID="0" desc="" durations="100" dx="0.4" dy="-0.0" height="480" id="521" name="brume_02" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1600" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="3.0" dy="-0.0" height="480" id="505" name="brume_01" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="1600" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="2.0" dy="-0.0" height="480" id="521" name="brume_02" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="1600" xpf="1.0" ypf="1.0"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="304" fixedrot="false" fric="0.2" gid="3" id="528" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="canne_peche" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="529" static="true">
         <snippets>
             <s enabled="true" id="315">
@@ -193,7 +193,7 @@
         <anim across="5" down="5" durations="60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60" height="600" id="0" loop="false" name="death_snake" numframes="24" originx="50" originy="60" sync="false" version="2" width="500"/>
     </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="558" name="death_fire" shared="false" width="100">
-        <anim across="5" down="5" durations="55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55" height="500" id="0" loop="false" name="death_snake" numframes="23" originx="50" originy="50" sync="false" version="2" width="500"/>
+        <anim across="6" down="6" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,40,40,40,40,40,40,40,40,40,40,40,40,40" height="600" id="0" loop="false" name="death_ruche" numframes="35" originx="50" originy="50" sync="false" version="2" width="600"/>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="323" fixedrot="false" fric="0.2" gid="3" id="557" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="death_ruche" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="558" static="true">
         <snippets>
@@ -256,11 +256,6 @@
     </sprite>
     <music atlasID="0" desc="" id="592" loop="true" name="eclair" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="581" loop="true" name="empale" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="30" id="601" name="feuille" shared="false" width="30">
-        <anim across="3" down="2" durations="50,50,50,50,50" height="60" id="0" loop="true" name="Animation 0" numframes="5" originx="3" originy="3" sync="false" version="2" width="90">
-            <poly data="4,12,13,18,13,18,19,12,19" density="0.1" fric="0.2" gid="6" id="0" name="Animation 0" rest="0.0" sensor="false"/>
-        </anim>
-    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="319" fixedrot="false" fric="0.2" gid="15" id="549" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="feuille" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="550" static="false">
         <snippets>
             <s enabled="true" id="515">
@@ -336,6 +331,9 @@
         </anim>
         <anim across="1" down="1" durations="100" height="22" id="1" loop="true" name="right" numframes="1" originx="8" originy="11" sync="false" version="2" width="17">
             <poly data="4,0,0,16,0,16,22,0,22" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="25" id="2" loop="true" name="inv" numframes="1" originx="11" originy="12" sync="false" version="2" width="23">
+            <poly data="4,0,0,23,0,23,25,0,25" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="320" id="560" name="foudre" shared="false" width="100">
@@ -504,26 +502,12 @@
         <blank name="Animation" order="1" type="ANIMATION"/>
         <blank name="Category" order="2" type="TEXT"/>
     </custom-block>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="506" fixedrot="false" fric="0.2" gid="6" id="600" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="luciole" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="601" static="false">
-        <snippets>
-            <s enabled="true" id="511">
-                <prop id="1" list="0" val="0.0"/>
-                <prop id="2" list="0" val="0.0"/>
-                <prop id="5" list="0" val="0.0"/>
-                <prop id="6" list="0" val="0.0"/>
-                <prop id="7" list="0" val="0.0"/>
-                <prop id="8" list="0" val="0.0"/>
-                <prop id="9" list="0" val="10.0"/>
-                <prop id="10" list="0" val="-90"/>
-                <prop id="11" list="0" val="true"/>
-                <prop id="12" list="0" val="0.0"/>
-                <prop id="13" list="0" val="10"/>
-                <prop id="14" list="0" val="0.0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="15" list="0" val="false"/>
-            </s>
-        </snippets>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="519" fixedrot="false" fric="0.2" gid="3" id="625" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="lucioles" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="626" static="true">
+        <snippets/>
     </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="30" id="626" name="lucioles" shared="false" width="30">
+        <anim across="3" down="2" durations="100,100,100,100,100" height="60" id="0" loop="true" name="Animation 0" numframes="5" originx="15" originy="15" sync="false" version="2" width="90"/>
+    </sprite>
     <custom-block blocktag="custom-358" blocktype="ACTION" code="" desc="" global="false" gui="For %0 Set Max Walk Speed To %1" id="358" message="MaxWalkSpeed" name="MaxWalkSpeed" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="MaxSpeed" order="1" type="NUMBER"/>
