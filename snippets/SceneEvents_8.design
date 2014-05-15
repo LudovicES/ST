@@ -202,7 +202,7 @@
             <ACTORTYPE eid="567" id="1"/>
         </event-type-create-kill>
     </group>
-    <group eventID="37" id="4">
+    <group eventID="37" id="1">
         <dolater comment="false" x="808" y="181">
             <group eventID="1" id="-1"/>
             <int id="0" val="2"/>
@@ -211,6 +211,99 @@
     </group>
     <group eventID="37" id="-1">
         <get-val-217-8 comment="false" x="745" y="555"/>
+    </group>
+    <group eventID="40" id="0">
+        <event-actor-create-kill comment="false" x="15" y="15">
+            <group eventID="40" id="-1">
+                <set-val-217-9 comment="false" x="26" y="42">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-217-9>
+                <delete-region comment="false" x="26" y="67">
+                    <REGION eid="2" id="0"/>
+                </delete-region>
+            </group>
+            <int id="0" val="1"/>
+            <ACTOR eid="47" id="1"/>
+        </event-actor-create-kill>
+    </group>
+    <group eventID="40" id="-1"/>
+    <group eventID="41" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="41" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="41" id="-1">
+                        <dolater comment="false" x="37" y="110">
+                            <group eventID="41" id="-1">
+                                <delete-region comment="false" x="48" y="137">
+                                    <REGION eid="0" id="0"/>
+                                </delete-region>
+                                <set-val-217-2 comment="false" x="48" y="164">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-217-2>
+                            </group>
+                            <int id="0" val="2"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                    </group>
+                    <or comment="false" id="0" x="0" y="0">
+                        <or comment="false" id="0" x="0" y="0">
+                            <or comment="false" id="0" x="0" y="0">
+                                <or comment="false" id="0" x="0" y="0">
+                                    <or comment="false" id="0" x="0" y="0">
+                                        <or comment="false" id="0" x="0" y="0">
+                                            <or comment="false" id="0" x="0" y="0">
+                                                <is-in-region comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="29" id="0"/>
+                                                    <REGION eid="0" id="1"/>
+                                                </is-in-region>
+                                                <is-in-region comment="false" id="1" x="0" y="0">
+                                                    <ACTOR eid="26" id="0"/>
+                                                    <REGION eid="0" id="1"/>
+                                                </is-in-region>
+                                            </or>
+                                            <is-in-region comment="false" id="1" x="0" y="0">
+                                                <ACTOR eid="41" id="0"/>
+                                                <REGION eid="0" id="1"/>
+                                            </is-in-region>
+                                        </or>
+                                        <is-in-region comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="28" id="0"/>
+                                            <REGION eid="0" id="1"/>
+                                        </is-in-region>
+                                    </or>
+                                    <is-in-region comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="25" id="0"/>
+                                        <REGION eid="0" id="1"/>
+                                    </is-in-region>
+                                </or>
+                                <is-in-region comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="27" id="0"/>
+                                    <REGION eid="0" id="1"/>
+                                </is-in-region>
+                            </or>
+                            <is-in-region comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="37" id="0"/>
+                                <REGION eid="0" id="1"/>
+                            </is-in-region>
+                        </or>
+                        <is-in-region comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="86" id="0"/>
+                            <REGION eid="0" id="1"/>
+                        </is-in-region>
+                    </or>
+                </if>
+            </group>
+            <CONTROL eid="9" id="0"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="41" id="-1">
+        <pick-type comment="false" x="596" y="266">
+            <ACTORTYPE eid="432" id="0"/>
+        </pick-type>
+        <region comment="false" x="1018" y="250">
+            <REGION eid="lastcreated" id="0"/>
+        </region>
     </group>
     <group eventID="13" id="0">
         <init comment="false" x="15" y="15">
@@ -378,7 +471,7 @@
             <ACTOR eid="lastcreated" id="2"/>
         </dolater>
     </group>
-    <group eventID="23" id="7">
+    <group eventID="23" id="6">
         <set-volume-channel comment="false" x="34" y="237">
             <int id="0" val="0"/>
             <int id="1" val="5"/>
