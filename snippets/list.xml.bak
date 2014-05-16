@@ -221,6 +221,10 @@
             <event displayName="Actor - Any" enabled="true" id="3" name="collide" order="3" repeats="true"/>
         </events>
     </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_627" classname="scripts.ActorEvents_627" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="520" language="" name="ActorEvents_627" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_545" classname="scripts.ActorEvents_545" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="317" language="" name="ActorEvents_545" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <actor default="" defaultValue="" desc="" dropdown="" fullname="fish" hidden="false" id="1" name="_fish" order="0"/>
         <blocks/>
@@ -363,9 +367,9 @@
             <event displayName="Actor Created" enabled="true" id="40" name="event-actor-create-kill" order="38" repeats="true"/>
             <event displayName="Keyboard" enabled="true" id="41" name="event-key-press-release" order="39" repeats="true"/>
             <event displayName="zik_foret" enabled="true" id="13" name="init" order="13" repeats="true"/>
-            <event displayName="boolean_draw_text" enabled="true" id="17" name="event-type-region" order="17" repeats="false"/>
+            <event displayName="boolean_draw_text" enabled="true" id="17" name="event-type-region" order="17" repeats="true"/>
             <event displayName="boolean_draw_text_exit" enabled="true" id="19" name="event-type-region" order="18" repeats="false"/>
-            <event displayName="draw_text" enabled="true" id="18" name="draw" order="19" repeats="true"/>
+            <event displayName="draw_text" enabled="false" id="18" name="draw" order="19" repeats="true"/>
             <event displayName="son_pluie_start" enabled="true" id="23" name="event-type-region" order="28" repeats="false"/>
             <event displayName="son abeille start" enabled="true" id="25" name="event-type-region" order="30" repeats="false"/>
             <event displayName="son_pluie_stop" enabled="true" id="24" name="event-type-region" order="29" repeats="true"/>

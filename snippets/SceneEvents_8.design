@@ -237,11 +237,14 @@
                                 <delete-region comment="false" x="48" y="137">
                                     <REGION eid="0" id="0"/>
                                 </delete-region>
-                                <set-val-217-2 comment="false" x="48" y="164">
+                                <die comment="false" x="48" y="164">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                </die>
+                                <set-val-217-2 comment="false" x="48" y="191">
                                     <false comment="false" id="0" x="0" y="0"/>
                                 </set-val-217-2>
                             </group>
-                            <int id="0" val="2"/>
+                            <int id="0" val="0.1"/>
                             <ACTOR eid="lastcreated" id="2"/>
                         </dolater>
                     </group>
@@ -297,13 +300,18 @@
             <int id="1" val="0"/>
         </event-key-press-release>
     </group>
+    <group eventID="17" id="1">
+        <set-val-217-2 comment="false" x="189" y="301">
+            <false comment="false" id="0" x="0" y="0"/>
+        </set-val-217-2>
+    </group>
     <group eventID="41" id="-1">
-        <pick-type comment="false" x="596" y="266">
-            <ACTORTYPE eid="432" id="0"/>
-        </pick-type>
         <region comment="false" x="1018" y="250">
             <REGION eid="lastcreated" id="0"/>
         </region>
+        <pick-type comment="false" x="596" y="266">
+            <ACTORTYPE eid="432" id="0"/>
+        </pick-type>
     </group>
     <group eventID="13" id="0">
         <init comment="false" x="15" y="15">
@@ -328,6 +336,9 @@
                 <set-val-217-8 comment="false" x="26" y="167">
                     <true comment="false" id="0" x="0" y="0"/>
                 </set-val-217-8>
+                <set-val-217-2 comment="false" x="26" y="192">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-217-2>
             </group>
         </init>
     </group>
@@ -338,6 +349,32 @@
                 <set-val-217-2 comment="false" x="26" y="47">
                     <true comment="false" id="0" x="0" y="0"/>
                 </set-val-217-2>
+                <if comment="false" x="26" y="72">
+                    <group eventID="18" id="-1">
+                        <create-actor3 comment="false" x="37" y="102">
+                            <ACTORTYPE eid="627" id="0"/>
+                            <get-xy comment="false" id="1" x="0" y="0">
+                                <actor-entered-exited comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </get-xy>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <actor-entered-exited comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                                <int id="1" val="60"/>
+                            </minus>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <set-val-217-2 comment="false" x="37" y="152">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-217-2>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-217-2 comment="false" id="0" x="0" y="0"/>
+                        <true comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
             </group>
             <int id="0" val="0"/>
             <REGION eid="0" id="1"/>
@@ -345,9 +382,49 @@
         </event-type-region>
     </group>
     <group eventID="17" id="1">
-        <print comment="false" x="59" y="219">
+        <print comment="false" x="35" y="363">
             <int id="0" val="test_text1"/>
         </print>
+    </group>
+    <group eventID="17" id="2">
+        <die comment="false" x="784" y="410">
+            <ACTOR eid="lastcreated" id="0"/>
+        </die>
+    </group>
+    <group eventID="17" id="6">
+        <print comment="false" x="320" y="325">
+            <int id="0" val="test2"/>
+        </print>
+    </group>
+    <group eventID="17" id="8">
+        <print comment="false" x="423" y="411">
+            <int id="0" val="test1"/>
+        </print>
+    </group>
+    <group eventID="17" id="9">
+        <die comment="false" x="858" y="245">
+            <ACTOR eid="lastcreated" id="0"/>
+        </die>
+    </group>
+    <group eventID="17" id="11">
+        <set-dxy comment="false" x="703" y="304">
+            <ACTOR eid="lastcreated" id="0"/>
+            <int id="1" val="0"/>
+            <get-dxy comment="false" id="2" x="0" y="0">
+                <actor-entered-exited comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="0"/>
+            </get-dxy>
+        </set-dxy>
+    </group>
+    <group eventID="17" id="12">
+        <set-dxy comment="false" x="711" y="443">
+            <ACTOR eid="lastcreated" id="0"/>
+            <int id="1" val="1"/>
+            <get-dxy comment="false" id="2" x="0" y="0">
+                <actor-entered-exited comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="1"/>
+            </get-dxy>
+        </set-dxy>
     </group>
     <group eventID="17" id="-1"/>
     <group eventID="19" id="0">
@@ -356,6 +433,9 @@
                 <set-val-217-2 comment="false" x="26" y="47">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-val-217-2>
+                <die comment="false" x="26" y="72">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </die>
             </group>
             <int id="0" val="1"/>
             <REGION eid="0" id="1"/>
@@ -373,15 +453,12 @@
             <group eventID="18" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="18" id="-1">
-                        <to-screen-space comment="false" x="37" y="70"/>
-                        <set-font-new comment="false" x="37" y="90">
-                            <FONT eid="617" id="0"/>
-                        </set-font-new>
-                        <draw-text comment="false" x="37" y="117">
-                            <int id="0" val="E"/>
+                        <create-actor3 comment="false" x="37" y="70">
+                            <ACTORTYPE eid="627" id="0"/>
                             <int id="1" val="400"/>
                             <int id="2" val="280"/>
-                        </draw-text>
+                            <int id="3" val="0"/>
+                        </create-actor3>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
                         <get-val-217-2 comment="false" id="0" x="0" y="0"/>
@@ -396,14 +473,43 @@
             <int id="0" val="test_text"/>
         </print>
     </group>
+    <group eventID="18" id="2">
+        <to-screen-space comment="false" x="338" y="488"/>
+        <set-font-new comment="false" x="338" y="508">
+            <FONT eid="617" id="0"/>
+        </set-font-new>
+        <draw-text comment="false" x="338" y="535">
+            <int id="0" val="E"/>
+            <int id="1" val="400"/>
+            <int id="2" val="280"/>
+        </draw-text>
+    </group>
+    <group eventID="18" id="3">
+        <create-actor3-next comment="false" x="504" y="119">
+            <ACTORTYPE eid="627" id="0"/>
+            <int id="1" val="400"/>
+            <int id="2" val="280"/>
+            <int id="3" val="0"/>
+        </create-actor3-next>
+    </group>
+    <group eventID="18" id="5">
+        <die comment="false" x="240" y="259">
+            <ACTOR eid="lastcreated" id="0"/>
+        </die>
+    </group>
+    <group eventID="18" id="6">
+        <set-val-217-2 comment="false" x="214" y="157">
+            <false comment="false" id="0" x="0" y="0"/>
+        </set-val-217-2>
+    </group>
     <group eventID="18" id="-1">
-        <get-xy comment="false" x="557" y="241">
-            <ACTOR eid="25" id="0"/>
-            <int id="1" val="1"/>
-        </get-xy>
         <get-xy comment="false" x="320" y="306">
             <ACTOR eid="25" id="0"/>
             <int id="1" val="0"/>
+        </get-xy>
+        <get-xy comment="false" x="557" y="241">
+            <ACTOR eid="25" id="0"/>
+            <int id="1" val="1"/>
         </get-xy>
     </group>
     <group eventID="23" id="0">

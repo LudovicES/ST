@@ -1,18 +1,19 @@
 #
-#Sat May 03 13:38:49 CEST 2014
+#Fri May 16 19:33:14 CEST 2014
 monospace=false
 monospace.numerals=false
 style=plain
 alphabet=
 tracking=0
+stroke.color=\#ffffff
 color=\#ffffff
-shadow.y=0
+shadow.y=3
 family=SansSerif
-shadow.x=0
+shadow.x=2
 shadow.color=\#000000
 gradient.offset=0
-shadow.blur=0
+shadow.blur=2
 chars=all
-stroke.size=0
+stroke.size=3
 antialias=true
 size=16
