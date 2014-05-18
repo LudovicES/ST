@@ -378,34 +378,40 @@
                                     <ACTOR eid="this" id="0"/>
                                     <int id="1" val="stick-r"/>
                                 </setanim>
+                                <set-val-228-61 comment="false" x="243" y="514">
+                                    <int id="0" val="12"/>
+                                </set-val-228-61>
                             </group>
                             <get-val-228-47 comment="false" id="0" x="0" y="0"/>
                         </if>
-                        <else comment="false" x="232" y="526">
+                        <else comment="false" x="232" y="546">
                             <group eventID="7" id="-1">
-                                <setanim comment="false" x="243" y="546">
+                                <setanim comment="false" x="243" y="566">
                                     <ACTOR eid="this" id="0"/>
                                     <int id="1" val="stick-l"/>
                                 </setanim>
+                                <set-val-228-61 comment="false" x="243" y="593">
+                                    <int id="0" val="-12"/>
+                                </set-val-228-61>
                             </group>
                         </else>
                     </group>
                     <get-val-228-53 comment="false" id="0" x="0" y="0"/>
                 </if>
-                <else comment="false" x="221" y="597">
+                <else comment="false" x="221" y="637">
                     <group eventID="7" id="-1">
-                        <if comment="false" x="232" y="617">
+                        <if comment="false" x="232" y="657">
                             <group eventID="7" id="-1">
-                                <setanim comment="false" x="243" y="642">
+                                <setanim comment="false" x="243" y="682">
                                     <ACTOR eid="this" id="0"/>
                                     <int id="1" val="kick-r"/>
                                 </setanim>
                             </group>
                             <get-val-228-47 comment="false" id="0" x="0" y="0"/>
                         </if>
-                        <else comment="false" x="232" y="681">
+                        <else comment="false" x="232" y="721">
                             <group eventID="7" id="-1">
-                                <setanim comment="false" x="243" y="701">
+                                <setanim comment="false" x="243" y="741">
                                     <ACTOR eid="this" id="0"/>
                                     <int id="1" val="kick-l"/>
                                 </setanim>
@@ -413,11 +419,30 @@
                         </else>
                     </group>
                 </else>
-                <dolater comment="false" x="221" y="752">
+                <set-xy comment="false" x="221" y="792">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-xy>
+                        <get-val-228-61 comment="false" id="1" x="0" y="0"/>
+                    </plus>
+                </set-xy>
+                <set-attribute comment="false" x="221" y="837">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Camera Follow Player"/>
+                    <int id="2" val="_XOffset"/>
+                    <neg comment="false" id="3" x="0" y="0">
+                        <get-val-228-61 comment="false" id="0" x="0" y="0"/>
+                    </neg>
+                </set-attribute>
+                <dolater comment="false" x="221" y="874">
                     <group eventID="7" id="-1">
-                        <if comment="false" x="232" y="779">
+                        <if comment="false" x="232" y="901">
                             <group eventID="3" id="-1">
-                                <toggle-image comment="false" x="243" y="812">
+                                <toggle-image comment="false" x="243" y="934">
                                     <get-attribute comment="false" id="0" x="0" y="0">
                                         <ACTOR eid="this" id="0"/>
                                         <int id="1" val="holder"/>
@@ -432,9 +457,14 @@
                                 <int id="2" val="_holding"/>
                             </get-attribute>
                         </if>
-                        <set-val-228-52 comment="false" x="232" y="864">
+                        <set-val-228-52 comment="false" x="232" y="986">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-val-228-52>
+                        <say comment="false" x="232" y="1011">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Scout Movement"/>
+                            <int id="2" val="resetoffset"/>
+                        </say>
                     </group>
                     <int id="0" val="0.5"/>
                     <ACTOR eid="this" id="2"/>
@@ -620,4 +650,35 @@
         </step>
     </group>
     <group eventID="9" id="-1"/>
+    <group eventID="10" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="10" id="-1">
+                <comment-short comment="false" x="26" y="40">
+                    <int id="0" val="pour remettre le decalage comme il faut, à la fin de l&amp;#039;anim de kick ou lors de la mort"/>
+                </comment-short>
+                <set-xy comment="false" x="26" y="60">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-xy>
+                        <get-val-228-61 comment="false" id="1" x="0" y="0"/>
+                    </minus>
+                </set-xy>
+                <set-attribute comment="false" x="26" y="105">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Camera Follow Player"/>
+                    <int id="2" val="_XOffset"/>
+                    <int id="3" val="0"/>
+                </set-attribute>
+                <set-val-228-61 comment="false" x="26" y="132">
+                    <int id="0" val="0"/>
+                </set-val-228-61>
+            </group>
+            <int id="0" val="resetoffset"/>
+        </event-custom>
+    </group>
+    <group eventID="10" id="-1"/>
 </groups>

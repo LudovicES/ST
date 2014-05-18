@@ -433,19 +433,19 @@
             <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-l" rest="0.0" sensor="false"/>
         </anim>
         <anim across="4" down="3" durations="55,55,55,55,55,55,55,55,55,55,55,55" height="210" id="17" loop="true" name="walk-l" numframes="12" originx="25" originy="35" sync="false" version="2" width="200">
-            <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="walk-r" rest="0.0" sensor="false"/>
+            <poly data="4,14,28,30,28,30,60,14,60" density="0.1" fric="0.2" gid="-1000" id="0" name="walk-r" rest="0.0" sensor="false"/>
         </anim>
         <anim across="3" down="3" durations="70,70,70,70,70,70,70,70,70" height="210" id="19" loop="true" name="idle2-r" numframes="9" originx="25" originy="35" sync="false" version="2" width="150">
             <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-l" rest="0.0" sensor="false"/>
         </anim>
         <anim across="4" down="3" durations="100,100,100,100,100,100,100,100,100,100" height="210" id="18" loop="true" name="idle-l" numframes="10" originx="25" originy="35" sync="false" version="2" width="200">
-            <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-l" rest="0.0" sensor="false"/>
+            <poly data="4,14,28,30,28,30,60,14,60" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-l" rest="0.0" sensor="false"/>
         </anim>
         <anim across="3" down="3" durations="60,60,60,60,60,60,60" height="210" id="21" loop="false" name="kick-r" numframes="7" originx="29" originy="35" sync="false" version="2" width="174">
             <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 21" rest="0.0" sensor="false"/>
         </anim>
         <anim across="3" down="3" durations="70,70,70,70,70,70,70,70,70" height="210" id="20" loop="true" name="idle2-l" numframes="9" originx="25" originy="35" sync="false" version="2" width="150">
-            <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-l" rest="0.0" sensor="false"/>
+            <poly data="4,14,28,30,28,30,60,14,60" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-l" rest="0.0" sensor="false"/>
         </anim>
         <anim across="4" down="3" durations="100,100,100,100,100,100,100,100,100,100" height="210" id="23" loop="true" name="hold-r" numframes="10" originx="25" originy="35" sync="false" version="2" width="200">
             <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 23" rest="0.0" sensor="false"/>
@@ -457,13 +457,13 @@
             <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="walk-r" rest="0.0" sensor="false"/>
         </anim>
         <anim across="4" down="3" durations="100,100,100,100,100,100,100,100,100,100" height="210" id="24" loop="true" name="hold-l" numframes="10" originx="25" originy="35" sync="false" version="2" width="200">
-            <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 23" rest="0.0" sensor="false"/>
+            <poly data="4,14,28,30,28,30,60,14,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 23" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="4" down="3" durations="50,50,50,50,50,50,50,50,50,50" height="240" id="27" loop="false" name="stick-r" numframes="10" originx="50" originy="40" sync="false" version="2" width="400">
-            <poly data="4,30,33,46,33,46,65,30,65" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        <anim across="4" down="3" durations="50,50,50,50,50,50,50,50,50,50" height="240" id="27" loop="false" name="stick-r" numframes="10" originx="90" originy="0" sync="false" version="2" width="400">
+            <poly data="4,33,33,49,33,49,65,33,65" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
         </anim>
         <anim across="4" down="3" durations="55,55,55,55,55,55,55,55,55,55,55,55" height="210" id="26" loop="true" name="walk-hold-l" numframes="12" originx="25" originy="35" sync="false" version="2" width="200">
-            <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="walk-r" rest="0.0" sensor="false"/>
+            <poly data="4,14,28,30,28,30,60,14,60" density="0.1" fric="0.2" gid="-1000" id="0" name="walk-r" rest="0.0" sensor="false"/>
         </anim>
         <anim across="3" down="3" durations="25,25,25,25,25,25,25,25" height="210" id="29" loop="false" name="hit-r" numframes="8" originx="25" originy="35" sync="false" version="2" width="150">
             <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 21" rest="0.0" sensor="false"/>
@@ -472,7 +472,7 @@
             <poly data="4,50,33,66,33,66,65,50,65" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
         </anim>
         <anim across="3" down="3" durations="25,25,25,25,25,25,25,25" height="210" id="30" loop="false" name="hit-l" numframes="8" originx="25" originy="35" sync="false" version="2" width="150">
-            <poly data="4,19,28,35,28,35,60,19,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 21" rest="0.0" sensor="false"/>
+            <poly data="4,14,28,30,28,30,60,14,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 21" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="82" id="576" name="lighr_tree" shared="false" width="32">
@@ -707,6 +707,7 @@
                 <prop id="58" list="0" val="false"/>
                 <prop id="57" list="0" val="stick-l"/>
                 <prop id="56" list="0" val="stick-r"/>
+                <prop id="61" list="0" val="0"/>
                 <prop id="60" list="0" val="false"/>
             </s>
             <s enabled="false" id="123">

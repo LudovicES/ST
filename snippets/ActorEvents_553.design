@@ -46,17 +46,22 @@
                                 <set-val-321-3 comment="false" x="48" y="151">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-val-321-3>
-                                <actor-enabledisable-snippet comment="false" x="48" y="176">
+                                <say comment="false" x="48" y="176">
+                                    <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="Scout Movement"/>
+                                    <int id="2" val="resetoffset"/>
+                                </say>
+                                <actor-enabledisable-snippet comment="false" x="48" y="208">
                                     <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="1"/>
                                     <int id="2" val="Scout Movement"/>
                                 </actor-enabledisable-snippet>
-                                <set-dxy comment="false" x="48" y="208">
+                                <set-dxy comment="false" x="48" y="240">
                                     <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="0"/>
                                     <int id="2" val="0"/>
                                 </set-dxy>
-                                <create-actor3 comment="false" x="48" y="240">
+                                <create-actor3 comment="false" x="48" y="272">
                                     <ACTORTYPE eid="557" id="0"/>
                                     <minus comment="false" id="1" x="0" y="0">
                                         <get-xy comment="false" id="0" x="0" y="0">
@@ -74,19 +79,19 @@
                                     </minus>
                                     <int id="3" val="0"/>
                                 </create-actor3>
-                                <die comment="false" x="48" y="290">
+                                <die comment="false" x="48" y="322">
                                     <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                                 </die>
-                                <die comment="false" x="48" y="322">
+                                <die comment="false" x="48" y="354">
                                     <get-attribute comment="false" id="0" x="0" y="0">
                                         <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                                         <int id="1" val="holder"/>
                                         <int id="2" val="_hold"/>
                                     </get-attribute>
                                 </die>
-                                <dolater comment="false" x="48" y="367">
+                                <dolater comment="false" x="48" y="399">
                                     <group eventID="2" id="-1">
-                                        <toggle-grav comment="false" x="59" y="394">
+                                        <toggle-grav comment="false" x="59" y="426">
                                             <ACTOR eid="this" id="0"/>
                                             <int id="1" val="0"/>
                                         </toggle-grav>
@@ -94,9 +99,9 @@
                                     <int id="0" val="0.01"/>
                                     <ACTOR eid="this" id="2"/>
                                 </dolater>
-                                <dolater comment="false" x="48" y="433">
+                                <dolater comment="false" x="48" y="465">
                                     <group eventID="2" id="-1">
-                                        <die comment="false" x="59" y="460">
+                                        <die comment="false" x="59" y="492">
                                             <ACTOR eid="this" id="0"/>
                                         </die>
                                     </group>

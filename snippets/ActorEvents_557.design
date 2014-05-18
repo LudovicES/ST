@@ -44,7 +44,7 @@
         </init>
     </group>
     <group eventID="1" id="1">
-        <print comment="false" x="45" y="233">
+        <print comment="false" x="175" y="392">
             <int id="0" val="killoooo"/>
         </print>
     </group>

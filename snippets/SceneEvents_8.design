@@ -300,11 +300,6 @@
             <int id="1" val="0"/>
         </event-key-press-release>
     </group>
-    <group eventID="17" id="1">
-        <set-val-217-2 comment="false" x="189" y="301">
-            <false comment="false" id="0" x="0" y="0"/>
-        </set-val-217-2>
-    </group>
     <group eventID="41" id="-1">
         <region comment="false" x="1018" y="250">
             <REGION eid="lastcreated" id="0"/>
@@ -344,6 +339,11 @@
     </group>
     <group eventID="13" id="-1"/>
     <group eventID="17" id="0">
+        <set-val-217-2 comment="false" x="189" y="301">
+            <false comment="false" id="0" x="0" y="0"/>
+        </set-val-217-2>
+    </group>
+    <group eventID="17" id="1">
         <event-type-region comment="false" x="15" y="15">
             <group eventID="17" id="-1">
                 <set-val-217-2 comment="false" x="26" y="47">
@@ -381,32 +381,32 @@
             <ACTORTYPE eid="432" id="2"/>
         </event-type-region>
     </group>
-    <group eventID="17" id="1">
+    <group eventID="17" id="2">
         <print comment="false" x="35" y="363">
             <int id="0" val="test_text1"/>
         </print>
     </group>
-    <group eventID="17" id="2">
+    <group eventID="17" id="3">
         <die comment="false" x="784" y="410">
             <ACTOR eid="lastcreated" id="0"/>
         </die>
     </group>
-    <group eventID="17" id="6">
+    <group eventID="17" id="4">
         <print comment="false" x="320" y="325">
             <int id="0" val="test2"/>
         </print>
     </group>
-    <group eventID="17" id="8">
+    <group eventID="17" id="5">
         <print comment="false" x="423" y="411">
             <int id="0" val="test1"/>
         </print>
     </group>
-    <group eventID="17" id="9">
+    <group eventID="17" id="6">
         <die comment="false" x="858" y="245">
             <ACTOR eid="lastcreated" id="0"/>
         </die>
     </group>
-    <group eventID="17" id="11">
+    <group eventID="17" id="7">
         <set-dxy comment="false" x="703" y="304">
             <ACTOR eid="lastcreated" id="0"/>
             <int id="1" val="0"/>
@@ -416,7 +416,7 @@
             </get-dxy>
         </set-dxy>
     </group>
-    <group eventID="17" id="12">
+    <group eventID="17" id="8">
         <set-dxy comment="false" x="711" y="443">
             <ACTOR eid="lastcreated" id="0"/>
             <int id="1" val="1"/>
@@ -492,12 +492,12 @@
             <int id="3" val="0"/>
         </create-actor3-next>
     </group>
-    <group eventID="18" id="5">
+    <group eventID="18" id="4">
         <die comment="false" x="240" y="259">
             <ACTOR eid="lastcreated" id="0"/>
         </die>
     </group>
-    <group eventID="18" id="6">
+    <group eventID="18" id="5">
         <set-val-217-2 comment="false" x="214" y="157">
             <false comment="false" id="0" x="0" y="0"/>
         </set-val-217-2>
