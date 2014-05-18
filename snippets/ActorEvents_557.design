@@ -48,10 +48,5 @@
             <int id="0" val="killoooo"/>
         </print>
     </group>
-    <group eventID="1" id="2">
-        <die comment="false" x="325" y="324">
-            <ACTOR eid="lastcollided" id="0"/>
-        </die>
-    </group>
     <group eventID="1" id="-1"/>
 </groups>

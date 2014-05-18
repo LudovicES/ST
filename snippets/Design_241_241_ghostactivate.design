@@ -39,26 +39,30 @@
                     <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                     <filter-tint comment="false" id="1" x="0" y="0">
                         <color b="255" g="255" id="0" r="51"/>
-                        <int id="1" val="70"/>
+                        <int id="1" val="50"/>
                     </filter-tint>
                 </apply-filter>
                 <die comment="false" x="26" y="233">
                     <ACTOR eid="this" id="0"/>
                 </die>
-                <set-val-241-2 comment="false" x="26" y="260">
+                <backforward comment="false" x="26" y="260">
+                    <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="1"/>
+                </backforward>
+                <set-val-241-2 comment="false" x="26" y="292">
                     <scene-get-attribute comment="false" id="0" x="0" y="0">
                         <int id="0" val="Game"/>
                         <int id="1" val="_NbToKill"/>
                     </scene-get-attribute>
                 </set-val-241-2>
-                <if comment="false" x="26" y="285">
+                <if comment="false" x="26" y="317">
                     <group eventID="3" id="-1">
-                        <scene-set-attribute comment="false" x="37" y="315">
+                        <scene-set-attribute comment="false" x="37" y="347">
                             <int id="0" val="Game"/>
                             <int id="1" val="_NbSingers"/>
                             <int id="2" val="2"/>
                         </scene-set-attribute>
-                        <set-volume-channel comment="false" x="37" y="335">
+                        <set-volume-channel comment="false" x="37" y="367">
                             <int id="0" val="0"/>
                             <int id="1" val="0"/>
                         </set-volume-channel>
@@ -68,14 +72,14 @@
                         <int id="1" val="5"/>
                     </eq>
                 </if>
-                <else-if comment="false" x="26" y="367">
+                <else-if comment="false" x="26" y="399">
                     <group eventID="3" id="-1">
-                        <scene-set-attribute comment="false" x="37" y="397">
+                        <scene-set-attribute comment="false" x="37" y="429">
                             <int id="0" val="Game"/>
                             <int id="1" val="_NbSingers"/>
                             <int id="2" val="1"/>
                         </scene-set-attribute>
-                        <set-volume-channel comment="false" x="37" y="417">
+                        <set-volume-channel comment="false" x="37" y="449">
                             <int id="0" val="0"/>
                             <int id="1" val="1"/>
                         </set-volume-channel>
@@ -85,14 +89,14 @@
                         <int id="1" val="2"/>
                     </eq>
                 </else-if>
-                <else-if comment="false" x="26" y="449">
+                <else-if comment="false" x="26" y="481">
                     <group eventID="3" id="-1">
-                        <scene-set-attribute comment="false" x="37" y="479">
+                        <scene-set-attribute comment="false" x="37" y="511">
                             <int id="0" val="Game"/>
                             <int id="1" val="_NbSingers"/>
                             <int id="2" val="0"/>
                         </scene-set-attribute>
-                        <set-volume-channel comment="false" x="37" y="499">
+                        <set-volume-channel comment="false" x="37" y="531">
                             <int id="0" val="0"/>
                             <int id="1" val="2"/>
                         </set-volume-channel>
@@ -106,6 +110,12 @@
             <ACTOR eid="this" id="0"/>
             <ACTORTYPE eid="432" id="1"/>
         </event-collide-actortotype>
+    </group>
+    <group eventID="5" id="3">
+        <setlayer comment="false" x="586" y="684">
+            <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
+            <int id="1" val="8"/>
+        </setlayer>
     </group>
     <group eventID="5" id="-1">
         <plus comment="false" x="1068" y="212">

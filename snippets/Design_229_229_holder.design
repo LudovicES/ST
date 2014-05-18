@@ -20,10 +20,10 @@
                                     </getlayer>
                                 </setlayer>
                                 <movewithinlayer comment="false" x="48" y="215">
-                                    <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                                    <ACTOR eid="this" id="0"/>
                                     <int id="1" val="3"/>
                                 </movewithinlayer>
-                                <set-val-226-3 comment="false" x="48" y="247">
+                                <set-val-226-3 comment="false" x="48" y="242">
                                     <plus comment="false" id="0" x="0" y="0">
                                         <zindex comment="false" id="0" x="0" y="0">
                                             <ACTOR eid="this" id="0"/>
@@ -31,9 +31,9 @@
                                         <int id="1" val="1"/>
                                     </plus>
                                 </set-val-226-3>
-                                <while comment="false" x="48" y="285">
+                                <while comment="false" x="48" y="280">
                                     <group eventID="2" id="-1">
-                                        <movewithinlayer comment="false" x="59" y="328">
+                                        <movewithinlayer comment="false" x="59" y="323">
                                             <get-val-226-1 comment="false" id="0" x="0" y="0"/>
                                             <int id="1" val="0"/>
                                         </movewithinlayer>
@@ -45,11 +45,11 @@
                                         <get-val-226-3 comment="false" id="1" x="0" y="0"/>
                                     </noteq>
                                 </while>
-                                <apply-filter comment="false" x="48" y="372">
+                                <apply-filter comment="false" x="48" y="367">
                                     <get-val-226-1 comment="false" id="0" x="0" y="0"/>
                                     <filter-tint comment="false" id="1" x="0" y="0">
                                         <color b="255" g="255" id="0" r="51"/>
-                                        <int id="1" val="70"/>
+                                        <int id="1" val="50"/>
                                     </filter-tint>
                                 </apply-filter>
                             </group>
@@ -63,18 +63,18 @@
                                 </keystate>
                             </and>
                         </if>
-                        <else-if comment="false" x="37" y="424">
+                        <else-if comment="false" x="37" y="419">
                             <group eventID="2" id="-1">
-                                <set-val-226-2 comment="false" x="48" y="467">
+                                <set-val-226-2 comment="false" x="48" y="462">
                                     <false comment="false" id="0" x="0" y="0"/>
                                 </set-val-226-2>
-                                <set-attribute comment="false" x="48" y="492">
+                                <set-attribute comment="false" x="48" y="487">
                                     <get-val-226-1 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="item"/>
                                     <int id="2" val="_dropping"/>
                                     <true comment="false" id="3" x="0" y="0"/>
                                 </set-attribute>
-                                <clear-filter comment="false" x="48" y="524">
+                                <clear-filter comment="false" x="48" y="519">
                                     <get-val-226-1 comment="false" id="0" x="0" y="0"/>
                                 </clear-filter>
                             </group>
@@ -103,9 +103,15 @@
             <GROUP eid="9" id="1"/>
         </event-collide-actortogroup>
     </group>
-    <group eventID="2" id="-1">
-        <get-val-226-2 comment="false" x="1067" y="347"/>
+    <group eventID="2" id="1">
+        <setlayer comment="false" x="599" y="139">
+            <collide-member-of-group comment="false" id="0" x="0" y="0"/>
+            <getlayer comment="false" id="1" x="0" y="0">
+                <first-actor comment="false" id="0" x="0" y="0"/>
+            </getlayer>
+        </setlayer>
     </group>
+    <group eventID="2" id="-1"/>
     <group eventID="3" id="0">
         <step comment="false" x="33" y="156">
             <group eventID="3" id="-1">
