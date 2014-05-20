@@ -42,13 +42,13 @@
                         <int id="1" val="50"/>
                     </filter-tint>
                 </apply-filter>
-                <die comment="false" x="26" y="233">
+                <movewithinlayer comment="false" x="26" y="233">
+                    <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="3"/>
+                </movewithinlayer>
+                <die comment="false" x="26" y="265">
                     <ACTOR eid="this" id="0"/>
                 </die>
-                <backforward comment="false" x="26" y="260">
-                    <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
-                    <int id="1" val="1"/>
-                </backforward>
                 <set-val-241-2 comment="false" x="26" y="292">
                     <scene-get-attribute comment="false" id="0" x="0" y="0">
                         <int id="0" val="Game"/>
@@ -110,12 +110,6 @@
             <ACTOR eid="this" id="0"/>
             <ACTORTYPE eid="432" id="1"/>
         </event-collide-actortotype>
-    </group>
-    <group eventID="5" id="3">
-        <setlayer comment="false" x="586" y="684">
-            <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
-            <int id="1" val="8"/>
-        </setlayer>
     </group>
     <group eventID="5" id="-1">
         <plus comment="false" x="1068" y="212">

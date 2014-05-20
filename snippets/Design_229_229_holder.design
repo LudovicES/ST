@@ -20,32 +20,10 @@
                                     </getlayer>
                                 </setlayer>
                                 <movewithinlayer comment="false" x="48" y="215">
-                                    <ACTOR eid="this" id="0"/>
+                                    <get-val-226-1 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="3"/>
                                 </movewithinlayer>
-                                <set-val-226-3 comment="false" x="48" y="242">
-                                    <plus comment="false" id="0" x="0" y="0">
-                                        <zindex comment="false" id="0" x="0" y="0">
-                                            <ACTOR eid="this" id="0"/>
-                                        </zindex>
-                                        <int id="1" val="1"/>
-                                    </plus>
-                                </set-val-226-3>
-                                <while comment="false" x="48" y="280">
-                                    <group eventID="2" id="-1">
-                                        <movewithinlayer comment="false" x="59" y="323">
-                                            <get-val-226-1 comment="false" id="0" x="0" y="0"/>
-                                            <int id="1" val="0"/>
-                                        </movewithinlayer>
-                                    </group>
-                                    <noteq comment="false" id="0" x="0" y="0">
-                                        <zindex comment="false" id="0" x="0" y="0">
-                                            <get-val-226-1 comment="false" id="0" x="0" y="0"/>
-                                        </zindex>
-                                        <get-val-226-3 comment="false" id="1" x="0" y="0"/>
-                                    </noteq>
-                                </while>
-                                <apply-filter comment="false" x="48" y="367">
+                                <apply-filter comment="false" x="48" y="247">
                                     <get-val-226-1 comment="false" id="0" x="0" y="0"/>
                                     <filter-tint comment="false" id="1" x="0" y="0">
                                         <color b="255" g="255" id="0" r="51"/>
@@ -63,18 +41,18 @@
                                 </keystate>
                             </and>
                         </if>
-                        <else-if comment="false" x="37" y="419">
+                        <else-if comment="false" x="37" y="299">
                             <group eventID="2" id="-1">
-                                <set-val-226-2 comment="false" x="48" y="462">
+                                <set-val-226-2 comment="false" x="48" y="342">
                                     <false comment="false" id="0" x="0" y="0"/>
                                 </set-val-226-2>
-                                <set-attribute comment="false" x="48" y="487">
+                                <set-attribute comment="false" x="48" y="367">
                                     <get-val-226-1 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="item"/>
                                     <int id="2" val="_dropping"/>
                                     <true comment="false" id="3" x="0" y="0"/>
                                 </set-attribute>
-                                <clear-filter comment="false" x="48" y="519">
+                                <clear-filter comment="false" x="48" y="399">
                                     <get-val-226-1 comment="false" id="0" x="0" y="0"/>
                                 </clear-filter>
                             </group>
@@ -102,14 +80,6 @@
             <ACTOR eid="this" id="0"/>
             <GROUP eid="9" id="1"/>
         </event-collide-actortogroup>
-    </group>
-    <group eventID="2" id="1">
-        <setlayer comment="false" x="599" y="139">
-            <collide-member-of-group comment="false" id="0" x="0" y="0"/>
-            <getlayer comment="false" id="1" x="0" y="0">
-                <first-actor comment="false" id="0" x="0" y="0"/>
-            </getlayer>
-        </setlayer>
     </group>
     <group eventID="2" id="-1"/>
     <group eventID="3" id="0">
