@@ -666,9 +666,6 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_524" classname="scripts.ActorEvents_524" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="251" language="" name="ActorEvents_524" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
-        <events>
-            <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
-        </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_519" classname="scripts.ActorEvents_519" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="248" language="" name="ActorEvents_519" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
